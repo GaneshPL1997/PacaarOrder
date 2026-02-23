@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<soap:Body>
+
+
+		<MLRoute ArrTime="2023-11-14T13:16:56" DId="8391934"
+			DepTime="2023-11-14T07:00:00" GroupId="6341" Id="5977:6967"
+			Name="699_05" OrgId="EXLA" TStamp="2024-10-23T19:01:07"
+			Trackable="DriverOnly" TruckId="699-Veh_05"
+			wGlnGuid="7fa81b93af1942e082baf5ab25301b0e">
+
+
+			<MeasureConfiguration />
+
+
+			<Trip ArrTime="2023-11-14T13:16:56" DepTime="2023-11-14T07:00:00"
+				Id="61736:837495" Name="699_05" Seq="0" Status="1">
+
+
+				<RouteNavigationProperties AvoidBridges="false"
+					AvoidFerries="false" AvoidHighways="false"
+					AvoidRoundabouts="false" AvoidTollRoads="false"
+					AvoidTunnels="false" HazMat="0" Height="-1" Length="-1"
+					TypeOfHazMat="0" VehicleType="5" Weight="-1" Width="-1" />
+
+
+				<Stop Address="5161 Hwy 42" CName="224615344" City="Ellenwood"
+					Close="2359" CustNo="StarCorp" GeoStop="0" Geofence="250"
+					GeofenceUnits="Meters" Id="12233445" Latitude="33.61415"
+					LocationKey="StarCorp" LocationType="0"
+					Longitude="-84.30606" Name="StarCorp" Open="0000"
+					PCode="30294" PlanArr="2023-11-14T14:00:00"
+					PlanDep="2023-11-14T15:00:00" ProjArr="2023-11-14T14:00:00"
+					ProjDep="2023-11-14T15:00:00" Seq="0" State="GA" Status="1"
+					Type="0" stopType="Depot">
+
+
+					<Extensions>
+
+
+						<Extension Name="stopType" Value="Depot"
+							stopType="Depot" stoptype="Depot" />
+
+
+					</Extensions>
+
+
+					<Job DispId="87241510" Id="12345676" Name="87241510" Pcs="1"
+						Status="1" Type="2" Vol="0" Wt="0"
+						carriercode="THD-Pompano" servicetype="Basic"
+						trucktype="Flatbed" udolegid="87241510">
+
+
+						<Dependency JId="12345677" SId="12345673" />
+
+
+						<Extensions>
+
+
+							<Extension Name="udolegid" Value="Stop1"
+								udolegid="Stop1" />
+
+
+							<Extension Name="carriercode" Value="THD-Pompano"
+								carriercode="THD-Pompano" />
+
+
+							<Extension Name="trucktype" Value="Flatbed"
+								trucktype="Flatbed" />
+
+
+							<Extension Name="servicetype" Value="Basic"
+								servicetype="Basic" />
+
+
+						</Extensions>
+
+
+						<Measures>
+
+
+							<Planned Key="quantity" Value="1" mId="pcs"
+								sName="Pcs" />
+
+
+						</Measures>
+
+
+						<JobExpectedPayment PaymentProcessingRequired="1" />
+
+
+						<Item Desc="AggPO0817235296025126713994" Id="21643514"
+							Name="AggPO0817235296025126713994" Pcs="1" Seq="0"
+							Status="0" Vol="0" Wt="0"
+							itemdescription="AggPO0817235296025126713994"
+							itemname="AggPO0817235296025126713994">
+
+
+							<Extensions>
+
+
+								<Extension Name="itemcustom" Value=""
+									itemcustom="" />
+
+
+								<Extension Name="itemdescription"
+									Value="AggPO0817235296025126713994"
+									itemdescription="AggPO0817235296025126713994" />
+
+
+								<Extension Name="itemname"
+									Value="AggPO0817235296025126713994"
+									itemname="AggPO0817235296025126713994" />
+
+
+							</Extensions>
+
+
+							<ItemExpectedPayment>
+
+
+								<Measure ManualPrompt="0" />
+
+
+								<PackagingInfo />
+
+
+							</ItemExpectedPayment>
+
+
+						</Item>
+
+
+					</Job>
+
+
+					<Job DispId="87241510" Id="12345676" Name="87241510" Pcs="1"
+						Status="1" Type="2" Vol="0" Wt="0"
+						carriercode="THD-Pompano" servicetype="Basic"
+						trucktype="Flatbed" udolegid="87241510">
+
+
+						<Dependency JId="12345677" SId="12345673" />
+
+
+						<Extensions>
+
+
+							<Extension Name="udolegid" Value="Stop1"
+								udolegid="Stop1" />
+
+
+							<Extension Name="carriercode" Value="THD-Pompano"
+								carriercode="THD-Pompano" />
+
+
+							<Extension Name="trucktype" Value="Flatbed"
+								trucktype="Flatbed" />
+
+
+							<Extension Name="servicetype" Value="Basic"
+								servicetype="Basic" />
+
+
+						</Extensions>
+
+
+						<Measures>
+
+
+							<Planned Key="quantity" Value="1" mId="pcs"
+								sName="Pcs" />
+
+
+						</Measures>
+
+
+						<JobExpectedPayment PaymentProcessingRequired="1" />
+
+
+						<Item Desc="AggPO0817235296025126713994" Id="21643514"
+							Name="AggPO0817235296025126713994" Pcs="1" Seq="0"
+							Status="0" Vol="0" Wt="0"
+							itemdescription="AggPO0817235296025126713994"
+							itemname="AggPO0817235296025126713994">
+
+
+							<Extensions>
+
+
+								<Extension Name="itemcustom" Value=""
+									itemcustom="" />
+
+
+								<Extension Name="itemdescription"
+									Value="AggPO0817235296025126713994"
+									itemdescription="AggPO0817235296025126713994" />
+
+
+								<Extension Name="itemname"
+									Value="AggPO0817235296025126713994"
+									itemname="AggPO0817235296025126713994" />
+
+
+							</Extensions>
+
+
+							<ItemExpectedPayment>
+
+
+								<Measure ManualPrompt="0" />
+
+
+								<PackagingInfo />
+
+
+							</ItemExpectedPayment>
+
+
+						</Item>
+
+
+					</Job>
+
+
+				</Stop>
+
+
+				<Stop Address="1245 NE 163RD STREET" CName="224615345"
+					City="NORTH MIAMI BEACH" Close="1600" CustNo="2335658"
+					GeoStop="0" Geofence="250" GeofenceUnits="Meters"
+					Id="12345673" Latitude="25.92555" LocationKey="2335658"
+					LocationType="1" Longitude="-80.1751" Name="0251"
+					Open="1000" PCode="33162" PlanArr="2023-11-14T02:23:27"
+					PlanDep="2023-11-14T02:38:27" ProjArr="2023-11-14T02:23:27"
+					ProjDep="2023-11-14T02:38:27" Seq="1" State="FL" Status="1"
+					Type="3" stopType="Customer">
+
+
+					<Extensions>
+
+
+						<Extension Name="stopType" Value="Customer"
+							stopType="Customer" stoptype="Customer" />
+
+
+					</Extensions>
+
+
+					<Job DispId="87241510" Id="123456377" Name="87241510"
+						Pcs="1" Status="1" Type="3" Vol="0" Wt="0"
+						carriercode="THD-Pompano" servicetype="Basic"
+						trucktype="Flatbed" udolegid="87241510">
+
+
+						<Dependency JId="12345676" SId="12345672" />
+
+
+						<Extensions>
+
+
+							<Extension Name="udolegid" Value="Stop2"
+								udolegid="Stop2" />
+
+
+							<Extension Name="carriercode" Value="THD-Pompano"
+								carriercode="THD-Pompano" />
+
+
+							<Extension Name="trucktype" Value="Flatbed"
+								trucktype="Flatbed" />
+
+
+							<Extension Name="servicetype" Value="Basic"
+								servicetype="Basic" />
+
+
+						</Extensions>
+
+
+						<Measures>
+
+
+							<Planned Key="quantity" Value="1" mId="pcs"
+								sName="Pcs" />
+
+
+						</Measures>
+
+
+						<JobExpectedPayment PaymentProcessingRequired="1" />
+
+
+						<Item Desc="AggPO0817235296025126713994" Id="21643515"
+							Name="AggPO0817235296025126713994" Pcs="1" Seq="0"
+							Status="0" Vol="0" Wt="0"
+							itemdescription="AggPO0817235296025126713994"
+							itemname="AggPO0817235296025126713994">
+
+
+							<Extensions>
+
+
+								<Extension Name="itemcustom" Value=""
+									itemcustom="" />
+
+
+								<Extension Name="itemdescription"
+									Value="AggPO0817235296025126713994"
+									itemdescription="AggPO0817235296025126713994" />
+
+
+								<Extension Name="itemname"
+									Value="AggPO0817235296025126713994"
+									itemname="AggPO0817235296025126713994" />
+
+
+							</Extensions>
+
+
+							<ItemExpectedPayment>
+
+
+								<Measure ManualPrompt="0" />
+
+
+								<PackagingInfo />
+
+
+							</ItemExpectedPayment>
+
+
+						</Item>
+
+
+					</Job>
+
+
+				</Stop>
+
+
+			</Trip>
+
+
+		</MLRoute>
+
+
+	</soap:Body>
+
+
+</soap:Envelope>

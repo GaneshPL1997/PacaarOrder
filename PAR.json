@@ -1,0 +1,173 @@
+{
+"MessageType":"Cancel",
+   "CreatedBy":"????",
+   "Account":"PyGuid",
+  "RequestingTradingPartnerID":"dd1a754a-01e9-4b5e-ad31-ce14c9d65e62",
+   "AssignedTradingPartnerID":"98caa74d-1bd2-440e-b6c2-3f2e0c00b0f9", 
+   "CaseType":"PickupAndRelease",
+   "ServiceLevel":"Basic",
+   "Equipment":"Trailer",
+   "Mode":"LTL",
+   "PaymentTerm":"Inbound Prepaid",
+   "HotPriority":"true",
+   "PickupNotes":"",
+   "DeliveryNotes":"",
+   "OrderRefs":{
+      "BOL":"",
+      "TrackingNumber":"",
+      "InvoiceNumber":"",
+      "PickupNumber":"257798805N",
+      "DeliveryNumber":"5463700",
+      "PONumber":"W122356790",
+      "SONumber":""
+   },
+    "OrderOrigin":{
+      "CompanyName":"THE HOME DEPOT 6006",
+      "Address1":"1 Main Street",
+      "Address2":"",
+      "City":"Waltham",
+      "State":"MA",
+      "PostalCode":"02453",
+      "Country":"US",
+      "Phone":"abccv",
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderDestination":{
+      "CompanyName":"55676",
+      "Address1":"1132 Kamaile St",
+      "Address2":"",
+      "City":"Honolulu",
+      "State":"HI",
+      "PostalCode":"96814",
+      "Country":"US",
+      "Phone":"qwer",
+      "Email":"",
+      "ContactName":""
+   },
+   "BillTo":{
+      "CompanyName":"Home Depot",
+      "Address1":"170 Forbes Road",
+      "Address2":"",
+      "City":"Braintree",
+      "State":"MA",
+      "PostalCode":"02184",
+      "Country":"US",
+      "Phone":"abcd 123456",
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderAgent":{
+      "CompanyName":"Estes Dallas",
+      "Address1":"11414 Mathis Ave",
+      "Address2":"",
+      "City":"Farmers",
+      "PostalCode":"75234",
+      "State":"TX",
+      "Country":"United States"
+   },
+   "AccessorialItemList" : [ 
+         {
+         "AccessorialCode" : "HIINS",
+         "AccessorialQuantity" : "1",
+         "AccessorialLocation" : "Pickup"
+         },
+        {
+         "AccessorialCode" : "HILGAT",
+         "AccessorialQuantity" : "1",
+         "AccessorialLocation" : "Delivery"
+         }
+    ],
+   "Items":[
+      {
+         "SkuName":"1003897266",
+         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+         "TotalWeight":10.0,
+         "WeightUOM":"lb",
+         "ItemQuantity":1,
+         "ItemWeight":30,
+         "PackageType":"",
+         "PackageWeight":30,
+         "PackageQuantity":1,
+         "DangerousGoods":10,
+         "FreightClass":"",
+         "NMFC":"",
+         "MaxTemp":"",
+         "MinTemp":"",
+         "OnHandlingUnit":[
+            {
+               "pyID":"DPB002993279"
+            }
+         ],
+         "DIMS":{
+            "Length":"24",
+            "Width":"69.199",
+            "Height":"34.5",
+            "UOM":"Inch"
+         }
+      },
+      {
+         "SkuName":"1003897288",
+         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+         "TotalWeight":1.0,
+         "WeightUOM":"lb",
+         "ItemQuantity":1,
+         "ItemWeight":20,
+         "PackageType":"",
+         "PackageWeight":30,
+         "PackageQuantity":1,
+         "DangerousGoods":30,
+         "FreightClass":"",
+         "NMFC":"",
+         "MaxTemp":"",
+         "MinTemp":"",
+         "OnHandlingUnit":[
+            {
+               "pyID":"DPB002993277"
+            }
+         ],
+         "DIMS":{
+            "Length":"24",
+            "Width":"69.199",
+            "Height":"34.5",
+            "UOM":"Inch"
+         }
+      }
+   ],
+   "HandlingUnit":[
+      {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":1,
+         "HandlingUnitClientID":"DPB002993277",
+         "FreightClass":"",
+         "TotalWeight":44,
+         "TareWeight":1.0,
+         "DIMS":{
+            "Length":"20",
+            "Width":"30",
+            "Height":"40",
+            "UOM":""
+         }
+      },
+      {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":1,
+         "HandlingUnitClientID":"DPB002993279",
+         "FreightClass":"",
+         "TotalWeight":44,
+         "TareWeight":1.0,
+         "DIMS":{
+            "Length":"20",
+            "Width":"30",
+            "Height":"40",
+            "UOM":""
+         }
+      }
+   ],
+   "PickupRequestTWStart":"",
+   "PickupRequestTWEnd":"",
+   "PickupGuaranteed":"",
+   "DeliverByTWStart":"",
+   "DeliverByTWEnd":"",
+   "DeliveryGuaranteed":"false"
+}

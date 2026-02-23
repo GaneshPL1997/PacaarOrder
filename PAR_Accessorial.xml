@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                	
+    
+    
+    
+    
+    
+    
+    
+    <soap:Body>
+                                                                		
+        
+        
+        
+        
+        
+        
+        
+        <MLW ArriveOutsideGeo="false" Cmd="7" CustNo="2324639" DevId="2b70499f-REG-f4b3b04c-af36829d" DriverName="Adam Samler Driver" GroupId="6012" GroupName="Starbucks General" Id="testdriveradam" LTStamp="2025-01-12T05:30:01" LocationAddress="8574 West FM" LocationCity="Wylie" LocationKey="2324639" LocationPostalCode="750989408" LocationState="TX" Name="3871" OrgId="EXLA" RouteId="61470:803514" RouteName="391 RAN 2" SType="4" StopId="123456780" TStamp="2025-01-12T11:30:01" TruckId="391 RAN 2">
+                                                                                                			
+            
+            
+            
+            
+            
+            
+            
+            <FieldData LCode="2" OwnerId="11658026" ParentId="69222:906392">
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122122" Key="Is Unattended?" Name="Is Unattended?" TStamp="2024-10-14T19:00:58" Value="false">
+                                                                                                                                                                					
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <Child FId="122124" Key="Customer Name" Name="Customer Name" PId="122122" TStamp="2024-10-14T19:01:07" Value="Stephanie"/>
+                                                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                </Field>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122128" Name="OS&amp;D" TStamp="2024-10-14T19:01:19" Value="Yes"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122129" Name="30 Minute call ahead" TStamp="2024-10-14T19:01:20" Value="Yes"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122130" Name="Are you satisfied with delivery?" TStamp="2024-10-14T19:01:22" Value="Yes"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122131" Name="Inside Pickup" TStamp="2024-10-14T19:01:23" Value="Yes"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122132" Name="Residential Location/Delivery" TStamp="2024-10-14T19:01:25" Value="Yes"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122133" Name="Lift Gate Used" TStamp="2024-10-14T19:01:26" Value="Yes"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Field FId="122134" Name="Driver Comments" TStamp="2024-10-14T19:01:36" Value="0"/>
+                                                                                                                                			
+            
+            
+            
+            
+            
+            
+            
+            </FieldData>
+                                                                                                			
+            
+            
+            
+            
+            
+            
+            
+            <GPS Direction="0" FixQuality="A" Latitude="42.4833853" Longitude="-71.4485795" NoOfSat="7" Speed="0.063565631210803983" TStamp="2023-03-28T15:26:01"/>
+                                                                                                			
+            
+            
+            
+            
+            
+            
+            
+            <Job DispId="285276.0" Id="14226768" JType="2" JobId="14226768" Name="" Status="3">
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Extension Name="UDOLEGID" Value="PAR-56014"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Extension Name="CARRIERCODE" Value="STARLA"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Extension Name="SERVICETYPE" Value="Basic"/>
+                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                <Item ItemId="21410269" Key="" LoadedOnCart="False" Name="Things" Status="1">
+                                                                                                                                                                					
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <Extension Name="ITEMCUSTOM" Value="Stuff"/>
+                                                                                                                                                                					
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <Extension Name="ITEMDESCRIPTION" Value="Coffee Supplies"/>
+                                                                                                                                                                					
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <Extension Name="ITEMNAME" Value="Things"/>
+                                                                                                                                                                				
+                
+                
+                
+                
+                
+                
+                
+                </Item>
+                                                                                                                                			
+            
+            
+            
+            
+            
+            
+            
+            </Job>
+                                                                                                			
+            
+            
+            
+            
+            
+            
+            
+            <Extension Name="STOPTYPE" Value="Customer"/>
+                                                                                                		
+        
+        
+        
+        
+        
+        
+        
+        </MLW>
+                                                                	
+    
+    
+    
+    
+    
+    
+    
+    </soap:Body>
+                                
+
+
+
+
+
+
+
+</soap:Envelope>

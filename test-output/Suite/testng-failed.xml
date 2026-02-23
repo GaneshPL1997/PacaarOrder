@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="packageEL2.Runner">
+        <methods>
+          <include name="Epic1113"/>
+        </methods>
+      </class> <!-- packageEL2.Runner -->
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="packageEL2.Runner">
+        <methods>
+          <include name="extentReportInitialization"/>
+          <include name="Epic1113"/>
+          <include name="BrowserLaunch"/>
+        </methods>
+      </class> <!-- packageEL2.Runner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

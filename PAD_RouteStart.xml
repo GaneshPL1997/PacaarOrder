@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<soap:Body>
+
+
+		<MLW Cmd="5" CustNo="MIA" DevId="67bc8418-REG-eda3195e-983cac5b"
+			DriverName="Julio Alum - Solano Delivery Service"
+			FDTStamp="2024-05-28T11:10:28" GroupId="6208"
+			GroupName="Comingle Medley" Id="3490001"
+			LFDTStamp="2024-05-28T07:10:28" LTStamp="2024-06-11T07:10:16"
+			LocationAddress="12950 NW Southriver Dr" LocationCity="Medley"
+			LocationKey="MIA" LocationPostalCode="33178" LocationState="FL"
+			Name="MIA" OrgId="EXLA" RouteId="5977:6967" RouteName="349-14"
+			SType="0" StopId="11352827" TStamp="2024-06-11T11:10:16"
+			TruckId="349-14" UseFDForTStamp="False" Value="7.6331856E7">
+
+
+			<FieldData LCode="0" OwnerId="90888:89999">
+
+
+				<Field FId="122108" Key="Cab/Windshield Glass"
+					Name="Cab/Windshield Glass" TStamp="2024-05-28T11:10:18"
+					Value="True" />
+
+
+				<Field FId="122109" Key="Oil Leaks" Name="Oil Leaks"
+					TStamp="2024-05-28T11:10:18" Value="True" />
+
+
+				<Field FId="122110" Key="Fuel Level" Name="Fuel Level"
+					TStamp="2024-05-28T11:10:17" Value="True" />
+
+
+				<Field FId="122111" Key="Windshield Wipers"
+					Name="Windshield Wipers" TStamp="2024-05-28T11:10:17"
+					Value="True" />
+
+
+				<Field FId="122112" Key="Horn/Backup Alarm"
+					Name="Horn/Backup Alarm" TStamp="2024-05-28T11:10:17"
+					Value="True" />
+
+
+				<Field FId="122113" Key="Park Brake" Name="Park Brake"
+					TStamp="2024-05-28T11:10:19" Value="True" />
+
+
+				<Field FId="122114" Key="Fire Extinguisher"
+					Name="Fire Extinguisher" TStamp="2024-05-28T11:10:19"
+					Value="True" />
+
+
+				<Field FId="122115" Key="Seat Belts" Name="Seat Belts"
+					TStamp="2024-05-28T11:10:19" Value="True" />
+
+
+				<Field FId="122116" Key="Lights" Name="Lights"
+					TStamp="2024-05-28T11:10:22" Value="True" />
+
+
+				<Field FId="122117" Key="Tires" Name="Tires"
+					TStamp="2024-05-28T11:10:22" Value="True" />
+
+
+				<Field FId="122118" Key="Brakes" Name="Brakes"
+					TStamp="2024-05-28T11:10:22" Value="True" />
+
+
+			</FieldData>
+
+
+			<GPS Direction="0" FixQuality="A" Latitude="42.4833853"
+				Longitude="-71.4485795" NoOfSat="7" Speed="0.063565631210803983"
+				TStamp="2024-03-04T15:26:01" />
+
+
+			<Job DispId="" Id="14226768" JType="3" JobId="14226768"
+				Name="22418362" Status="4">
+
+
+				<Extension Name="UDOLEGID" Value="PAD-81013" />
+
+
+				<Extension Name="CARRIERCODE" Value="STARLA" />
+
+
+				<Extension Name="SERVICETYPE" Value="Basic" />
+
+
+				<Item ItemId="21410269" Key="" LoadedOnCart="False"
+					Name="Things" Status="1">
+
+
+					<Extension Name="ITEMCUSTOM" Value="Stuff" />
+
+
+					<Extension Name="ITEMDESCRIPTION" Value="Coffee Supplies" />
+
+
+					<Extension Name="ITEMNAME" Value="Things" />
+
+
+				</Item>
+
+
+			</Job>
+
+
+			<Job DispId="" Id="14226768" JType="2" JobId="14226768"
+				Name="22418362" Status="2">
+
+
+				<Extension Name="UDOLEGID" Value="PAD-80005" />
+
+
+				<Extension Name="CARRIERCODE" Value="STARLA" />
+
+
+				<Extension Name="SERVICETYPE" Value="Basic" />
+
+
+				<Item ItemId="21410269" Key="" LoadedOnCart="False"
+					Name="Things" Status="1">
+
+
+					<Extension Name="ITEMCUSTOM" Value="Stuff" />
+
+
+					<Extension Name="ITEMDESCRIPTION" Value="Coffee Supplies" />
+
+
+					<Extension Name="ITEMNAME" Value="Things" />
+
+
+				</Item>
+
+
+			</Job>
+
+
+			<Extension Name="STOPTYPE" Value="Customer" />
+
+
+		</MLW>
+
+
+	</soap:Body>
+
+
+</soap:Envelope>

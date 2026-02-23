@@ -1,0 +1,21 @@
+{
+  "OrderRefs" : {
+    "InvoiceNumber" : "",
+    "PickupNumber" : "",
+    "TrackingNumber" : "",
+    "BOL" : "",
+    "DeliveryNumber" : "",
+    "PONumber" : ""
+  },
+  "StatusEventDateTime" : "20241122T161609.283-07:00",
+  "OutboundCarrierTracking" : "Estes Express Lines",
+  "StatusEvent" : "Received",
+  "OutboundTrailerID" : "TestReceived1",
+  "CaseID" : "",
+  "UpdateType" : "StatusUpdate",
+   "RequestingTradingPartnerID" : "",
+  "AssignedTradingPartnerID" : "",
+  "TerminalNotes": "Test Terminal notes",
+  "LocationCity" : "Lathrop",
+  "LocationState" : "CA"
+}

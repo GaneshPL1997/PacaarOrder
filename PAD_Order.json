@@ -1,0 +1,113 @@
+{
+	"CreatedBy": "????",
+	"Account": "PyGuid",
+	"RequestingTradingPartnerID": "dd1a754a-01e9-4b5e-ad31-ce14c9d65e62",
+	"AssignedTradingPartnerID": "98caa74d-1bd2-440e-b6c2-3f2e0c00b0f9",
+	"CaseType": "PickupAndDelivery",
+	"ServiceLevel": "Basic",
+	"Equipment": "Trailer",
+	"Mode": "CrowleyTL",
+	"PaymentTerm": "Outbound Prepaid",
+	"HotPriority": "",
+	"PickupNotes": "",
+	"DeliveryNotes": "",
+	"OrderRefs": {
+      "BOL":"",
+      "TrackingNumber":"",
+      "InvoiceNumber":"",
+      "PickupNumber":"123281970",
+      "DeliveryNumber":"123233",
+      "PONumber":"W8387237",
+      "SONumber":""
+   },
+   "OrderOrigin":{
+      "CompanyName":"THE HOME DEPOT 6006",
+      "Address1":"1 Main Street",
+      "Address2":"",
+      "City":"Waltham",
+      "State":"MA",
+      "PostalCode":"02453",
+      "Country":"US",
+      "Phone":"abccv",
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderDestination":{
+      "CompanyName":"55676",
+      "Address1":"2095 Kolekole Avenue",
+      "Address2":"",
+      "City":"Wahiawa",
+      "State":"HI",
+      "PostalCode":"96857",
+      "Country":"US",
+      "Phone":"qwer",
+      "Email":"",
+      "ContactName":""
+   },
+	"BillTo": {
+		"CompanyName": "Home Depot",
+		"Address1": "2455 Paces Ferry Rd. Nw",
+		"Address2": "",
+		"City": "Atlanta",
+		"State": "GA",
+		"PostalCode": "30339",
+		"Country": "United States",
+		"Phone": "",
+		"Email": "",
+		"ContactName": ""
+	},
+	"OrderAgent": {
+		"CompanyName": "NR",
+		"Address1": "20 Forge Parkway",
+		"Address2": "",
+		"City": "Franklin",
+		"PostalCode": "2038",
+		"State": "MA",
+		"Country": "United States"
+	},
+	"Items": [{
+		"SkuName": "1003897288",
+		"SkuDescription": "ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+		"TotalWeight": 1.0,
+		"WeightUOM": "lb",
+		"ItemQuantity": 1,
+		"ItemWeight": 0,
+		"PackageType": "",
+		"PackageWeight": 0,
+		"PackageQuantity": 1,
+		"DangerousGoods": 0,
+		"FreightClass": "",
+		"NMFC": "",
+		"MaxTemp": "",
+		"MinTemp": "",
+		"OnHandlingUnit": [{
+			"pyID": "DPB002993001"
+		}],
+		"DIMS": {
+			"Length": "24",
+			"Width": "69.199",
+			"Height": "34.5",
+			"UOM": "Inch"
+		}
+	}],
+	"HandlingUnit": [{
+		"HandlingUnitType": "Pallet",
+		"HandlingUnitQuantity": 1,
+		"HandlingUnitClientID": "DPB002993001",
+		"FreightClass": "",
+		"TotalWeight": 44,
+		"TareWeight": 1.0,
+		"DIMS": {
+			"Length": "120",
+			"Width": "120",
+			"Height": "120",
+			"UOM": "Inch"
+		}
+	}],
+	"PickupRequestTWStart": "01/12/24 1:00 PM",
+	"PickupRequestTWEnd": "01/12/24 1:00 PM",
+	"PickupGuaranteed": "",
+	"DeliverByTWStart": "01/12/24 1:00 PM",
+	"DeliverByTWEnd": "01/12/24 1:00 PM",
+	"DeliveryGuaranteed": "false"
+}

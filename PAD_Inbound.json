@@ -1,0 +1,187 @@
+{
+	"CreatedBy": "????",
+	"Account": "PyGuid",
+	"RequestingTradingPartnerID": "Tnb7eFPtAjqj6tmT",
+	"AssignedTradingPartnerID": "qKaIzYzpJKnp8Q7K",
+	"CaseType": "PickupAndDelivery",
+	"ServiceLevel": "Threshold",
+	"Equipment": "Trailer",
+	"Mode": "CrowleyTL",
+	"PaymentTerm": "Inbound Prepaid",
+	"HotPriority": "",
+	"PickupNotes": "",
+	"DeliveryNotes": "",
+	"OrderRefs": {
+		"BOL": "",
+		"TrackingNumber": "",
+		"InvoiceNumber": "",
+		"PickupNumber": "11029041N",
+		"DeliveryNumber": "123456679",
+		"PONumber": "W49858646820",
+		"SONumber": ""
+	},
+	"OrderOrigin":{
+      "CompanyName":"THE HOME DEPOT 6006",
+      "Address1":"1 Main Street",
+      "Address2":"",
+      "City":"Waltham",
+      "State":"MA",
+      "PostalCode":"02453",
+      "Country":"US",
+      "Phone":"abccv",
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderDestination":{
+      "CompanyName":"55676",
+      "Address1":"2095 Kolekole Avenue",
+      "Address2":"",
+      "City":"Wahiawa",
+      "State":"HI",
+      "PostalCode":"96857",
+      "Country":"US",
+      "Phone":"qwer",
+      "Email":"",
+      "ContactName":""
+   },
+   "BillTo":{
+      "CompanyName":"Home Depot",
+      "Address1":"170 Forbes Road",
+      "Address2":"",
+      "City":"Braintree",
+      "State":"MA",
+      "PostalCode":"02184",
+      "Country":"US",
+      "Phone":"abcd 123456",
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderAgent":{
+      "CompanyName":"NR",
+      "Address1":"20 Forge Parkway",
+      "Address2":"",
+      "City":"Franklin",
+      "PostalCode":"2038",
+      "State":"MA",
+      "Country":"United States"
+   },
+   "Items":[
+      {
+         "SkuName":"1003897266",
+         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+         "TotalWeight":0.0,
+         "WeightUOM":"lb",
+         "ItemQuantity":1,
+         "ItemWeight":30,
+         "PackageType":"",
+         "PackageWeight":30,
+         "PackageQuantity":1,
+         "DangerousGoods":10,
+         "FreightClass":"",
+         "NMFC":"",
+         "MaxTemp":"",
+         "MinTemp":"",
+         "OnHandlingUnit":[
+            {
+               "pyID":"DPB002993279"
+            }
+         ],
+         "DIMS":{
+            "Length":"",
+            "Width":"",
+            "Height":"",
+            "UOM":"Inch"
+         }
+      },
+      {
+         "SkuName":"1003897288",
+         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+         "TotalWeight":1.0,
+         "WeightUOM":"lb",
+         "ItemQuantity":1,
+         "ItemWeight":20,
+         "PackageType":"",
+         "PackageWeight":30,
+         "PackageQuantity":1,
+         "DangerousGoods":30,
+         "FreightClass":"",
+         "NMFC":"",
+         "MaxTemp":"",
+         "MinTemp":"",
+         "OnHandlingUnit":[
+            {
+               "pyID":"DPB002993278"
+            }
+         ],
+         "DIMS":{
+            "Length":"",
+            "Width":"",
+            "Height":"",
+            "UOM":"Inch"
+         }
+      },
+      {
+         "SkuName":"1003897288",
+         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+         "TotalWeight":1.0,
+         "WeightUOM":"lb",
+         "ItemQuantity":1,
+         "ItemWeight":20,
+         "PackageType":"",
+         "PackageWeight":30,
+         "PackageQuantity":1,
+         "DangerousGoods":30,
+         "FreightClass":"",
+         "NMFC":"",
+         "MaxTemp":"",
+         "MinTemp":"",
+         "OnHandlingUnit":[
+            {
+               "pyID":"DPB002993275"
+            }
+         ],
+         "DIMS":{
+            "Length":"",
+            "Width":"",
+            "Height":"",
+            "UOM":"Inch"
+         }
+      }
+   ],
+   "HandlingUnit":[
+    {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":1,
+         "HandlingUnitClientID":"DPB002993275",
+         "FreightClass":"",
+         "TotalWeight":44,
+         "TareWeight":1.0,
+         "DIMS":{
+            "Length":"60",
+            "Width":"50",
+            "Height":"",
+            "UOM":""
+         }
+      },
+      {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":1,
+         "HandlingUnitClientID":"DPB002993275",
+         "FreightClass":"",
+         "TotalWeight":44,
+         "TareWeight":1.0,
+         "DIMS":{
+            "Length":"50",
+            "Width":"40",
+            "Height":"52",
+            "UOM":""
+         }
+      }
+   ],
+   "PickupRequestTWStart":"03/18/25 4:00 AM",
+   "PickupRequestTWEnd":"03/19/25 5:00 AM",
+   "PickupGuaranteed":"",
+   "DeliverByTWStart":"03/22/25 7:00 AM",
+   "DeliverByTWEnd":"03/23/25 7:00 AM",
+   "DeliveryGuaranteed":"false"
+}

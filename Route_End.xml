@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<soap:Body>
+
+
+		<MLW Cmd="9" CustNo="MIA" DevId="67bc8418-REG-eda3195e-983cac5b"
+			DriverName="Julio Alum - Solano Delivery Service" GroupId="6208"
+			GroupName="Comingle Medley" Id="3490001"
+			LTStamp="2024-06-07T13:17:42"
+			LocationAddress="12950 NW Southriver Dr" LocationCity="Medley"
+			LocationKey="MIA" LocationPostalCode="33178" LocationState="FL"
+			Name="MIA" OrgId="EXLA" RouteId="5977:6967" RouteName="349-14"
+			SType="2" StopId="12233445" StopType="1"
+			TStamp="2024-06-07T17:17:42" TruckId="349-14">
+
+
+			<GPS Direction="0" FixQuality="A" Latitude="42.4833853"
+				Longitude="-71.4485795" NoOfSat="7" Speed="0.063565631210803983"
+				TStamp="2024-03-04T15:26:01" />
+
+
+			<Job DispId="" Id="14226768" JType="2" JobId="14226768"
+				Name="22418362" Status="4">
+
+
+				<Extension Name="UDOLEGID" Value="" />
+
+
+				<Extension Name="CARRIERCODE" Value="STARLA" />
+
+
+				<Extension Name="SERVICETYPE" Value="Basic" />
+
+
+				<Item ItemId="21410269" Key="" LoadedOnCart="False"
+					Name="Things" Status="1">
+
+
+					<Extension Name="ITEMCUSTOM" Value="Stuff" />
+
+
+					<Extension Name="ITEMDESCRIPTION" Value="Coffee Supplies" />
+
+
+					<Extension Name="ITEMNAME" Value="Things" />
+
+
+				</Item>
+
+
+			</Job>
+
+
+			<Job DispId="" Id="14226768" JType="2" JobId="14226768"
+				Name="22418362" Status="4">
+
+
+				<Extension Name="UDOLEGID" Value="" />
+
+
+				<Extension Name="CARRIERCODE" Value="STARLA" />
+
+
+				<Extension Name="SERVICETYPE" Value="Basic" />
+
+
+				<Item ItemId="21410269" Key="" LoadedOnCart="False"
+					Name="Things" Status="1">
+
+
+					<Extension Name="ITEMCUSTOM" Value="Stuff" />
+
+
+					<Extension Name="ITEMDESCRIPTION" Value="Coffee Supplies" />
+
+
+					<Extension Name="ITEMNAME" Value="Things" />
+
+
+				</Item>
+
+
+			</Job>
+
+
+			<Extension Name="STOPTYPE" Value="Customer" />
+
+
+		</MLW>
+
+
+	</soap:Body>
+
+
+</soap:Envelope>

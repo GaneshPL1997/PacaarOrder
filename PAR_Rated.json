@@ -1,0 +1,227 @@
+{
+   "MessageType":"Cancel",
+   "CreatedBy":"????",
+   "Account":"PyGuid",
+  "RequestingTradingPartnerID" : "EVAB5MM8Yayut1jC",
+  "AssignedTradingPartnerID" : "qKaIzYzpJKnp8Q7K",
+   "CaseType":"PickupAndRelease",
+   "ServiceLevel":"Basic",
+   "Equipment":"Trailer",
+   "Mode":"CrowleyTL",
+   "PaymentTerm":"Inbound Prepaid",
+   "HotPriority":"false",
+   "PickupNotes":"test notes pickup",
+   "DeliveryNotes":"test delivery notes",
+   "OrderRefs":{
+      "BOL":"",
+      "TrackingNumber":"",
+      "InvoiceNumber":"29955.0",
+      "PickupNumber":"5676553",
+      "DeliveryNumber":"453563",
+      "PONumber":"13248503",
+      "SONumber":""
+   },
+   "OrderOrigin":{
+      "CompanyName":"THE HOME DEPOT 6006",
+      "Address1":"1 Main Street",
+      "Address2":"",
+      "City":"Waltham",
+      "State":"MA",
+      "PostalCode":"02453",
+      "Country":"US",
+      "Phone":"abccv",	
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderDestination":{
+      "CompanyName":"55676",
+      "Address1":"1132 Kamaile St",
+      "Address2":"",
+      "City":"Honolulu",
+      "State":"HI",
+      "PostalCode":"96814",
+      "Country":"US",
+      "Phone":"qwer",
+      "Email":"",
+      "ContactName":""
+   },
+   "BillTo":{
+      "CompanyName":"Crowley Maritime",
+      "Address1":"8200 NATIONS WAY",
+      "Address2":"",
+      "City":"JACKSONVILLE",
+      "State":"FL",
+      "PostalCode":"32256",
+      "Country":"USA",
+      "Phone":"",
+      "Email":"",
+      "ContactName":""
+   },
+   "OrderAgent":{
+      "CompanyName":"Estes Dallas",
+      "Address1":"11414 Mathis Ave",
+      "Address2":"",
+      "City":"Farmers",
+      "PostalCode":"75234",
+      "State":"TX",
+      "Country":"United States"
+   },
+   "Items":[
+      {
+         "SkuName":"WHEEL ASSEMBLY,PNEU",
+         "SkuDescription":"WHEEL ASSEMBLY,PNEU-Desc",
+         "TotalWeight":820,
+         "WeightUOM":"lb",
+         "ItemQuantity":1,
+         "ItemWeight":"1",
+         "PackageType":"1",
+         "PackageWeight":"1",
+         "PackageQuantity":"1",
+         "DangerousGoods":"test",
+         "HazmatClass":"test",
+         "FreightClass":"test",
+         "NMFC":"1",
+         "MaxTemp":"1",
+         "MinTemp":"1",
+         "OnHandlingUnit":[
+            {
+               "pyID":"W56HZW3320021VXXX"
+            }
+         ]
+      }, {
+         "SkuName":"WHEEL ASSEMBLY,PNEU",
+         "SkuDescription":"WHEEL ASSEMBLY,PNEU-Desc",
+         "TotalWeight":840,
+         "WeightUOM":"lb",
+         "ItemQuantity":2,
+         "ItemWeight":"2",
+         "PackageType":"2",
+         "PackageWeight":"2",
+         "PackageQuantity":"2",
+         "DangerousGoods":"2",
+         "HazmatClass":"test2",
+         "FreightClass":"2",
+         "NMFC":"2",
+         "MaxTemp":"2",
+         "MinTemp":"2",
+         "OnHandlingUnit":[
+            {
+               "pyID":"W56HZW3320021VYYY"
+            }
+         ]
+      }, {
+         "SkuName":"WHEEL ASSEMBLY,PNEU",
+         "SkuDescription":"WHEEL ASSEMBLY,PNEU-Desc",
+         "TotalWeight":860,
+         "WeightUOM":"lb",
+         "ItemQuantity":3,
+         "ItemWeight":"3",
+         "PackageType":"3",
+         "PackageWeight":"3",
+         "PackageQuantity":"3",
+         "DangerousGoods":"Test3",
+         "HazmatClass":"Test3",
+         "FreightClass":"3",
+         "NMFC":"3",
+         "MaxTemp":"3",
+         "MinTemp":"3",
+         "OnHandlingUnit":[
+            {
+               "pyID":"W56HZW3320021VWWW"
+            }
+         ]
+      }, {
+         "SkuName":"WHEEL ASSEMBLY,PNEU",
+         "SkuDescription":"WHEEL ASSEMBLY,PNEU-Desc",
+         "TotalWeight":880,
+         "WeightUOM":"lb",
+         "ItemQuantity":4,
+         "ItemWeight":"4",
+         "PackageType":"4",
+         "PackageWeight":"4",
+         "PackageQuantity":"4",
+         "DangerousGoods":"4",
+         "HazmatClass":"4",
+         "FreightClass":"4",
+         "NMFC":"4",
+         "MaxTemp":"4",
+         "MinTemp":"4",
+         "OnHandlingUnit":[
+            {
+               "pyID":"W56HZW3320021VYYY"
+            }
+         ]
+      }, {
+         "SkuName":"WHEEL ASSEMBLY,PNEU",
+         "SkuDescription":"WHEEL ASSEMBLY,PNEU-Desc",
+         "TotalWeight":880,
+         "WeightUOM":"lb",
+         "ItemQuantity":5,
+         "ItemWeight":"5",
+         "PackageType":"5",
+         "PackageWeight":"5",
+         "PackageQuantity":"5",
+         "DangerousGoods":"5",
+         "HazmatClass":"5",
+         "FreightClass":"5",
+         "NMFC":"5",
+         "MaxTemp":"5",
+         "MinTemp":"5",
+         "OnHandlingUnit":[
+            {
+               "pyID":"W56HZW3320021VZZZ"
+            }
+         ]
+      }
+   ],
+   "HandlingUnit":[
+      {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":2,
+         "HandlingUnitClientID":"W56HZW3320021VXX",
+         "FreightClass":"",
+         "TotalWeight":930,
+         "TareWeight":"",
+         "DIMS":{
+            "Length":"42",
+           "Width":"46",
+            "Height":"48",
+            "UOM":""
+         }
+      },
+       {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":2,
+         "HandlingUnitClientID":"W56HZW3320021VXXX",
+         "FreightClass":"",
+         "TotalWeight":900,
+         "TareWeight":"",
+         "DIMS":{
+            "Length":"55",
+           "Width":"47",
+            "Height":"48",
+            "UOM":""
+         }
+      },
+       {
+         "HandlingUnitType":"Pallet",
+         "HandlingUnitQuantity":5,
+         "HandlingUnitClientID":"W56HZW3320021VYYY",
+         "FreightClass":"",
+         "TotalWeight":900,
+         "TareWeight":"",
+         "DIMS":{
+            "Length":"56",
+           "Width":"40",
+            "Height":"49",
+            "UOM":""
+         }
+      }
+   ],
+"PickupRequestTWStart":"20250127T120000.000 GMT",
+"PickupRequestTWEnd":"20250127T120000.000 GMT",
+"PickupGuaranteed":"false",
+"DeliverByTWStart":"20250127T120000.000 GMT",
+"DeliverByTWEnd":"20250127T120000.000 GMT",
+"DeliveryGuaranteed":"false" 
+}

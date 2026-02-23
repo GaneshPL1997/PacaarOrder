@@ -1,0 +1,21 @@
+{
+  "OrderRefs": {
+    "InvoiceNumber": "",
+    "PickupNumber": "",
+    "TrackingNumber": "",
+    "BOL": "6101364678",
+    "DeliveryNumber": "998877",
+    "PONumber": ""
+  },
+  "StatusEventDateTime": "20240618T015749.283-05:00",
+  "OutboundCarrierTracking": "12345",
+  "StatusEvent": "Loaded",
+  "OutboundTrailerID": "TRL4596",
+  "CaseID": "PAR-10061",
+  "UpdateType": "StatusUpdate",
+   "RequestingTradingPartnerID":"",
+   "AssignedTradingPartnerID":"",
+  "TerminalNotes": "Test Terminal notes",
+  "LocationCity": "Dallas",
+  "LocationState": "TX"
+}

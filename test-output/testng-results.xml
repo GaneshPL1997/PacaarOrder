@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-20T11:26:18Z" name="Default suite" finished-at="2026-02-20T11:44:21Z" duration-ms="1082985">
+    <groups>
+    </groups>
+    <test started-at="2026-02-20T11:26:18Z" name="Default test" finished-at="2026-02-20T11:44:21Z" duration-ms="1082985">
+      <class name="packageEL2.NewToResolve_PAR">
+        <test-method is-config="true" signature="extentReportInitialization()[pri:0, instance:packageEL2.NewToResolve_PAR@c94fd30]" started-at="2026-02-20T16:56:18Z" name="extentReportInitialization" finished-at="2026-02-20T16:56:19Z" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportInitialization -->
+        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:packageEL2.NewToResolve_PAR@c94fd30]" started-at="2026-02-20T16:56:19Z" name="BrowserLaunch" finished-at="2026-02-20T16:56:22Z" duration-ms="3236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="PAR_LTL()[pri:0, instance:packageEL2.NewToResolve_PAR@c94fd30]" started-at="2026-02-20T16:56:22Z" name="PAR_LTL" finished-at="2026-02-20T17:14:21Z" duration-ms="1079340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PAR_LTL -->
+      </class> <!-- packageEL2.NewToResolve_PAR -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
