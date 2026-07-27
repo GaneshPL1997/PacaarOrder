@@ -1,0 +1,86 @@
+{
+"RequestingTradingPartnerID" : "5baa04ed-4315-45ea-9c43-a18eadaa03e7",
+"AssignedTradingPartnerID" : "9aba29e5-2c47-488f-8fb3-e1121ebfa556",
+"CaseType" : "PickupAndRelease",
+"Equipment" : "Trailer",
+"Mode" : "LTL",
+"ServiceLevel" : "Standard",
+"HotPriority" : "False",
+"PaymentTerm" : "Inbound Prepaid",
+"OrderRefs" : {
+"TrackingNumber" : "",
+"InvoiceNumber" : "",
+ "PickupNumber":"25779851",
+"BOL" : "",
+ "DeliveryNumber":"5463700",
+"PONumber" : "12926021"
+},
+"OrderOrigin" : {
+"CompanyName" : "SW3224-95304-DLA DISTRIBUTION SAN JOAQUIN CA",
+"Address1" : "25600 SOUTH CHRISMAN ROAD",
+"City" : "TRACY",
+"State" : "CA",
+"PostalCode" : "95304",
+"Country" : "USA",
+"ContactName" : "CROWLEY Logistics",
+"Phone" : "904-727-2646"
+},
+"OrderAgent" : {
+"CompanyName" : "Crowley Consolidation - Universal Logistics Tracy",
+"Address1" : "11980 SOUTH HARLAN ROAD",
+"City" : "LATHROP",
+"State" : "CA",
+"PostalCode" : "95330",
+"Country" : "USA"
+},
+"OrderDestination" : {
+"CompanyName" : "0117 SP BN SPACE BN HHC",
+"Address1" : "1181 KILMER ST CO NATIONAL GUARD ARMY SSA WAREHOUSE",
+"City" : "GOLDEN",
+"State" : "CO",
+"PostalCode" : "80401",
+"Country" : "USA",
+"ContactName" : "CROWLEY Logistics",
+"Phone" : "904-727-2646"
+},
+"BillTo" : {
+"CompanyName" : "Crowley Government Services",
+"Address1" : "9487 REGENCY SQUARE BLVD",
+"City" : "JACKSONVILLE",
+"State" : "FL",
+"PostalCode" : "32225",
+"Country" : "USA"
+},
+"AccessorialItemList" : [ 
+         {
+         "AccessorialCode" : "HIINS",
+         "AccessorialQuantity" : "1",
+         "AccessorialLocation" : "Pickup"
+         }
+    ],
+"Items" : [ {
+"SkuName" : "VACU-TOTE STORAGE",
+"TotalWeight" : 182,
+"ItemQuantity" : 1,
+"HazmatClass":"TestHazmat1",
+"OnHandlingUnit" : [ {
+"pyID" : "W91DF41207125XXX"
+} ]
+} ],
+"HandlingUnit" : [ {
+"HandlingUnitClientID" : "W91DF41207125XXX",
+"DIMS" : {
+"Length" : "48.00",
+"Width" : "40.00",
+"Height" : "51.00"
+}
+} ],
+"PickupRequestTWStart" : "20250416T120000.000 GMT",
+"DeliverByTWStart" : "20250416T120000.000 GMT",
+"PickupRequestTWEnd" : "20250416T220000.000 GMT",
+"DeliverByTWEnd" : "20250416T220000.000 GMT",
+"PickupGuaranteed" : "false",
+"DeliveryGuaranteed" : "false"
+}
+ 
+ 
