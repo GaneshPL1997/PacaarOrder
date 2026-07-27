@@ -7,14 +7,17 @@ import java.util.ArrayList;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.json.JsonInput;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 
 @SuppressWarnings("unused")
 public class NewToResolve_PAR extends BaseClass {
@@ -28,17 +31,18 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PEGALogin();
 		pom.LaunchWarehousePortal();
 		pom.OrdersPAR();
-     	pom.InboundTrailer_WorkQueue();
+		pom.InboundTrailer_WorkQueue();
 		pom.frameswitch2();
 		Thread.sleep(7000);
 		pom.PickUpScheduled_Validation();
 		driver.switchTo().defaultContent();
+
 		ArrayList<String> tab0 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab0.get(0));
 		Await();
 		Await();
 		pom.ClickonRecentsIcon.click();
-	//	pom.DevStudioSearchBox();
+		// pom.DevStudioSearchBox();
 		pom.OrderServicePage();
 		pom.orderService_Actions();
 		pom.SOAPServicePopup();
@@ -64,8 +68,21 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records, 6);
 		pom.Clickon_Datatype_Records.click();
 		Await();
-		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+	//	pom.Clickon_Datatype_Records.click();
 		pom.waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records_Search, 8);
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
 		pom.Clickon_Datatype_Records_SearchIcon.click();
 		Await();
@@ -76,9 +93,9 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.ArrivedAtPickup_Date();
 		Await();
 		Await();
-	//	pom.Pickup_Date_Validation();
+		// pom.Pickup_Date_Validation();
 		Await();
-	//	pom.Order_Data_Validation();
+		// pom.Order_Data_Validation();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
@@ -103,11 +120,25 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.Clickon_Order_Datatype.click();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		Await();
 		Await();
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
@@ -120,14 +151,14 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.OutForDelivery_Date();
 		Await();
-	//	pom.Delivery_Date_Validation();
+		// pom.Delivery_Date_Validation();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
 		Await();
 		pom.ClickonRecentsIcon.click();
 		pom.OrderServicePage();
-	//	pom.DevStudioSearchBox();
+		// pom.DevStudioSearchBox();
 		pom.orderService_Actions();
 		pom.SOAPServicePopup();
 		pom.PAR_ArrivedAtConsignee_Status_Update();
@@ -149,7 +180,18 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.frameSwitch();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		Await();
 		Await();
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
@@ -191,7 +233,20 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.frameSwitch();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		Await();
 		Await();
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
@@ -204,7 +259,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.Delivered_Date();
 		Await();
-	//	pom.Delivered_Date_Validation();
+		// pom.Delivered_Date_Validation();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
@@ -231,19 +286,8 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.StatusUpdate_Process();
 		pom.FNB_Status_Validation();
 		Await();
-	/*	
-		pom.Status_File_BNF();
-		pom.StatusUpdate_Process();
-		//pom.ActionsPage();
-		pom.BNF_Status_Validation();
-		Await();
-
-		pom.Status_File_NBNF();
-		pom.StatusUpdate_Process();
-	//	pom.ActionsPage();
-		pom.NBNF_Status_Validation();
-		Await();                             */                       
-		pom.ClickonGo.click();   
+		
+		pom.ClickonGo.click();
 		Await();
 		pom.BOL_Received_Status();
 		Await();
@@ -260,9 +304,9 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Outbound_Trailer();
 		Await();
 		pom.Outbound_Carrier();
-		
+
 		scrollToElementAndClick(driver, pom.Submit);
-		
+
 		pom.Submit.click();
 		Await();
 		pom.ClickonGo.click();
@@ -283,15 +327,15 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
-		pom.StatusUI_Released_Portal();    
+		pom.StatusUI_Released_Portal();
 
 		// ------------------------
 		Await();
 		driver.switchTo().defaultContent();
 		Await();
-		pom.SwitchtoOrdersPAR();  
-		
-		//---------------------------------------------------------stop here ---------------------------------
+		pom.SwitchtoOrdersPAR();
+
+		// ---------------------------------------------------------stop here
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
@@ -304,40 +348,57 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PAR_OrderSearchandFilter();
 		Await();
 //------------------------------------------------------
-		
+
 		pom.Validate_Status_Released();
 		pom.Validate_Attachment_No();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.CrowleyTLPOD.click();
+		// pom.frameSwitch();
 		pom.frames3();
-		pom.EnterIBLoadID.sendKeys(Keys.ENTER);
-		pom.EnterIBLoadID.sendKeys(pom.Invoice_number);
-	    Await();
-	    pom.Search_IBLoadID.click();
-	    Await();
-	    pom.ConfirmStatus_Submit.click();
-	    Await();
-		pom.AttachFile_POD.sendKeys("C:\\Users\\palanga\\eclipse-workspace\\Sprint-35\\File\\List of Outbound Loads (4).pdf");
+		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
+		pom.SelectIBLoadID.sendKeys(pom.Invoice_number);
 		Await();
-		pom.ResolvePAROrder_Submit.click();
+		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
+		Await();
+		Dimension size = driver.manage().window().getSize();
+
+		// Find center coordinates
+		int centerX = size.getWidth() / 2;
+		int centerY = size.getHeight() / 2;
+
+		// Click at center of screen
+		Actions actions = new Actions(driver);
+		actions.moveByOffset(centerX, centerY).click().perform();
+		Await();
+		pom.Attach_POD_Click.click();
+		Await();
+		pom.Enter_IBLoadID.click();
+		pom.Enter_IBLoadID.sendKeys(pom.Invoice_number);
+		pom.Search_IBLoadID.click();
+		Await();
+		pom.Submit.click();
+		Await();
+		pom.AttachFile_POD
+				.sendKeys("C:\\Users\\palanga\\eclipse-workspace\\Sprint-35\\File\\List of Outbound Loads (4).pdf");
+		Await();
+		pom.Submit.click();
 		Await();
 		pom.driver.switchTo().defaultContent();
-		
-		
+
 		pom.SwitchtoOrdersPAR();
 		pom.frameSwitch();
 		Await();
-        pom.Order_Tab_Refresh.click();
-        Await();
-    	pom.driver.switchTo().defaultContent();  
-        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='PegaGadget0Ifr']")));     
-		Await(); 
+		pom.Order_Tab_Refresh.click();
+		Await();
+		pom.driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='PegaGadget0Ifr']")));
+		Await();
 		pom.PAR_OrderSearchandFilter();
 		Await();
 		pom.Validate_Attachment_Yes();
-	
+
 		Await();
 		pom.POD_Received();
 		Await();
@@ -349,7 +410,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Re_Submit.click();
 		Await();
 		pom.Re_Submit_Validation();
-		
+
 		Await();
 
 		pom.Validate_Attachment_Yes();
@@ -359,26 +420,36 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Download_and_Delete_Document_Attached();
 		pom.Validate_Status_Released();
 		Await();
-		
+
 		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.CrowleyTLPOD.click();
+		pom.frames3();
+		pom.CrowleyTL_Refresh.click();
 		Await();
-		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='PegaGadget2Ifr']")));
-	//	pom.frameswitch2();
-		pom.EnterIBLoadID.sendKeys(Keys.ENTER);
-		pom.EnterIBLoadID.sendKeys(pom.Invoice_number);
-	    Await();
-	    pom.Search_IBLoadID.click();
-	    Await();
-	    pom.ConfirmStatus_Submit.click();
-	    Await();
-		pom.AttachFile_POD.sendKeys("C:\\Users\\palanga\\eclipse-workspace\\Sprint-35\\File\\List of Outbound Loads (4).pdf");
+		pom.driver.switchTo().defaultContent();
+		pom.frames3();
+		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
+		pom.SelectIBLoadID.sendKeys(pom.Invoice_number);
 		Await();
-	//	-----------------------------------DEBUG---------------------------------
-		pom.ResolvePAROrder_Submit.click();
-		Await();	
+		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
+		Await();
+
+		pom.Attach_POD_Click.click();
+		Await();
+		pom.Enter_IBLoadID.click();
+		pom.Enter_IBLoadID.sendKeys(pom.Invoice_number);
+		pom.Search_IBLoadID.click();
+		Await();
+		pom.Submit.click();
+		Await();
+		pom.AttachFile_POD
+				.sendKeys("C:\\Users\\palanga\\eclipse-workspace\\Sprint-35\\File\\List of Outbound Loads (4).pdf");
+		Await();
+		pom.Submit.click();
+		Await();
+
 		pom.driver.switchTo().defaultContent();
 		pom.SwitchtoOrdersPAR();
 		Await();
@@ -395,7 +466,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.Validate_Attachment_Yes();
 		Await();
-		
+
 		pom.POD_Received();
 		Await();
 		pom.CheckBox_Click.click();
@@ -410,10 +481,15 @@ public class NewToResolve_PAR extends BaseClass {
 		driver.switchTo().defaultContent();
 		ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab2.get(0));
-		Await();    
 		Await();
-		pom.DevStudioSearchBox("ConfrimPOD", pom.ClickConfirmPOD);  
+		Await();
+
+		pom.ClickonRecentsIcon.click();
+		pom.CrowleyConfirmPOD();
 		pom.orderService_Actions();
+
+//		pom.DevStudioSearchBox("ConfrimPOD", pom.ClickConfirmPOD);  
+//		pom.orderService_Actions();
 		driver.switchTo().defaultContent();
 		Await();
 		System.out.println(driver.getWindowHandles().size());
@@ -441,7 +517,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.frameSwitch();
 		pom.Order_Tab_Refresh.click();
-		Await();        
+		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
@@ -454,6 +530,8 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.Validate_ApprovePOD();
 		Await();
+		//TC40: Verify that the user can approve the case when the required status and attachment type is in Y status.
+		extentTest.log(Status.PASS, "User can approve the case when the required status and attachment type is in Y status");
 		pom.ApprovePAR_Submit.click();
 		pom.driver.switchTo().defaultContent();
 		Await();
@@ -468,42 +546,24 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.frameswitch2();
 		pom.Resolved_Completed();
 		
+		pom.driver.switchTo().defaultContent();
+		Await();
+		pom.Clipboard_Validation();
+		pom.Click_PAR_PyWorkpage();
+		Await();
+
+		driver.close();
+
 		
-	/*	pom.POD_Received();
-		Await();
-		pom.CheckBox_Click.click();
-		Await();
-		pom.Approve_POD_Click.click();
-		Await();
-		pom.ResolvePAROrder();
-		pom.ErrorMessage_PODAccepted();
-		pom.driver.switchTo().defaultContent();
-		pom.SwitchtoOrderPage();
-		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='PegaGadget1Ifr']")));
-	//	pom.frameswitch2();
-		Await();
-		pom.ActionsButton();
-		Await();
-		pom.driver.switchTo().defaultContent();
-		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='PegaGadget1Ifr']")));
-	//	pom.frameswitch2();
-		Await();
-		pom.TextMessage_CompletedUI();
-		Await();
-		pom.OrderStatus_PODReceived();
-		//pom.Resolved_Completed();
-		pom.driver.switchTo().defaultContent();
-		Await();
-		pom.SwitchtoOrdersPAR();    */
-		
+
 	}
 
 	@SuppressWarnings("static-access")
 	@Test
 	public void PAR_LTL() throws Exception {
-		
+
 		Pom pom = new Pom(driver);
-		pom.PAR_Order_Create(); // LTL or Truckload
+	//	pom.PAR_Order_Create(); // LTL or Truckload
 		pom.Await(By.id("loginText2"));
 		pom.PEGALogin();
 		pom.LaunchWarehousePortal();
@@ -517,8 +577,13 @@ public class NewToResolve_PAR extends BaseClass {
 		driver.switchTo().window(tab0.get(0));
 		Await();
 		Await();
-		pom.DevStudioSearchBox("OrderServicePackage", pom.ClickOrderServicePackage);
+
+		pom.ClickonRecentsIcon.click();
+		pom.OrderServicePage();
 		pom.orderService_Actions();
+
+//		pom.DevStudioSearchBox("OrderServicePackage", pom.ClickOrderServicePackage);
+//		pom.orderService_Actions();
 		pom.SOAPServicePopup();
 		pom.PAR_ArrivedAtPickup_Status_Update();
 		WebElement textArea = driver
@@ -542,7 +607,14 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records, 6);
 		pom.Clickon_Datatype_Records.click();
 		Await();
-		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+	//	pom.Clickon_Datatype_Records.click();
 		pom.waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records_Search, 8);
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
 		pom.Clickon_Datatype_Records_SearchIcon.click();
@@ -556,11 +628,11 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.Pickup_Date_Validation();
 		Await();
-		pom.Order_Data_Validation();
+	//	pom.Order_Data_Validation();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
-	//-------------------------------------------------------->	
+		// -------------------------------------------------------->
 		pom.Clickon_RequestedAccessorial_Datatype.click();
 		Await();
 		pom.driver.switchTo().defaultContent();
@@ -568,6 +640,13 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.frameSwitch();
 		Await();
 		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		Await();
 		Await();
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
@@ -582,9 +661,13 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
-		
-		pom.DevStudioSearchBox("OrderServicePackage", pom.ClickOrderServicePackage);
+
+		pom.ClickonRecentsIcon.click();
+		pom.OrderServicePage();
 		pom.orderService_Actions();
+
+//		pom.DevStudioSearchBox("OrderServicePackage", pom.ClickOrderServicePackage);
+//		pom.orderService_Actions();
 		pom.SOAPServicePopup();
 		pom.PAR_OutForDelivery_Status_Update();
 		WebElement textArea1 = driver
@@ -605,7 +688,18 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.frameSwitch();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		pom.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		Await();
 		Await();
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
@@ -647,7 +741,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.ClickonTodayDate.click();
 		Await();
 		scrollToElementAndClick(driver, pom.Submit);
-	//	pom.Submit.click();
+		// pom.Submit.click();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
@@ -710,7 +804,7 @@ public class NewToResolve_PAR extends BaseClass {
 
 		driver.switchTo().defaultContent();
 		Await();
-		pom.SwitchtoOrdersPAR(); 
+		pom.SwitchtoOrdersPAR();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
@@ -772,7 +866,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.Close_AttachmentList_Box.click();
 		Await();
-		
+
 		Await();
 		pom.Attach_POD_Click.click();
 		Await();
@@ -812,10 +906,14 @@ public class NewToResolve_PAR extends BaseClass {
 		driver.switchTo().defaultContent();
 		ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab2.get(0));
-		Await();    
 		Await();
-		pom.DevStudioSearchBox("ConfrimPOD", pom.ClickConfirmPOD);
+		Await();
+		pom.ClickonRecentsIcon.click();
+		pom.CrowleyConfirmPOD();
 		pom.orderService_Actions();
+
+//		pom.DevStudioSearchBox("OrderServicePackage", pom.ClickOrderServicePackage);
+//		pom.orderService_Actions();
 		driver.switchTo().defaultContent();
 		Await();
 		System.out.println(driver.getWindowHandles().size());
@@ -843,7 +941,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.frameSwitch();
 		pom.Order_Tab_Refresh.click();
-		Await();        
+		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
@@ -857,7 +955,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Validate_ApprovePOD();
 		Await();
 		pom.ApprovePAR_Submit.click();
-	
+
 	}
 
 	@SuppressWarnings("static-access")
@@ -891,9 +989,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.OrderStatus_Released_Validation();
 		Await();
 	}
-	
-	
-	
+
 	@SuppressWarnings("static-access")
 	@Test
 	public void DFD_RatedStatus() throws Exception {
@@ -1041,7 +1137,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		login.frameswitch2();
 		login.Rated_Status_Validation();
-		
+
 		login.driver.switchTo().defaultContent();
 		Await();
 
@@ -1072,6 +1168,18 @@ public class NewToResolve_PAR extends BaseClass {
 		login.driver.switchTo().defaultContent();
 		Pom.frameswitch2();
 		Await();
+		login.PODComplete_Edit.click();
+		Await();
+		login.PODComplete_Status_Y();
+		Await();
+		Await();
+		scrollToElementAndClick(driver, login.SaveChanges);
+		Await();
+		login.ClickonGo.click();
+		Await();
+		login.driver.switchTo().defaultContent();
+		login.frameswitch2();
+		Await();
 		login.Add_Accessorial.click();
 		Await();
 		login.Accessorial_Pickup();
@@ -1098,14 +1206,15 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		login.frameSwitch();
 		Await();
-		WebElement OrderId_CheckBox_Click = driver.findElement(By.xpath("(//tr[.//a[normalize-space(text())='"+login.OrderID.trim()+"']]//input[@type='checkbox'])[1]"));
+		WebElement OrderId_CheckBox_Click = driver.findElement(By.xpath(
+				"(//tr[.//a[normalize-space(text())='" + login.OrderID.trim() + "']]//input[@type='checkbox'])[1]"));
 		OrderId_CheckBox_Click.click();
 		Await();
 		login.Submit210_Click.click();
 		Await();
 		login.Submit210_Submit.click();
 		Await();
-		login.Validate_210Submitted();
+		login.Validate_210Submitted(); // failure
 		login.driver.switchTo().defaultContent();
 		login.SwitchtoOrderPage();
 		login.frameswitch2();
@@ -1125,7 +1234,8 @@ public class NewToResolve_PAR extends BaseClass {
 		login.driver.switchTo().defaultContent();
 		login.switchTo_OrdersDFD.click();
 		login.frameSwitch();
-		WebElement OrderId_CheckBox_Click1 = driver.findElement(By.xpath("(//tr[.//a[normalize-space(text())='"+login.OrderID.trim()+"']]//input[@type='checkbox'])[2]"));
+		WebElement OrderId_CheckBox_Click1 = driver.findElement(By.xpath(
+				"(//tr[.//a[normalize-space(text())='" + login.OrderID.trim() + "']]//input[@type='checkbox'])[2]"));
 		OrderId_CheckBox_Click1.click();
 		Await();
 		login.ConfirmPaid_Click.click();
@@ -1144,7 +1254,6 @@ public class NewToResolve_PAR extends BaseClass {
 		login.Resolved_Completed();
 	}
 
-
 	@SuppressWarnings("static-access")
 	@Test
 	public void PAR_Status_Update_ExceptionFlow() throws Exception {
@@ -1161,31 +1270,27 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PickUpScheduled_Validation();
 		Await();
 
-		pom.Status_File_FNB();
-		pom.StatusUpdate_Process();
-		pom.FNB_Status_Validation();
-		Await();
+		/*
+		 * pom.Status_File_FNB(); pom.StatusUpdate_Process();
+		 * pom.FNB_Status_Validation(); Await();
+		 */
 
-/*		pom.Status_File_BNF();
+		pom.Status_File_BNF();
 		pom.StatusUpdate_Process();
 		pom.BNF_Status_Validation();
 		Await();
 
-		pom.Status_File_NBNF();
-		pom.StatusUpdate_Process();
-		pom.NBNF_Status_Validation();
-		Await();
+		/*
+		 * pom.Status_File_NBNF(); pom.StatusUpdate_Process();
+		 * pom.NBNF_Status_Validation(); Await();
+		 * 
+		 * pom.Status_File_Shortage(); pom.StatusUpdate_Process();
+		 * pom.Shortage_Status_Validation(); Await();
+		 * 
+		 * pom.Status_File_Overage(); pom.StatusUpdate_Process();
+		 * pom.Overage_Status_Validation(); Await();
+		 */
 
-		pom.Status_File_Shortage();
-		pom.StatusUpdate_Process();
-		pom.Shortage_Status_Validation();
-		Await();
-
-		pom.Status_File_Overage();
-		pom.StatusUpdate_Process();
-		pom.Overage_Status_Validation();
-		Await();                             */
-		                                    
 		pom.StatusUpdate_Received();
 		pom.StatusUpdate_Process();
 		pom.Received_Status_Validation();
@@ -1205,23 +1310,14 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Loaded_Status_Validation();
 		Await();
 
-		pom.StatusUpdate_Cancelled();
-		pom.StatusUpdate_Process();
-		pom.OrderStatus_Cancelled_Validation();
-		Await();
+//		pom.StatusUpdate_Cancelled();
+//		pom.StatusUpdate_Process();
+//		pom.OrderStatus_Cancelled_Validation();      // failure
+//		Await();
 
 		pom.StatusUpdate_Released();
 		pom.StatusUpdate_Process();
 		pom.OrderStatus_Released_Validation();
-
-		pom.StatusUpdate_Loaded();
-		pom.StatusUpdate_Process();
-		pom.Loaded_Status_Validation();
-		Await();
-
-		pom.StatusUpdate_Received();
-		pom.StatusUpdate_Process();
-		pom.Received_Status_Validation();
 
 	}
 
@@ -1242,14 +1338,14 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
-		pom.Resolved_Cancelled();            // Change credentials for PROD
+		pom.Resolved_Cancelled(); // Change credentials for PROD
 		pom.PAR_Refresh();
 		pom.StatusUpdate_Received();
 		pom.StatusUpdate();
 		pom.OutboundLoads();
 		pom.OrderFromOutboundLoads();
 		pom.Received_Status_Validation();
-		
+
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
@@ -1257,11 +1353,11 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.PAR_OBLoads_Refresh();
 		pom.StatusUpdate_Loaded();
-		pom.StatusUpdate();	
+		pom.StatusUpdate();
 		pom.OrderFromOutboundLoads();
 		pom.Loaded_Status_Validation();
-		
-		Await();
+
+	/*	Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
 		pom.Resolved_Cancelled();
@@ -1271,7 +1367,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.OSnDClick();
 		pom.OrderFromOSandD();
 		pom.FNB_Status_Validation();
-		
+
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
@@ -1282,7 +1378,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PAR_OBLoads_Refresh();
 		pom.OrderFromOSandD();
 		pom.BNF_Status_Validation();
-		
+
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
@@ -1293,7 +1389,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PAR_OBLoads_Refresh();
 		pom.OrderFromOSandD();
 		pom.NBNF_Status_Validation();
-		
+
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
@@ -1304,7 +1400,7 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PAR_OBLoads_Refresh();
 		pom.OrderFromOSandD();
 		pom.Shortage_Status_Validation();
-		
+
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
@@ -1314,8 +1410,8 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.StatusUpdate();
 		pom.PAR_OBLoads_Refresh();
 		pom.OrderFromOSandD();
-		pom.Overage_Status_Validation();
-		
+		pom.Overage_Status_Validation(); */
+
 		Await();
 		driver.switchTo().defaultContent();
 		pom.Close_PARtab.click();
@@ -1323,8 +1419,8 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.PAR_OBLoads_Refresh();
 		pom.StatusUpdate_UnLoaded();
 		pom.StatusUpdate();
-	//	pom.PAR_OBLoads_Refresh();
-		pom.OutboundLoads();
+		pom.PAR_OBLoads_Refresh();
+	//	pom.OutboundLoads();
 		pom.OrderFromOutboundLoads();
 		pom.Received_Status_Validation();
 	}

@@ -7,7 +7,7 @@
    "CaseType":"PickupAndRelease",
    "ServiceLevel":"Basic",
    "Equipment":"Trailer",
-   "Mode":"LTL",
+   "Mode":"CrowleyTL",
    "PaymentTerm":"Inbound Prepaid",
    "HotPriority":"true",
    "PickupNotes":"",
@@ -26,10 +26,10 @@
       "Address1":"1 Main Street",
       "Address2":"",
       "City":"Waltham",
-      "State":"MA",
-      "PostalCode":"02453",
+      "State":"PA",
+      "PostalCode":"17011",
       "Country":"US",
-      "Phone":"abccv",
+      "Phone":"56767778",
       "Email":"",
       "ContactName":""
    },
@@ -37,23 +37,23 @@
       "CompanyName":"55676",
       "Address1":"1132 Kamaile St",
       "Address2":"",
-      "City":"Honolulu",
+      "City":"New York",
       "State":"HI",
-      "PostalCode":"96814",
+      "PostalCode":"10001",
       "Country":"US",
-      "Phone":"qwer",
+      "Phone":"66777909",
       "Email":"",
       "ContactName":""
    },
    "BillTo":{
-      "CompanyName":"Home Depot",
-      "Address1":"170 Forbes Road",
+      "CompanyName":"Crowley Maritime",
+      "Address1":"8200 NATIONS WAY",
       "Address2":"",
-      "City":"Braintree",
+      "City":"JACKSONVILLE",
       "State":"MA",
-      "PostalCode":"02184",
+      "PostalCode":"32256",
       "Country":"US",
-      "Phone":"abcd 123456",
+      "Phone":"677123456",
       "Email":"",
       "ContactName":""
    },
@@ -74,6 +74,11 @@
          },
         {
          "AccessorialCode" : "HILGAT",
+         "AccessorialQuantity" : "1",
+         "AccessorialLocation" : "Delivery"
+         },
+        {
+         "AccessorialCode" : "HIPRIS",
          "AccessorialQuantity" : "1",
          "AccessorialLocation" : "Delivery"
          }

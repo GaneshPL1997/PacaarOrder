@@ -6,12 +6,13 @@
 	<artifactId>Sprint-35</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<dependencies>
 		<!--https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.9.1</version>
+			<version>6.1.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -55,6 +56,12 @@
 			<version>5.3.0</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.15.1</version>
+</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>

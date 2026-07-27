@@ -63,6 +63,7 @@ public class Runner extends BaseClass {
 		login.LaunchWarehousePortal();
 		login.OrdersDFD();
 		login.EFM_Clipboard_Status_Validation();
+		
 		driver.close();
 		Await();
 		ArrayList<String> tab1 = new ArrayList<>(driver.getWindowHandles());
@@ -249,7 +250,26 @@ public class Runner extends BaseClass {
 		Await();
 		driver.switchTo().defaultContent();
 		login.frameswitch2();
+		
 		Await();
+		login.Loaded_Status();
+		Await();
+		login.Outbound_Trailer();
+		Await();
+		login.Outbound_Carrier();
+		
+		scrollToElementAndClick(driver, login.Submit);
+		
+		login.Submit.click();
+		Await();
+		login.ClickonGo.click();
+		Await();
+		login.driver.switchTo().defaultContent();
+		login.frameswitch2();
+		login.Loaded_Status_Validation();
+		Await();
+		
+		
 		login.Released_Status();
 		Await();
 		login.getAttribute();
@@ -274,7 +294,7 @@ public class Runner extends BaseClass {
 		Await();
 		Await();
 		Await();
-		login.Report_Click_CaseIDFilter1.click();
+		login.Report_Click_CaseIDFilter.click();
 		Await();
 		Await();
 		Await();
@@ -314,7 +334,26 @@ public class Runner extends BaseClass {
 		pom.ClickonGo.click();
 		pom.driver.switchTo().defaultContent();
 		Await();
-		Pom.frameswitch2();
+		pom.frameswitch2();
+		
+		Await();
+		pom.Loaded_Status();
+		Await();
+		pom.Outbound_Trailer();
+		Await();
+		pom.Outbound_Carrier();
+		
+		scrollToElementAndClick(driver, pom.Submit);
+		
+		pom.Submit.click();
+		Await();
+		pom.ClickonGo.click();
+		Await();
+		pom.driver.switchTo().defaultContent();
+		pom.frameswitch2();
+		pom.Loaded_Status_Validation();
+		Await();
+		
 		Await();
 		pom.Released_Status();
 		Await();
@@ -338,7 +377,7 @@ public class Runner extends BaseClass {
 		// pom.PAR_Refresh();
 		pom.frameSwitch();
 		Await();
-		pom.OrderSearchandFilter();
+		pom.PAR_OrderSearchandFilter();
 		Await();
 		pom.Validate_Status_Released();
 		pom.Validate_Attachment_No();
@@ -352,7 +391,7 @@ public class Runner extends BaseClass {
 //		pom.Rich_Text();
 		pom.Attachment_Save();
 		Await();
-		pom.OrderSearchandFilter();
+		pom.PAR_OrderSearchandFilter();
 		Await();
 		pom.Validate_Attachment_Yes();
 		Await();
@@ -421,7 +460,6 @@ public class Runner extends BaseClass {
 		pom.InboundTrailer_WorkQueue();
 		pom.frameswitch2();
 		Thread.sleep(7000);
-
 	}
 
 	@SuppressWarnings("static-access")
@@ -457,7 +495,7 @@ public class Runner extends BaseClass {
 		pom.Button_Receive.click();
 		Await();
 		pom.OutBound_Loads.click();
-		pom.OrderSearchandFilter();
+		pom.PAR_OrderSearchandFilter();
 		Await();
 		pom.Received_OBStatus_Validation();
 		Await();
@@ -541,7 +579,7 @@ public class Runner extends BaseClass {
 		// pom.PAR_Refresh();
 		pom.frameSwitch();
 		Await();
-		pom.OrderSearchandFilter();
+		pom.PAR_OrderSearchandFilter();
 		Await();
 		pom.Validate_Status_Released();
 		pom.Validate_Attachment_No();
@@ -553,7 +591,7 @@ public class Runner extends BaseClass {
 		pom.Attach_File();
 		pom.Attachment_Save();
 		Await();
-		pom.OrderSearchandFilter();
+		pom.PAR_OrderSearchandFilter();
 		Await();
 		pom.Validate_Attachment_Yes();
 		Await();
@@ -566,17 +604,17 @@ public class Runner extends BaseClass {
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
 		Await();
-		pom.OrderStatus_PODException_Validation();
+		pom.OrderStatus_PODReceived();
 		pom.ClickonGo.click();
 		Await();
-		Pom.ClickonCalendar_POD_review.click();
-		Pom.Select2DaysagoDate();
-		Await();
-		Pom.ClickonCalendar_POD_review2.click();
-		Pom.Select2DaysagoDate();
-		Await();
-	//	pom.Release_Carrier();
-		Pom.Submit.click();
+//		Pom.ClickonCalendar_POD_review.click();
+//		Pom.Select2DaysagoDate();
+//		Await();
+//		Pom.ClickonCalendar_POD_review2.click();
+//		Pom.Select2DaysagoDate();
+//		Await();
+//	//	pom.Release_Carrier();
+    	Pom.Submit.click();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameswitch2();
@@ -613,7 +651,9 @@ public class Runner extends BaseClass {
 		PADInbound_Order_API();
 		PAD_XML_Write();
 		login.PEGALogin();
-		login.DevStudioSearchBox();
+		Await();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
 		login.orderService_Actions();
 		login.SOAPServicePopup();
 		WebElement textArea = driver
@@ -668,8 +708,10 @@ public class Runner extends BaseClass {
 		login.Datatype_StopID();
 		login.driver.switchTo().defaultContent();
 		login.CloseTab();
-		login.DevStudioSearchBox();
-		login.orderService_Actions1();
+		Await();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
+		login.orderService_Actions();
 		login.SOAPServicePopup();
 		login.PAD_RouteEnd_XML_Write();
 		WebElement textArea2 = driver
@@ -695,8 +737,9 @@ public class Runner extends BaseClass {
 		login.driver.switchTo().defaultContent();
 		login.CloseTab();
 		Await();
-		login.DevStudioSearchBox();
-		login.orderService_Actions1();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
+		login.orderService_Actions();
 		login.SOAPServicePopup();
 		login.PAD_RouteEnd_XML_CMD6Update();
 		WebElement textArea3 = driver
@@ -720,8 +763,9 @@ public class Runner extends BaseClass {
 		login.driver.switchTo().defaultContent();
 		login.CloseTab();
 		Await();
-		login.DevStudioSearchBox();
-		login.orderService_Actions1();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
+		login.orderService_Actions();
 		login.SOAPServicePopup();
 		login.PAD_RouteEnd_XML_CMD7Update();
 		WebElement textArea4 = driver
@@ -745,8 +789,9 @@ public class Runner extends BaseClass {
 		login.driver.switchTo().defaultContent();
 		login.CloseTab();
 		Await();
-		login.DevStudioSearchBox();
-		login.orderService_Actions1();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
+		login.orderService_Actions();
 		login.SOAPServicePopup();
 		login.PAD_RouteEnd_XML_CMD9Update();
 		WebElement textArea5 = driver
@@ -1141,6 +1186,24 @@ public class Runner extends BaseClass {
 		Await();
 		Pom.frameswitch2();
 		Await();
+		login.Loaded_Status();
+	//	login.Loaded_Status();
+		Await();
+		login.Outbound_Trailer();
+		Await();
+		login.Outbound_Carrier();
+		
+		scrollToElementAndClick(driver, login.Submit);
+		
+		login.Submit.click();
+		Await();
+		login.ClickonGo.click();
+		Await();
+		login.driver.switchTo().defaultContent();
+		login.frameswitch2();
+		login.Loaded_Status_Validation();
+		Await();
+		
 		login.Released_Status();
 		Await();
 		login.ClickonCalendar.click();
@@ -1200,7 +1263,7 @@ public class Runner extends BaseClass {
 		Await();
 		login.frameSwitch();
 		Await();
-		login.OrderSearchandFilter();
+		login.PAR_OrderSearchandFilter();
 		Await();
 		login.Validate_Attachment_Yes();
 		Await();
@@ -1255,7 +1318,7 @@ public class Runner extends BaseClass {
 		Await();
 		login.frameSwitch();
 		Await();
-		login.OrderSearchandFilter();
+		login.PAR_OrderSearchandFilter();
 		Await();
 		login.Validate_POD_Accepted();
 		Await();
@@ -1842,7 +1905,9 @@ public class Runner extends BaseClass {
 		login.PAR_ArrivedAtPickup_Status_Update();
 		Await();
 		login.PEGALogin();
-		login.DevStudioSearchBox();
+		Await();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
 		login.orderService_Actions();
 		login.SOAPServicePopup();
 
@@ -1925,9 +1990,8 @@ public class Runner extends BaseClass {
 		ArrayList<String> tab10 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab10.get(0));
 		Await();
-//---------------------------		
-		Await();
-		login.DevStudioSearchBox();
+		login.ClickonRecentsIcon.click();
+		login.OrderServicePage();
 		login.orderService_Actions();
 		login.SOAPServicePopup();
 		login.PAR_OutForDelivery_Status_Update();

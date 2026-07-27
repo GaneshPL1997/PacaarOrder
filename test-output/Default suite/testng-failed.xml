@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test" verbose="2">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="packageEL2.NewToResolve_PAR">
+      <class name="packageEL2.OrdersPAD">
         <methods>
-          <include name="PAR_LTL"/>
+          <include name="BrowserLaunch"/>
+          <include name="extentReportInitialization"/>
+          <include name="PADRating"/>
         </methods>
-      </class> <!-- packageEL2.NewToResolve_PAR -->
+      </class> <!-- packageEL2.OrdersPAD -->
     </classes>
-  </test> <!-- Default test -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

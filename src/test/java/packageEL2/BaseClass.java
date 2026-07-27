@@ -27,12 +27,10 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -72,9 +70,10 @@ public class BaseClass {
 	public static String generatedId;
 
 	@BeforeClass
+	
 	public void extentReportInitialization() {
 		String path = System.getProperty("user.dir");
-		ExtentSparkReporter reporter = new ExtentSparkReporter(path + "/02_20_2026_Report/testReport.html");
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path + "/07_24_2026_Report/testReport.html");
 		reports = new ExtentReports();
 		reports.attachReporter(reporter);
 	}
@@ -82,10 +81,8 @@ public class BaseClass {
 	@BeforeMethod
 	public static void BrowserLaunch() {
 
-		// ChromeOptions m_Options = new ChromeOptions();
-//    	m_Options.addArguments("--user-data-dir=\\Client\\C$\\Users\\ganesh.pl\\AppData\\Local\\Google\\Chrome\\User Data");
 
-		String chromeVersion = "144"; // Your actual Chrome version
+		String chromeVersion = "149"; // Your actual Chrome version
 		WebDriverManager.chromedriver().browserVersion(chromeVersion).setup();
 
 		driver = new ChromeDriver();
@@ -93,16 +90,11 @@ public class BaseClass {
 		driver.get("https://epicuatlb.estes-express.com/prweb/PRAuth/app/epic/vQbSpdBva3zBDbMlMRMsHQ*/!STANDARD");
 
 		// --------------> Production URL <-------------------
-		// driver.get("https://epic.estes-express.com/prweb/PRAuth/app/epic_/vQbSpdBva3zBDbMlMRMsHQ*/!STANDARD");
+		//driver.get("https://epic.estes-express.com/prweb/PRAuth/app/epic_/vQbSpdBva3zBDbMlMRMsHQ*/!STANDARD");
 		driver.manage().window().maximize();
 		
 	}
 
-//		@AfterMethod
-//		public void browser() {
-//			
-//			driver.close();
-//		}
 
 	public static void init(Object page) {
 		PageFactory.initElements(driver, page);
@@ -218,7 +210,6 @@ public class BaseClass {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
 		element.click();
 	}
 

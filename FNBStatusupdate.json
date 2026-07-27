@@ -10,12 +10,12 @@
   "StatusEventDateTime": "20241113T113109.283-07:00",
   "OutboundCarrierTracking": "Estes Express Lines",
   "StatusEvent": "FNB",
-  "OutboundTrailerID": "Test",
+  "OutboundTrailerID": "test",
   "CaseID": "",
   "UpdateType": "StatusUpdate",
  "RequestingTradingPartnerID" : "",
   "AssignedTradingPartnerID" : "",
-  "TerminalNotes": "Test Terminal notes",
+  "TerminalNotes": "test Terminal notes",
   "LocationCity": "Lathrop",
   "LocationState": "CA"
 }

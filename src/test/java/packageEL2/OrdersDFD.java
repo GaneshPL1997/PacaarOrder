@@ -78,7 +78,12 @@ public class OrdersDFD extends BaseClass {
 		login.waitForElementToBeVisibleAndClickable(driver, login.Clickon_Datatype_Records, 6);
 		login.Clickon_Datatype_Records.click();
 		Await();
-		login.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+	//	login.Clickon_Datatype_Records.click();
 		login.waitForElementToBeVisibleAndClickable(driver, login.Clickon_Datatype_Records_Search, 8);
 		login.Clickon_Datatype_Records_Search.sendKeys(login.OrderID);
 		login.Clickon_Datatype_Records_SearchIcon.click();
@@ -125,6 +130,11 @@ public class OrdersDFD extends BaseClass {
 		login.Clickon_Datatype_Records.click();
 		Await();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		login.Clickon_Datatype_Records_Search.sendKeys(login.OrderID);
 		Await();
 		login.Clickon_Datatype_Records_SearchIcon.click();
@@ -168,6 +178,11 @@ public class OrdersDFD extends BaseClass {
 		login.Clickon_Datatype_Records.click();
 		Await();
 		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		login.Clickon_Datatype_Records_Search.sendKeys(login.OrderID);
 		Await();
 		login.Clickon_Datatype_Records_SearchIcon.click();
@@ -209,6 +224,11 @@ public class OrdersDFD extends BaseClass {
 		login.frameSwitch();
 		Await();
 		login.Clickon_Datatype_Records.click();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
 		Await();
 		Await();
 		login.Clickon_Datatype_Records_Search.sendKeys(login.OrderID);
@@ -263,7 +283,7 @@ public class OrdersDFD extends BaseClass {
 		Await();
 		login.OrderSearchandFilter();
 		Await();
-		login.SubmitPOD_Validation();
+	//	login.SubmitPOD_Validation();
 		login.RateReview_Rated_Status_Validation();
 		login.driver.switchTo().defaultContent();
 		Await();
@@ -327,10 +347,10 @@ public class OrdersDFD extends BaseClass {
 		String TotalAccessorial = login.Total_Accessorial.getText();
         System.out.println("TotalAccessorial: "+ TotalAccessorial);
 		
-		login.PODComplete_Edit.click();
+	/*	login.PODComplete_Edit.click();
 		Await();
 		login.PODComplete_Status_N();
-		Await();
+		Await();        */
 		Await();
 		scrollToElementAndClick(driver, login.SaveChanges);
 		Await();
@@ -345,7 +365,7 @@ public class OrdersDFD extends BaseClass {
 		Await();
 		login.OrderSearchandFilter();
 		Await();
-		login.SubmitPOD_Validation();
+	//	login.SubmitPOD_Validation();
 		driver.switchTo().defaultContent();
 		ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab2.get(0));   

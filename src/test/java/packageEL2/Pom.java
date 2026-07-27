@@ -1,7 +1,6 @@
 package packageEL2;
 
 import static org.testng.Assert.assertEquals;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -78,7 +77,7 @@ public class Pom extends BaseClass {
 
 	public static String OrderID = "";
 	public static String DateTime = "";
-	//public static String SearchBox_Text = "OrderServicePackage";
+	// public static String SearchBox_Text = "OrderServicePackage";
 	public static String IB_LoadID_Value = "";
 	public static String BOL_Order = "";
 	public static String ATP_Id = "";
@@ -138,6 +137,1057 @@ public class Pom extends BaseClass {
 	List<String> actualAccessorialCodes = new ArrayList<>();
 	List<String> actualAccessorialLocation = new ArrayList<>();
 
+	@FindBy(xpath = "//div[@title='Recents']/h3/i")
+	public static WebElement ClickonRecentsIcon;
+
+	@FindBy(xpath = "//div[@title='Data types']/h3/i")
+	public static WebElement ClickonDatatypesIcon;
+
+	@FindBy(xpath = "//a[@aria-label='menu Route']")
+	public static WebElement Clickon_Route_Datatype;
+
+	@FindBy(xpath = "//a[@aria-label='menu Stop']")
+	public static WebElement Clickon_Stop_Datatype;
+
+	@FindBy(xpath = "//a[@aria-label='menu Order']")
+	public static WebElement Clickon_Order_Datatype;
+
+	@FindBy(xpath = "//a[@aria-label='menu Requested Accessorial']")
+	public static WebElement Clickon_RequestedAccessorial_Datatype;
+
+	@FindBy(xpath = "//a[@aria-label='menu Status']")
+	public static WebElement Clickon_Status_Datatype;
+
+	@FindBy(xpath = "//a[@aria-label='menu Rate']")
+	public static WebElement Clickon_Rate_Datatype;
+
+	@FindBy(xpath = "//div[@class='header']/h3[contains(text(),'Records')]")
+	public static WebElement Clickon_Datatype_Records;
+
+	@FindBy(xpath = "(//div[@class='header']/h3[contains(text(),'Records')])[2]")
+	public static WebElement Clickon_Datatype_Records2;
+
+	@FindBy(xpath = "//div[@class='field-item dataValueWrite']/span/input[@class='leftJustifyStyle' and @placeholder='Search...']")
+	public static WebElement Clickon_Datatype_Records_Search;
+
+	@FindBy(xpath = "//i[@class='pi pi-search']")
+	public static WebElement Clickon_Datatype_Records_SearchIcon;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Route Status']/div[contains(text(),' In Progress')]")
+	public static WebElement Route_Status_Validation;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Globally unique ID (required)']/div")
+	public static WebElement Route_GloballyUniqueID;
+
+	@FindBy(xpath = "//span[contains(text(), 'Order BOL')]/following-sibling::div[1]/span")
+	public static WebElement PODReview_BOL;
+
+	@FindBy(xpath = "//span[contains(text(),'Inbound Load ID')]/following-sibling::div/span")
+	public static WebElement PODReview_IBLoadID;
+
+	@FindBy(xpath = "//span[contains(text(),'Inbound Trailer')]/following-sibling::div/span")
+	public static WebElement PODReview_IBTrailer;
+
+	@FindBy(xpath = "//span[contains(text(),'Outbound Load ID')]/following-sibling::div/span")
+	public static WebElement PODReview_OBLoadID;
+
+	@FindBy(xpath = "//span[contains(text(),'Total Weight')]/following-sibling::div/span")
+	public static WebElement PODReview_TotalWt;
+
+	@FindBy(xpath = "//span[contains(text(),'Total Weight')]/following-sibling::div/span")
+	public static WebElement PODReview_TotalHU;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Stop ID']/div)[1]")
+	public static WebElement Datatype_StopID;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Route Status']/div")
+	public static WebElement RouteStatus_Complete;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Stop Status']/div)[1]")
+	public static WebElement Stop_Status_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='ReceivedDate']/div)[1]")
+	public static WebElement Received_Date_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='TrackingNumber']/div)[1]")
+	public static WebElement TrackingNumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='PickupNumber']/div)[1]")
+	public static WebElement PickupNumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='InvoiceNumber']/div)[1]")
+	public static WebElement InvoiceNumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='PONumber']/div)[1]")
+	public static WebElement PONumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='DeliveryNumber']/div)[1]")
+	public static WebElement DeliveryNumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Company']/div)[1]")
+	public static WebElement Origin_Company_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Address 1']/div)[1]")
+	public static WebElement Origin_Address1_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin City']/div)[1]")
+	public static WebElement Origin_City_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin State']/div)[1]")
+	public static WebElement Origin_State_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Postal Code']/div)[1]")
+	public static WebElement Origin_PostalCode_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Country']/div)[1]")
+	public static WebElement Origin_Country_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='OriginPhoneNumber']/div)[1]")
+	public static WebElement Origin_PhoneNumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Contact Name']/div)[1]")
+	public static WebElement Origin_ContactName_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Company']/div)[1]")
+	public static WebElement Destination_Company_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Address 1']/div)[1]")
+	public static WebElement Destination_Address1_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination City']/div)[1]")
+	public static WebElement Destination_City_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination State']/div)[1]")
+	public static WebElement Destination_State_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Postal Code']/div)[1]")
+	public static WebElement Destination_PostalCode_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Country']/div)[1]")
+	public static WebElement Destination_Country_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='DestinationPhoneNumber']/div)[1]")
+	public static WebElement Destination_PhoneNumber_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Contact Name']/div)[1]")
+	public static WebElement Destination_ContactName_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='BOL']/div)[1]")
+	public static WebElement BOL_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Actual Delivery Date']/div)[1]")
+	public static WebElement ActualDelivery_Date_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='ArrivedAtPickup']/div)[1]")
+	public static WebElement ArrivedAtPickup_Date_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='OutForDelivery']/div)[1]")
+	public static WebElement OutForDelivery_Date_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='ArrivedAtConsignee']/div)[1]")
+	public static WebElement ArrivedAtConsignee_Date_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Actual Delivery Date']/div)[1]")
+	public static WebElement ActualDeliveryDate_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='LineHaulComplete']/div)[1]")
+	public static WebElement Delivered_Date_Validation;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Accessorial Code']/div")
+	public static List<WebElement> AccessorialCode_ValidationList;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='AccessorialLocation']/div")
+	public static List<WebElement> AccessorialLocation_ValidationList;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Status Event']/div)")
+	public static List<WebElement> StatusEvent_Data;
+
+	@FindBy(xpath = "//span[contains(text(), 'pyWorkPage (ESTES-EL2-EPIC-Work-PickupAndRelease)')]")
+	public static WebElement ClickonpyworkPage;
+
+	@FindBy(xpath = "//span[contains(text(), 'pyWorkPage (ESTES-EL2-EPIC-Work-DropForDelivery)')]")
+	public static WebElement ClickonpyworkPage_DFD;
+
+	@FindBy(xpath = "//span[contains(text(), 'pyWorkPage (ESTES-EL2-EPIC-Work-PickupAndDelivery)')]")
+	public static WebElement ClickonpyworkPage_PAD;
+
+	@FindBy(xpath = "(//span[contains(text(), 'pyWorkPage')])[1]/ancestor::li[2]/ul/li/div/div[1]")
+	public static WebElement ExpandpyworkPage;
+
+	@FindBy(xpath = "//span[contains(text(), 'OrderPage')]")
+	public static WebElement ClickonOrderpageinCipboard;
+
+	@FindBy(xpath = "((//span[contains(text(), 'OrderPage')])[1]/ancestor::li)[3]/ul/li/div/div/a")
+	public static WebElement ExpandOrderPageinClipboard;
+
+	@FindBy(xpath = "(//table[@id='gridLayoutTable']/tbody/tr/td[2]/div/table/tbody/tr[2]/td/div/span/label/span[contains(text(),'pyID')]/ancestor::td/following-sibling::td)[1]//input")
+	public static WebElement pyIDTextBox;
+
+	@FindBy(xpath = "(//table[@id='gridLayoutTable']/tbody/tr/td[2]/div/table/tbody/tr[3]/td/div/span/label/span[contains(text(),'PODConfirmNumber')]/ancestor::td/following-sibling::td)[1]//input")
+	public static WebElement PODConfirmNum_TextBox;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'LoadedDate')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPageStatusEvent;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusEvent')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPage_StatusEvent;
+
+	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusEvent')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
+	public static WebElement OrderPage_StatusEvent1;
+
+	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'RequiredStatus')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
+	public static WebElement pyWorkpage_RequiredStatus;
+
+	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusEventDateTime')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
+	public static WebElement OrderPage_StatusEvent_DateTime;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'ReceivedDate')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPage_ReceivedDate;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Received Date']")
+	public static WebElement OrderPAR_ReceivedDate;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'RequiredStatus')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPage_RequiredStatus;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'ArrivedAtPickup')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPage_ArrivedAtPickup;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'OutForDelivery')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPage_OutForDelivery;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusUpdateToScanTool')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement StatusUpdatetoScanTool_Validation;
+
+	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'AccessorialCode')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
+	public static WebElement AccessorialCode;
+
+	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'AccessorialLocation')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
+	public static WebElement AccessorialLocation;
+
+	@FindBy(xpath = "((//span[contains(text(), 'ShipmentList')]/ancestor::li)[4]//ul//li//div//div)[1]")
+	public static WebElement ExpandShipmentinCLipboard;
+
+	@FindBy(xpath = "((//span[contains(text(), 'AccessorialItemList')]/ancestor::li)[4]//ul//li//div//div)[1]")
+	public static WebElement ExpandAccessorialinCLipboard;
+
+	@FindBy(xpath = "//span[contains(text(), 'AccessorialItemList(1)')]")
+	public static WebElement ClickAccessorial1inCLipboard;
+
+	@FindBy(xpath = "//span[contains(text(), 'AccessorialItemList(2)')]")
+	public static WebElement ClickAccessorial2inCLipboard;
+
+	@FindBy(xpath = "//span[contains(text(), 'AccessorialItemList(3)')]")
+	public static WebElement ClickAccessorial3inCLipboard;
+
+	@FindBy(xpath = "//span[contains(text(), 'ShipmentList(2)')]")
+	public static WebElement ClickonShipment2inCLipboard;
+
+	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'PickupNumber')]/ancestor::td/following-sibling::td[1]/div/span")
+	public static WebElement OrderPage_PickupNumber;
+
+	@FindBy(id = "loginText2")
+	public static WebElement ssoLogin;
+
+	@FindBy(className = "table-row")
+	public static WebElement code;
+
+	@FindBy(id = "idTxtBx_SAOTCC_OTC")
+	public static WebElement send;
+
+	@FindBy(id = "idSubmit_SAOTCC_Continue")
+	public static WebElement click;
+
+	@FindBy(xpath = "//div[contains(@class,'launch-portals')]/descendant::a")
+	public static WebElement LaunchPortal;
+
+	@FindBy(xpath = "//span[contains(text(),'WareHouse UserPortal')]")
+	public static WebElement warehouse;
+
+	@FindBy(xpath = "//li[@title='Orders PAR']")
+	public static WebElement OrdersPAR;
+
+	@FindBy(xpath = "//li[@title='Crowley On Dock']")
+	public static WebElement OrdersOnDock;
+
+	@FindBy(xpath = "//li[@title='Attach POD for CrowleyTL']")
+	public static WebElement CrowleyTLPOD;
+
+	@FindBy(xpath = "//input[@placeholder='Enter IB Load ID']")
+	public static WebElement EnterIBLoadID;
+
+	@FindBy(xpath = "//input[@placeholder='Select IB Load ID']")
+	public static WebElement SelectIBLoadID;
+
+	@FindBy(xpath = "//div[@id='msresults-list']/ul/li/div")
+	public static WebElement ClickUse_IBLoadID;
+
+	@FindBy(xpath = "//button[contains(text(),'Search')]")
+	public static WebElement Search_IBLoadID;
+
+	@FindBy(xpath = "//input[@placeholder='Enter IB Load ID']")
+	public static WebElement Enter_IBLoadID;
+
+	@FindBy(xpath = "//button[@name='ProcessCancellationRequestForCrowleyTL_pyDisplayHarness_45']")
+	public static WebElement ConfirmStatus_Submit;
+
+	@FindBy(xpath = "(//span[@role='presentation' and @class='menu-item-icon-imageclass pi pi-clipboard-content-icon'])[1]")
+	public static WebElement Reports;
+
+	@FindBy(xpath = "//button[@name='pyReportBrowserHeaderReports_pyDisplayHarness_']")
+	public static WebElement Reports_MovetoActions;
+
+	@FindBy(xpath = "//span[@title='Crowley Report'][1]")
+	public static WebElement Click_CrowleyReports;
+
+	@FindBy(xpath = "(//a[@id='pui_colmenu'])[1]")
+	public static WebElement Report_CaseIDFilterIcon;
+
+	@FindBy(xpath = "//span[contains(text(),'Filter')]")
+	public static WebElement Report_Click_CaseIDFilter;
+
+	@FindBy(xpath = "(//span[contains(text(),'Filter')])[3]")
+	public static WebElement Report_Click_CaseIDFilter1;
+
+	@FindBy(xpath = "(//input[@class='leftJustifyStyle'])[2]")
+	public static WebElement Report_Click_SearchTextFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'Filter')]")
+	public static WebElement Report_Click_Filter_Apply;
+
+	@FindBy(xpath = "//iframe[@name='PegaGadget0Ifr']")
+	public static WebElement frameName;
+
+	@FindBy(xpath = "(//input[@name='$PpySimulationDataPage$ppyHTTPMethod'])[2]")
+	public static WebElement RadioButton_POST;
+
+	@FindBy(xpath = "//h3[contains(text(),'OS&D')]")
+	public static WebElement OSD;
+
+	@FindBy(xpath = "//h1[contains(text(),'Crowley On Dock')]")
+	public static WebElement CrowleyOnDock_Header;
+
+	@FindBy(xpath = "//h3[contains(text(),'Inbound Trailer')]")
+	public static WebElement InboundTrailer;
+
+	@FindBy(xpath = "//h3[contains(text(),'Outbound Loads')]")
+	public static WebElement OutboundLoads;
+
+	@FindBy(xpath = "//th[@aria-label='Order ID']/div/span/a")
+	public static WebElement OrderFilter;
+
+	@FindBy(xpath = "//h3[@class='layout-group-item-title' and contains(text(),'POD Review')]")
+	public static WebElement PODReview_Workpage;
+
+	@FindBy(xpath = "//h3[@class='layout-group-item-title' and contains(text(),'Rate Review')]")
+	public static WebElement RateReview_Workpage;
+
+	@FindBy(xpath = "(//input[@type='checkbox'])[2]")
+	public static WebElement CheckBox_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Submit 210')]")
+	public static WebElement Submit210_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Confirm Paid')]")
+	public static WebElement ConfirmPaid_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Generate Invoice')]")
+	public static WebElement GenerateInvoice_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Assign Carrier')]")
+	public static WebElement Assign_Carrier_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Assign OB Trailer')]")
+	public static WebElement Assign_OBTrailer_Click;
+
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pPickupNumber']")
+	public static WebElement TrailerNumber_Click;
+
+	@FindBy(xpath = "//button[@title='Loaded']")
+	public static WebElement Loaded_Button;
+
+	@FindBy(xpath = "//button[contains(text(),'Confirm Unload')]")
+	public static WebElement ConfirmUnload_Button;
+
+	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")
+	public static WebElement ConfirmReleased_Button;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Loaded Date']")
+	public static WebElement loadedDateElement;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Outbound Trailer']")
+	public static WebElement OutboundTrailerElement;
+
+	@FindBy(xpath = "//button[contains(text(),'Unload')]")
+	public static WebElement Unload_Button;
+
+	@FindBy(xpath = "//button[contains(text(),'Released')]")
+	public static WebElement Released_Button;
+
+	@FindBy(xpath = "//button[contains(text(), '  Assign Carrier ')]")
+	public static WebElement Click_AssignCarrier_Popup;
+
+	@FindBy(xpath = "//span[contains(text(), 'USKO Logistics')]")
+	public static WebElement AssignCarrier_Validation;
+
+	@FindBy(xpath = "(//div[@id='gridBody_right']/table/tbody/tr/td/div/span)[1]")
+	public static WebElement ResolvePAROrder_CaseID;
+
+	@FindBy(xpath = "(//div[@id='gridBody_right']/table/tbody/tr/td/div/span)[2]")
+	public static WebElement ResolvePAROrder_BOL;
+
+	@FindBy(xpath = "(//div[@id='gridBody_right']/table/tbody/tr/td/div/span)[3]")
+	public static WebElement ResolvePAROrder_InvoiceNumber;
+
+	@FindBy(xpath = "//button[contains(text(),'Approve POD')]")
+	public static WebElement Approve_POD_Click;
+
+	@FindBy(xpath = "//div[contains(text(),'case type does not yet have any fields')]")
+	public static WebElement TextMessage_CompletedUI;
+
+	@FindBy(xpath = "//span[@id='ERRORMESSAGES_ALL']//li")
+	public static WebElement ErrorMessage_ApprovePOD;
+
+	@FindBy(xpath = "//button[contains(text(),'Receive Order')]")
+	public static WebElement ReceiveOrder_Click;
+
+	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")
+	public static WebElement Button_Receive;
+
+	@FindBy(xpath = "//button[contains(text(),'Attach POD')]")
+	public static WebElement Attach_POD_Click;
+
+	@FindBy(xpath = "//input[@name='$PpyAttachmentPage$ppxAttachName']")
+	public static WebElement AttachFile_POD;
+
+	@FindBy(xpath = "//input[@name='$PpxRequestor$ppyFileUpload']")
+	public static WebElement ChooseFile_BulkAccessorial;
+
+	@FindBy(xpath = "//span/button[contains(text(),'Update Accessorial')]")
+	public static WebElement ChooseFile_UpdateAccessorial;
+
+	@FindBy(xpath = "//span/button[contains(text(),'Complete Update')]")
+	public static WebElement CompleteUpdate;
+
+	@FindBy(xpath = "//div/div[contains(text(),'Total BOL:')]")
+	public static WebElement Text_TotalBOL;
+
+	@FindBy(xpath = "//div/div[contains(text(),'Total Weight:')]")
+	public static WebElement Text_TotalWeight;
+
+	@FindBy(xpath = "//div/div[contains(text(),'Total Pieces:')]")
+	public static WebElement Text_TotalPieces;
+
+	@FindBy(xpath = "//*[contains(text(),'Attachment and Req Status')]")
+	public static WebElement ReSubmit_ErrorMessage_Element;
+
+	@FindBy(xpath = "//button[contains(text(),'Re-Submit POD')]")
+	public static WebElement Re_Submit_POD_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Upload Accessorials')]")
+	public static WebElement UploadAccessorials_Click;
+
+	@FindBy(xpath = "//button[contains(text(),'Submit')]")
+	public static WebElement ResolvePAROrder_Submit;
+
+	@FindBy(xpath = "(//input[@CLASS='multiselect-list'])[2]")
+	public static WebElement OrderSearch_Filer;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[1]")
+	public static WebElement Order_Search_Filter;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[2]")
+	public static WebElement PODReview_BOL_Filter;
+
+	@FindBy(xpath = "(//span/a[contains(text(),'PAR')])[1]")
+	public static WebElement PAR_Order_OSnD;
+
+	@FindBy(xpath = "//div[@class='content-inner ']/div/span/input[@type='text']")
+	public static WebElement OrderSearch_Filter;
+
+	@FindBy(xpath = "(//input[@type='checkbox' and contains(@name,'Inbound')])[21]")
+	public static WebElement FilterCheckBox;
+
+	@FindBy(xpath = "(//button[@class='pzhc pzbutton'])[1]")
+	public static WebElement OrderFilterApply;
+
+	@FindBy(xpath = "//a[contains(text(),'Refresh ')]")
+	public static WebElement Order_Tab_Refresh;
+
+	@FindBy(xpath = "//div[@id='PEGA_GRID_SKIN']//a[contains(text(),'Refresh')]")
+	public static WebElement RateReview_Refresh;
+
+	@FindBy(xpath = "//a[contains(text(), 'DFD')]")
+	public static WebElement ClickDFDCaseID;
+
+	@FindBy(xpath = "//a[contains(text(), 'PAD')]")
+	public static WebElement ClickPADCaseID;
+
+	@FindBy(xpath = "//a[contains(text(), 'PAR')]")
+	public static WebElement ClickPARCaseID;
+
+	@FindBy(xpath = "//button[contains(text(),'Go')]")
+	public static WebElement OutboundLoads_Go;
+
+	@FindBy(xpath = "//h3[contains(text(),'Outbound Loads')]")
+	public static WebElement OutBound_Loads;
+
+	@FindBy(xpath = "//iframe[@name='PegaGadget1Ifr']")
+	public static WebElement frameName2;
+
+	@FindBy(xpath = "//iframe[@name='PegaGadget2Ifr']")
+	public static WebElement frameName3;
+
+	@FindBy(xpath = "//a[@name='CrowleyTLSection_pyDisplayHarness_41' and contains(text(),'Refresh ')]")
+	public static WebElement CrowleyTL_Refresh;
+
+	@FindBy(xpath = "//iframe[@name='PegaGadget3Ifr']")
+	public static WebElement CrowleyReport_Frame;
+
+	@FindBy(xpath = "//div/span[contains(text(),'Note: Case has been invoiced')]")
+	public static WebElement Invoiced_Note;
+
+	@FindBy(xpath = "//span[contains(text(),'Arrived at Terminal')]")
+	public static WebElement ArrivedAtTerminal;
+
+	@FindBy(xpath = "//label[contains(normalize-space(.),'Status')]/ancestor::div[1]//span[contains(text(),'210 Submitted')]")
+	public static WebElement Submitted210_Status;
+
+	@FindBy(xpath = "//span[contains(text(),'FNB')]")
+	public static WebElement FNB_Status;
+
+	@FindBy(xpath = "//span[contains(text(),'BNF')]")
+	public static WebElement BNF_Status;
+
+	@FindBy(xpath = "//span[contains(text(),'NBNF')]")
+	public static WebElement NBNF_Status;
+
+	@FindBy(xpath = "//span[contains(text(),'Shortage')]")
+	public static WebElement Shortage_Status;
+
+	@FindBy(xpath = "//span[contains(text(),'Freight not on Bill')]")
+	public static WebElement Overage_Status;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pOrderPage$pShipmentList$l2$pPickupNumber')]")
+	public static WebElement Outbound_trailer_outboundLoads_Status;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pStatusEvent')]")
+	public static WebElement Inbound_trailer_outboundLoads_Status;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pOrderPage$pShipmentList$l2$pAssignedTradingPartnerName')]")
+	public static WebElement Outbound_carrier_outboundLoads_Status;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyDisplayHarness$pRateRequestingTPID')]")
+	public static WebElement RateReview_Shipper;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyDisplayHarness$pAssignedTradingPartnerName')]")
+	public static WebElement Assign_OutboundCarrier;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pCustomerAppointmentStatus')]")
+	public static WebElement CustomerAppointment_Status;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pDeliveryStatus')]")
+	public static WebElement CustomerDelivery_Status;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pAccessorialLocation')]")
+	public static WebElement AccessorialLocation_Dropdown;
+
+	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pAccessorialCode')]")
+	public static WebElement AccessorialCode_Dropdown;
+
+	@FindBy(xpath = "//*[contains(@alt, 'Choose from calendar')]")
+	public static WebElement ClickonCalendar;
+
+	@FindBy(xpath = "//a[@id='todayLink']")
+	public static WebElement ClickonTodayDate;
+
+	@FindBy(xpath = "//a[@id='applyLink']")
+	public static WebElement ClickOnApply;
+
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pEventDate']")
+	public static WebElement GetDateandTime;
+
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pReceivedDate']")
+	public static WebElement Get_Received_DateandTime;
+
+	@FindBy(xpath = "//span[text()='Arrive At Pickup']/following::div[@class='field-item dataValueRead'][1]/span")
+	public static WebElement Get_Pickup_DateandTime;
+
+	@FindBy(xpath = "//span[text()='Depart At Pickup']/following::div[@class='field-item dataValueRead'][1]/span")
+	public static WebElement Get_OutForDelivery_DateandTime;
+
+	@FindBy(xpath = "//button[contains(text(),'Submit')]")
+	public static WebElement Submit;
+
+	@FindBy(xpath = "//span[contains(text(),'POD Complete')]/following-sibling::div/span[contains(text(),'Y')]")
+	public static WebElement PODComplete_Y;
+
+	@FindBy(xpath = "//span[contains(text(),'Required Status')]/following-sibling::div/span[contains(text(),'Y')]")
+	public static WebElement RequiredStatus_Y;
+
+	@FindBy(xpath = "//button[@name='ApproveRate_pyDisplayHarness_44']")
+	public static WebElement Submit210_Submit;
+
+	@FindBy(xpath = "//button[@type='button' and @title='Submit']")
+	public static WebElement ConfirmPaid_Submit;
+
+	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")
+	public static WebElement ApprovePAR_Submit;
+
+	@FindBy(xpath = "//button[@type='button' and @title='Click Submit to Generate Invoice PDF']")
+	public static WebElement GenerateInvoice_Submit;
+
+	@FindBy(xpath = "//a[contains(text(),'+ AddItem')]")
+	public static WebElement AddItem;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'210 Submitted')]")
+	public static WebElement Validate_210Submitted;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'POD Received')]")
+	public static WebElement Validate_POD_Received;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'POD Accepted')]")
+	public static WebElement Validate_POD_Accepted;
+
+	@FindBy(xpath = "//ul[contains(@class,'error')]/li")
+	public static WebElement Validate_ErrorMessage;
+
+	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'POD Resubmitted')]")
+	public static WebElement Validate_POD_Resubmitted;
+
+	@FindBy(xpath = "//span[contains(text(),'Resolved-Completed')]")
+	public static WebElement Resolved_Completed;
+
+	@FindBy(xpath = "//button[contains(text(), 'Go')]")
+	public static WebElement ClickonGo;
+
+	@FindBy(xpath = "//input[contains(@name,'Description')]")
+	public static WebElement Description_Value;
+
+	@FindBy(xpath = "//input[contains(@name,'Code')]")
+	public static WebElement Code_Value;
+
+	@FindBy(xpath = "//input[contains(@name,'QTY')]")
+	public static WebElement Qty_Value;
+
+	@FindBy(xpath = "//input[contains(@name,'AccessorialCost')]")
+	public static WebElement Charge_Value;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Charge']/div/span/span")
+	public static WebElement Charge_Value1;
+
+	@FindBy(xpath = "(//td[@data-attribute-name='Charge']/div/span/span)[2]")
+	public static WebElement Charge_Value2;
+
+	@FindBy(xpath = "//button[contains(text(),'Save Accessorial')]")
+	public static WebElement SaveAccessorial;
+
+	@FindBy(xpath = "//button[contains(text(),'Request New Rate')]")
+	public static WebElement RequestNewRate;
+
+	@FindBy(xpath = "//button[contains(text(),'Save Changes')and @name='RateReview_pyWorkPage_113']")
+	public static WebElement SaveChanges;
+
+	@FindBy(xpath = "//button[@title='Toggle runtime toolbar']/i[@class='pz-pi pi-gear']")
+	public static WebElement Toggle_toolbar;
+
+	@FindBy(xpath = "//button[@title='Clipboard']")
+	public static WebElement CLickOnClipBoard;
+
+	@FindBy(xpath = "//span[contains(text(), 'Received')]")
+	public static WebElement StatusEvent_Shipement2_Clipboard;
+
+	@FindBy(xpath = "//span[contains(text(),'EFM')]")
+	public static WebElement EFMStatus_Validation;
+
+	@FindBy(xpath = "//span[contains(text(),'Loaded')]")
+	public static WebElement Loaded_Status_Validation;
+
+	@FindBy(xpath = "//span[contains(text(),'Received')]")
+	public static WebElement Received_Status_Validation;
+
+	@FindBy(xpath = "//span[contains(text(),'RECEIVED')]")
+	public static WebElement DFD_Received_Status_Validation;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='TotalInvoiceAmount']/div)[1]")
+	public static WebElement Table_TotalInvoiceAmount;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Line Haul Price']/div)[1]")
+	public static WebElement Table_LineHaul;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='FSC Price']/div)[1]")
+	public static WebElement Table_FSCPrice;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='FSC Rate Percentage']/div)[1]")
+	public static WebElement Table_FSCRatePercentage;
+
+	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='AccessorialTotalFees']/div)[1]")
+	public static WebElement Table_AccessorialTotalFees;
+
+	@FindBy(xpath = "//label[text()='Status']/following::span[@class='badge_text']")
+	public static WebElement Rated_Status;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Rated')]")
+	public static WebElement RatedTable_Status;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Status']/div/span[contains(text(),'Invoiced')]")
+	public static WebElement Invoiced_Status;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Line Haul Rate']/div/span/span")
+	public static WebElement Invoice_Linehaul;
+
+	@FindBy(xpath = "//td[@data-attribute-name='FSC Charge']/div/span/span")
+	public static WebElement Invoice_FSCCharge;
+
+	@FindBy(xpath = "(//td[@data-attribute-name='Total Accessorial']/div/span/span)[1]")
+	public static WebElement Invoice_TotalAccessorial;
+
+	@FindBy(xpath = "(//td[@data-attribute-name='Total Amount']/div/span/span)[1]")
+	public static WebElement Invoice_TotalAmount;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Base &#43; Fuel']/div/span/span")
+	public static WebElement Base_FuelTotalCharge;
+
+	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Total']/following-sibling::div/span/span")
+	public static WebElement Total_Rate;
+
+	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Line Haul']/following-sibling::div/span/span")
+	public static WebElement LineHaul_Rate;
+
+	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Fuel']/following-sibling::div/span/span")
+	public static WebElement Fuel;
+
+	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Fuel Rate']/following-sibling::div/span/span")
+	public static WebElement Fuel_Rate;
+
+	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Total Accessorial']/following-sibling::div/span/span")
+	public static WebElement Total_Accessorial;
+
+	@FindBy(xpath = "//span[contains(text(),'Scan Tool Order API')]")
+	public static WebElement ScanToolStatus_Validation;
+
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$ppySearchText']")
+	public static WebElement ClickDevStudioSearchBox;
+
+	@FindBy(xpath = "//i[@class='pi pi-search-2']")
+	public static WebElement ClickDevStudioSearchIcon;
+
+	@FindBy(xpath = "//a[contains(text(),'OrderServicePackage Services ProcessData')]")
+	public static WebElement ClickOrderServicePackage;
+
+	@FindBy(xpath = "//a[contains(text(),'ConfrimPOD')]")
+	public static WebElement ClickConfirmPOD;
+
+	@FindBy(xpath = "//a[contains(text(),'OrderServicePackage V1 updatestatus')]")
+	public static WebElement ClickOrderServicePackage_UpdateStatus;
+
+	@FindBy(xpath = "//div[@string_type='field']/span/button[contains(text(),'Actions')]")
+	public static WebElement ServicePageActions;
+
+	@FindBy(xpath = "//div[contains(text(),'Run')]")
+	public static WebElement Actions_Run;
+
+	@FindBy(xpath = "(//span[contains(text(),'Run')])[2]")
+	public static WebElement ServicePageRun;
+
+	@FindBy(xpath = "(//button[@name='CaseActionHeader_pyWorkPage_4'])[2]")
+	public static WebElement Actions_Button;
+
+	@FindBy(xpath = "(//button[@title='Actions' and contains(text(),'Actions')])[2]")
+	public static WebElement PAD_Actions_Button;
+
+	@FindBy(xpath = "//span[contains(text(), 'Refresh')]")
+	public static WebElement Actions_Refresh;
+
+	@FindBy(xpath = "//input[@value='EnterText']")
+	public static WebElement SupplySOAPCheckBox;
+
+	@FindBy(xpath = "//textarea[@name='$PpySimulationDataPage$ppyPOSTRequestParameterValues$l1$ppyValue']")
+	public static WebElement TextAreaClick;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Pickup Scheduled')]")
+	public static WebElement pickUpScheduled_Validation;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Awaiting Arrival')]")
+	public static WebElement AwaitingArrival_Validation;
+
+	@FindBy(xpath = "//textarea[@name='$PpySimulationDataPage$ppyRequestTextData']")
+	public static WebElement SupplySOAPTextBox;
+
+	@FindBy(xpath = "//div//span[contains(text(),'Execute')]")
+	public static WebElement ExecuteClick;
+
+	@FindBy(xpath = "(//span[contains(@class,'route')])[1]")
+	public static WebElement OrdersDFDClick;
+
+	@FindBy(xpath = "(//span[contains(@class,'locations')])[1]")
+	public static WebElement OrdersPADClick;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[8]")
+	public static WebElement OrdersShipmentPADFilter;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[1]")
+	public static WebElement ShipmentScheduling_OrderID_Filter;
+
+	@FindBy(xpath = "/html/body/div[3]/form/div[5]/div[1]/ul/li[3]/div/button[1]")
+	public static WebElement CrowApplyClick;
+
+	@FindBy(xpath = "//div[@aria-label='Rate Review']")
+	public static WebElement ExceptionManagementHeaderClick;
+
+	@FindBy(xpath = "//div[contains(@aria-label,'Inbound Shipment')]")
+	public static WebElement InboundShipmentHeaderClick;
+
+	@FindBy(xpath = "//div[contains(@aria-label,'Shipment Scheduling')]")
+	public static WebElement ShipmentSchedulingHeaderClick;
+
+	@FindBy(xpath = "//div[contains(@aria-label,'Delivery Management')]")
+	public static WebElement DeliveryManagementHeaderClick;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[2]")
+	public static WebElement FilterIconClick;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[1]")
+	public static WebElement PAD_FilterIconClick;
+
+	@FindBy(xpath = "//input[@data-primary-value='.BOL']")
+	public static WebElement BOL_DropdownFilterIconClick;
+
+	@FindBy(xpath = "//input[@data-primary-value='.BOL' and @data-target='$PpyDisplayHarness$pInboundBOLNumberList']")
+	public static WebElement BOL_DropdownFilterIconClick_DFD;
+
+	@FindBy(xpath = "//input[@data-primary-value='.BOL' and @placeholder='Select']")
+	public static WebElement PAD_BOL_DropdownFilterIconClick;
+
+	@FindBy(xpath = "//input[@data-primary-value='.BOL' and @placeholder='Select BOL']")
+	public static WebElement OnDock_BOL_DropdownFilterIconClick;
+
+	@FindBy(xpath = "(//input[@data-primary-value='.Value'])[1]")
+	public static WebElement StatusSearchFilterIconClick;
+
+	@FindBy(xpath = "//input[@data-primary-value='.DeliveryNumber']")
+	public static WebElement POD_BOL_DropdownFilterIconClick;
+
+	@FindBy(xpath = "//span[contains(text(),'Use \"')]")
+	public static WebElement BOL_Use_Click;
+
+	@FindBy(xpath = "(//a[@id='pui_filter'])[4]")
+	public static WebElement BOL_FilterIconClick;
+
+	@FindBy(xpath = "//input[@CLASS='leftJustifyStyle']")
+	public static WebElement OrderSearchBoxClick;
+
+	@FindBy(xpath = "//button[contains(text(),'Apply')]")
+	public static WebElement ApplyClick;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Status']/div/span[contains(text(),'Released')]")
+	public static WebElement status_Released;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'POD Received')]")
+	public static WebElement Order_status_PODReceived;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'POD Resubmitted')]")
+	public static WebElement status_Re_Submit;
+
+	@FindBy(xpath = "//span[contains(text(),'Released')]")
+	public static WebElement CaseStatusUI_Released;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Released')]")
+	public static WebElement OrderStatus_Released_Validation;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'POD Exception')]")
+	public static WebElement OrderStatus_PODException_Validation;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Cancelled')]")
+	public static WebElement OrderStatus_Cancelled_Validation;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Delivery Scheduled')]")
+	public static WebElement OrderStatus_DeliveryScheduled_Validation;
+
+	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Out For Delivery')]")
+	public static WebElement OrderStatus_OutForDelivery_Validation;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'POD Received')]")
+	public static WebElement status_PODReceived;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Attached?']/div/span[contains(text(),'N')]")
+	public static WebElement Attachment_No;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Attached?']/div/span[contains(text(),'Y')]")
+	public static WebElement Attachment_Yes;
+
+	@FindBy(xpath = "//h3[@class='layout-group-item-title' and contains(text(),'Add existing')]")
+	public static WebElement Add_Existing_Attachment;
+
+	@FindBy(xpath = "//td[@data-attribute-name='Count']/div/span[contains(text(),'0')]")
+	public static WebElement Count_Nil;
+
+	@FindBy(xpath = "//input[@name='$PAddRecentContent$ppyLabel']")
+	public static WebElement RichText_Name;
+
+	@FindBy(xpath = "//body[@aria-label='Enter document content.']")
+	public static WebElement RichText_ContentName;
+
+	@FindBy(xpath = "//div[@title='Add URL']")
+	public static WebElement AddURL;
+
+	@FindBy(xpath = "//div[@title='Upload local file']")
+	public static WebElement AddLocalFile;
+
+	@FindBy(xpath = "//input[@name='$PpyAttachmentPage$ppyNote']")
+	public static WebElement AddURL_Name;
+
+	@FindBy(xpath = "//div[@id='uniqueIDforMultiFilePath']/input[@name='$PpyAttachmentPage$ppxAttachName']")
+	public static WebElement SelectFile;
+
+	@FindBy(xpath = "//input[@name='$PpyAttachmentPage$ppyURL']")
+	public static WebElement AddURL_tag;
+
+	@FindBy(xpath = "//div[@string_type='label' and contains(text(),'Note')]")
+	public static WebElement Validation_Attachment_Note;
+
+	@FindBy(xpath = "//button[@name='ShowAttachmentNote_pyWorkPage_4' and contains(text(),'OK')]")
+	public static WebElement Click_Attachment_Ok;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span/a/i[@class='pi pi-paper-clip']")
+	public static WebElement Attachment_Clip;
+
+	@FindBy(xpath = "//input[@id='$PpyAttachmentPage$ppxAttachName']")
+	public static WebElement AttachFile_ApprovePOD;
+
+	@FindBy(xpath = "//button[@title='Submit']")
+	public static WebElement Attachment_Submit;
+
+	@FindBy(xpath = "//button[contains(text(),'Save')]")
+	public static WebElement Attachment_Save;
+
+	@FindBy(xpath = "//button[@title='Please Provide Valid Orders' and contains(text(),'Re-Submit')]")
+	public static WebElement Re_Submit;
+
+	@FindBy(xpath = "//table/tbody/tr/td/button[@title='Submit']")
+	public static WebElement ApprovePOD_Submit;
+
+	@FindBy(xpath = "//span[contains(text(),'No cases')]")
+	public static WebElement POD_Review_NoCases;
+
+	@FindBy(xpath = "//button[contains(text(),'Refresh ')]")
+	public static WebElement PAR_Refresh;
+
+	@FindBy(xpath = "//a[contains(text(),'Refresh')]")
+	public static WebElement PAR_OBLoads_Refresh;
+
+	@FindBy(xpath = "//td[@data-attribute-name='IB Load ID']/div/span")
+	public static WebElement IB_LoadID;
+
+	@FindBy(xpath = "//input[@name='_user']")
+	public static WebElement Roundcube_Username;
+
+	@FindBy(xpath = "//input[@name='_pass']")
+	public static WebElement Roundcube_Password;
+
+	@FindBy(id = "rcmloginsubmit")
+	public static WebElement Roundcube_Submit;
+
+//	@FindBy(xpath = "(//a/span[contains(text(),'"+ OB_LoadID_Value +"')])[1]")
+//	public static WebElement Roundcube_Mail;
+
+	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Crowley Report')]")
+	public static WebElement Switchto_CrowleyReport_Page;
+
+	@FindBy(xpath = "//button[@name='pyReportEditorHeader_pyReportContentPage_18']")
+	public static WebElement ClickReport_Actions;
+
+	@FindBy(xpath = "//span[contains(text(),'Refresh')]")
+	public static WebElement ClickReport_Refresh;
+
+	@FindBy(xpath = "(//span[@title='Close this tab'])")
+	public static WebElement Close_PARtab1;
+
+	@FindBy(xpath = "(//span[@title='Close this tab'])[2]")
+	public static WebElement Close_PARtab;
+
+	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Orders PAR')]")
+	public static WebElement switchTo_OrdersPAR;
+
+	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Orders DFD')]")
+	public static WebElement switchTo_OrdersDFD;
+
+	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Orders PAD')]")
+	public static WebElement switchTo_OrdersPAD;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span/a[contains(text(),'View')]   ")
+	public static WebElement Click_ViewDoc;
+
+	@FindBy(xpath = "//div[@class='layout-body clearfix  ']/div/div/span[contains(text(),'1')]")
+	public static WebElement View_One_Doc;
+
+	@FindBy(xpath = "//div[@class='layout-body clearfix  ']/div/div/span[contains(text(),'0')]")
+	public static WebElement View_Zero_Doc;
+
+	@FindBy(xpath = "//span[@class='supporting_text' and contains(text(),'ago')]")
+	public static WebElement View_Doc_Validation;
+
+	@FindBy(xpath = "(//span[@class='supporting_text' and contains(text(),'No items')])[1]")
+	public static WebElement No_Doc_Attached;
+
+	@FindBy(xpath = "//i[@class='pi pi-more pi-right']")
+	public static WebElement Icon_Delete_Document_Attached;
+
+	@FindBy(xpath = "(//i[@class='pi pi-more pi-right'])[1]")
+	public static WebElement PDF_Download_Icon;
+
+	@FindBy(xpath = "//span[@class='menu-item-title-wrap']/span[contains(text(),'Download')]")
+	public static WebElement Download_Doc_Attached;
+
+	// span[@class='menu-item-title-wrap']/span[contains(text(),'Download')]
+	// div[@class='ellipsis']/a[contains(text(),'pdf')]/following::span/button/i[@class='pi
+	// pi-more pi-right']
+
+	@FindBy(xpath = "//span[@class='menu-item-title-wrap']/span[contains(text(),'Delete')]")
+	public static WebElement Delete_Doc_Attached;
+
+	@FindBy(xpath = "//button[@title='Close modal']")
+	public static WebElement Close_AttachmentList_Box;
+
+//	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'"+ sendkeys +"')]")
+//	public static WebElement switchTo_OrdersPage;
+
+	@FindBy(xpath = "//span[@id='$PpyWorkPage$pDeliveryAppointmentDateSpan']/*[contains(@alt, 'Choose from calendar')]")
+	public static WebElement ClickonCalendar_DeliveryAppointment;
+
+	@FindBy(xpath = "(//*[contains(@alt, 'Choose from calendar')])[1]")
+	public static WebElement ClickonCalendar_POD_review;
+
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pOrderPage$pOutForDelivery']/following-sibling::img[@alt='Choose from calendar']")
+	public static WebElement ClickonCalendar_POD_review2;
+
+	@FindBy(xpath = "//img[@alt='Choose from calendar']")
+	public static WebElement CustomerDelivery_Calendar;
+
+	@FindBy(xpath = "//select[@name='$PpyWorkPage$pAssignedTradingPartnerName']")
+	public static WebElement Release__Carrier;
+
+	@FindBy(xpath = "//select[@name='$PpyWorkPage$pCustomerAppointmentStatus']")
+	public static WebElement CustomerAppointmentStatus;
+
+	@FindBy(xpath = "//a[contains(text(),'+ Add Accessorial')]")
+	public static WebElement Add_Accessorial;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Submit POD')]")
+	public static WebElement SubmitPOD;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Ready to Invoice')]")
+	public static WebElement ReadyToInvoice;
+
+	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Rated')]")
+	public static WebElement Rated_StatusValidation;
+
+	@FindBy(xpath = "(//span/a[contains(text(),'Edit')])[1]")
+	public static WebElement PODComplete_Edit;
+
+	@FindBy(xpath = "//select[@name='$PpyWorkPage$pOrderPage$pPODSent']")
+	public static WebElement PODComplete_Dropdown;
+
 	public void PAR_Order_Create() throws Exception {
 
 		File file = new File(System.getProperty("user.dir") + "\\PAR.json");
@@ -148,15 +1198,15 @@ public class Pom extends BaseClass {
 			ObjectNode objectNode = (ObjectNode) rootNode;
 			ObjectNode orderRefs = (ObjectNode) objectNode.get("OrderRefs");
 
-			double BOL_number = Math.ceil(Math.random() * 100000);
+			double BOL_number = Math.ceil(Math.random() * 1000000);
 			BOL_Order = Double.toString(BOL_number);
 			// BOL_Order = orderRefs.path("BOL").asText();
 			System.out.println("BOL :" + BOL_Order);
 			orderRefs.put("BOL", BOL_Order);
-			double Track_number = Math.ceil(Math.random() * 100000);
+			double Track_number = Math.ceil(Math.random() * 1000000);
 			Tracking_Number = Double.toString(Track_number);
 			orderRefs.put("TrackingNumber", Tracking_Number);
-			double Invoice_num = Math.ceil(Math.random() * 100000);
+			double Invoice_num = Math.ceil(Math.random() * 1000000);
 			Invoice_number = Double.toString(Invoice_num);
 			orderRefs.put("InvoiceNumber", Invoice_number);
 
@@ -165,15 +1215,16 @@ public class Pom extends BaseClass {
 			ATP_Id = rootNode.path("AssignedTradingPartnerID").asText();
 			System.out.println("Ass Trading Partner: " + ATP_Id);
 			String mode = rootNode.path("Mode").asText();
+		//TC77:	Verify the created order has mode as CrowleyTL
 			extentTest.log(Status.PASS, "Created order has mode as " + mode);
 			String paymentTerm = rootNode.path("PaymentTerm").asText();
 			extentTest.log(Status.PASS, "Created order has Payment Term as " + paymentTerm);
-           
+
 			PO_Number = rootNode.path("OrderRefs").path("PONumber").asText();
 			// Retrieve the CompanyName from OrderOrigin
 			Pickup_Number = rootNode.path("OrderRefs").path("PickupNumber").asText();
 			Delivery_Number = rootNode.path("OrderRefs").path("DeliveryNumber").asText();
-			
+
 			Origin_CompanyName = rootNode.path("OrderOrigin").path("CompanyName").asText();
 			Origin_Address1 = rootNode.path("OrderOrigin").path("Address1").asText();
 			Origin_City = rootNode.path("OrderOrigin").path("City").asText();
@@ -233,10 +1284,10 @@ public class Pom extends BaseClass {
 			// Convert the modified JsonNode back to a pretty-printed string
 			prettyString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(objectNode);
 
-		RestAssured.baseURI = "https://epicuatlb.estes-express.com";
+			RestAssured.baseURI = "https://epicuatlb.estes-express.com";
 
 			// PROD URL
-	//		 RestAssured.baseURI = "https://epic.estes-express.com";
+			// RestAssured.baseURI = "https://epic.estes-express.com";
 			Response response = RestAssured.given().auth().basic("EpicSevicesTest1", "Rules@1234") // Change password
 					.contentType("application/json").body(prettyString)
 					.post("/prweb/api/OrderServicePackage/V1/CreateOrUpdateOrder");
@@ -252,7 +1303,8 @@ public class Pom extends BaseClass {
 			System.out.println("Total Item Weight: " + totalWeight);
 			System.out.println("Handling Unit Count: " + handlingUnitCount);
 
-			extentTest.log(Status.PASS, "Created a PAR Order using JSON : " + OrderID);
+			// TC01: Verify whether the user can create a PAR case using JSON.
+			extentTest.log(Status.PASS, "User can create a PAR case using JSON : " + OrderID);
 			extentTest.log(Status.PASS, "BOL of the created order : " + BOL_Order);
 			extentTest.log(Status.PASS, "Case is created using " + mode + " as Mode");
 			extentTest.log(Status.PASS, "Case is created using " + paymentTerm + " as Payment Term");
@@ -265,7 +1317,7 @@ public class Pom extends BaseClass {
 		try {
 
 			// PROD URL
-		//	 RestAssured.baseURI = "https://epic.estes-express.com";
+			// RestAssured.baseURI = "https://epic.estes-express.com";
 
 			// Re-sending the same JSON structure to the endpoint
 			RestAssured.baseURI = "https://epicuatlb.estes-express.com"; // or prod URL
@@ -293,66 +1345,64 @@ public class Pom extends BaseClass {
 			extentTest.log(Status.FAIL, "Error while re-sending the order: " + e.getMessage());
 		}
 	}
-	
+
 	public void Resend_With_Modified_JSON() {
-	    try {
-	        // JSON file path
-	        String filePath = "C:\\Users\\PALANGA\\eclipse-workspace\\EL2-Automation\\PAR_Accessorial_Update.json";
+		try {
+			// JSON file path
+			String filePath = "C:\\Users\\PALANGA\\eclipse-workspace\\EL2-Automation\\PAR_Accessorial_Update.json";
 
-	        // Read JSON file into a String
-	        String jsonContent = new String(Files.readAllBytes(Paths.get(filePath)));
+			// Read JSON file into a String
+			String jsonContent = new String(Files.readAllBytes(Paths.get(filePath)));
 
-	        // Convert to JSONObject for modification
-	        JSONObject jsonObject = new JSONObject(jsonContent);
-	    
-	        // Update values in the JSON object
-	        jsonObject.getJSONObject("OrderRefs").put("BOL", BOL_Order);
-	        jsonObject.getJSONObject("OrderRefs").put("TrackingNumber", Tracking_Number);
-	        jsonObject.getJSONObject("OrderRefs").put("InvoiceNumber", Invoice_number);
+			// Convert to JSONObject for modification
+			JSONObject jsonObject = new JSONObject(jsonContent);
 
-	        // Extract the AccessorialItemList array
-            JSONArray accessorialList = jsonObject.getJSONArray("AccessorialItemList");
+			// Update values in the JSON object
+			jsonObject.getJSONObject("OrderRefs").put("BOL", BOL_Order);
+			jsonObject.getJSONObject("OrderRefs").put("TrackingNumber", Tracking_Number);
+			jsonObject.getJSONObject("OrderRefs").put("InvoiceNumber", Invoice_number);
 
-            // Get the third accessorial item (index 2 since it's zero-based)
-            if (accessorialList.length() >= 3) {
-                JSONObject thirdAccessorial = accessorialList.getJSONObject(2);
-                String accessorialCode = thirdAccessorial.getString("AccessorialCode");
-                String accessorialLocation = thirdAccessorial.getString("AccessorialLocation");
-                expectedAccessorialCodes.add(accessorialCode);
-                expectedAccessorialLocation.add(accessorialLocation);
-            }
-            
-	        // Set the Base URI
-	        RestAssured.baseURI = "https://epicuatlb.estes-express.com"; // or prod URL
+			// Extract the AccessorialItemList array
+			JSONArray accessorialList = jsonObject.getJSONArray("AccessorialItemList");
 
-	        // Send the updated JSON
-	        Response response = RestAssured.given()
-	                .auth().basic("EpicSevicesTest1", "Rules@1234")
-	                .contentType(ContentType.JSON)
-	                .body(jsonObject.toString()) // Send modified JSON
-	                .post("/prweb/api/OrderServicePackage/V1/CreateOrUpdateOrder");
+			// Get the third accessorial item (index 2 since it's zero-based)
+			if (accessorialList.length() >= 3) {
+				JSONObject thirdAccessorial = accessorialList.getJSONObject(2);
+				String accessorialCode = thirdAccessorial.getString("AccessorialCode");
+				String accessorialLocation = thirdAccessorial.getString("AccessorialLocation");
+				expectedAccessorialCodes.add(accessorialCode);
+				expectedAccessorialLocation.add(accessorialLocation);
+			}
 
-	        // Log response
-	        String responseBody = response.getBody().asString();
-	        System.out.println("Modified JSON Sent: " + jsonObject.toString());
-	        System.out.println("Response Body: " + responseBody);
+			// Set the Base URI
+			RestAssured.baseURI = "https://epicuatlb.estes-express.com"; // or prod URL
 
-	        // Extract Order ID from response
-	        String[] split = responseBody.split("Reference ");
-	        String OrderID = split.length > 1 ? split[1] : "Not Found";
-	        System.out.println("Re-sent OrderID: " + OrderID);
+			// Send the updated JSON
+			Response response = RestAssured.given().auth().basic("EpicSevicesTest1", "Rules@1234")
+					.contentType(ContentType.JSON).body(jsonObject.toString()) // Send modified JSON
+					.post("/prweb/api/OrderServicePackage/V1/CreateOrUpdateOrder");
 
-	        int statusCode = response.getStatusCode();
-	        System.out.println("Status Code: " + statusCode);
+			// Log response
+			String responseBody = response.getBody().asString();
+			System.out.println("Modified JSON Sent: " + jsonObject.toString());
+			System.out.println("Response Body: " + responseBody);
 
-	        // Log the results
-	        extentTest.log(Status.PASS, "Re-sent Order with modified JSON at path : " + OrderID);
-	        extentTest.log(Status.PASS, "BOL of the re-sent order : " + BOL_Order);
+			// Extract Order ID from response
+			String[] split = responseBody.split("Reference ");
+			String OrderID = split.length > 1 ? split[1] : "Not Found";
+			System.out.println("Re-sent OrderID: " + OrderID);
 
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	        extentTest.log(Status.FAIL, "Error while re-sending the order: " + e.getMessage());
-	    }
+			int statusCode = response.getStatusCode();
+			System.out.println("Status Code: " + statusCode);
+
+			// Log the results
+			extentTest.log(Status.PASS, "Re-sent Order with modified JSON at path : " + OrderID);
+			extentTest.log(Status.PASS, "BOL of the re-sent order : " + BOL_Order);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			extentTest.log(Status.FAIL, "Error while re-sending the order: " + e.getMessage());
+		}
 	}
 
 	public void DFD_NewOrder() throws Exception {
@@ -510,7 +1560,8 @@ public class Pom extends BaseClass {
 		statusUpdateFile = new File(System.getProperty("user.dir") + "\\PAR_ShortageStatusUpdate.Json");
 		ObjectMapper objectMapper = new ObjectMapper();
 		updateStatusWithOrderID(BOL_Order, Invoice_number, objectMapper, ATP_Id, RTP_Id);
-		extentTest.log(Status.PASS, "BOL, Invoice number and trading partners are updated for Shortage Status update API");
+		extentTest.log(Status.PASS,
+				"BOL, Invoice number and trading partners are updated for Shortage Status update API");
 	}
 
 	public void Status_File_Overage() throws Exception {
@@ -518,12 +1569,14 @@ public class Pom extends BaseClass {
 		statusUpdateFile = new File(System.getProperty("user.dir") + "\\PAR_OverageStatusUpdate.Json");
 		ObjectMapper objectMapper = new ObjectMapper();
 		updateStatusWithOrderID(BOL_Order, Invoice_number, objectMapper, ATP_Id, RTP_Id);
-		extentTest.log(Status.PASS, "BOL, Invoice number and trading partners are updated for Overage Status update API");
+		extentTest.log(Status.PASS,
+				"BOL, Invoice number and trading partners are updated for Overage Status update API");
 	}
 
 	public static String updatedStatusJson = "";
 
-	public void updateStatusWithOrderID(String BOL_Order, String Invoice_number, ObjectMapper objectMapper, String ATP_Id, String RTP_Id) throws Exception {
+	public void updateStatusWithOrderID(String BOL_Order, String Invoice_number, ObjectMapper objectMapper,
+			String ATP_Id, String RTP_Id) throws Exception {
 
 		JsonNode statusNode = objectMapper.readTree(statusUpdateFile);
 
@@ -537,7 +1590,7 @@ public class Pom extends BaseClass {
 				orderRefsObjectNode.put("InvoiceNumber", Invoice_number);
 			}
 			statusObjectNode.put("AssignedTradingPartnerID", ATP_Id);
-	        statusObjectNode.put("RequestingTradingPartnerID", RTP_Id);
+			statusObjectNode.put("RequestingTradingPartnerID", RTP_Id);
 			// Convert the modified JsonNode back to a pretty-printed string
 			updatedStatusJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(statusObjectNode);
 			System.out.println(updatedStatusJson);
@@ -554,7 +1607,7 @@ public class Pom extends BaseClass {
 		ClickonRecentsIcon.click();
 		Await();
 		UpdateStatus();
-	//	DevStudioSearchBox1();
+		// DevStudioSearchBox1();
 		Await();
 		orderService_Actions();
 		RadioSelect();
@@ -573,7 +1626,7 @@ public class Pom extends BaseClass {
 		driver.switchTo().defaultContent();
 		frameswitch2();
 	}
-	
+
 	public void ActionsPage() throws Exception {
 		Await();
 		driver.switchTo().defaultContent();
@@ -605,8 +1658,8 @@ public class Pom extends BaseClass {
 		driver.switchTo().window(tab5.get(0));
 		Await();
 		Await();
-		DevStudioSearchBox1();
-		Await();
+		ClickonRecentsIcon.click();
+		UpdateStatus();
 		orderService_Actions();
 		RadioSelect();
 		ClickExecute();
@@ -618,6 +1671,7 @@ public class Pom extends BaseClass {
 	}
 
 	public void OutboundLoads() {
+		driver.switchTo().defaultContent();
 		frameSwitch();
 		OutBound_Loads.click();
 	}
@@ -631,7 +1685,10 @@ public class Pom extends BaseClass {
 		Await();
 		BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
 		Await();
-		ClickPARCaseID.click();
+		Await();
+		Await();
+		scrollToElementAndClick(driver, ClickPARCaseID);
+	//	ClickPARCaseID.click();
 		Await();
 		driver.switchTo().defaultContent();
 		frameswitch2();
@@ -1061,8 +2118,7 @@ public class Pom extends BaseClass {
 			System.out.println("XML file updated with UDOLEGID attribute name as : " + OrderID);
 			System.out.println("XML updated for Arrived at pickup status with 7, 2, 2, 3 combination successfully");
 			// Log the update
-			extentTest.log(Status.PASS,
-					"XML has the combination of CMD as 7, S Type as 2, J Type as 2, Status as 3");
+			extentTest.log(Status.PASS, "XML has the combination of CMD as 7, S Type as 2, J Type as 2, Status as 3");
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -1146,8 +2202,7 @@ public class Pom extends BaseClass {
 		transformer.transform(source, result);
 
 		System.out.println("XML updated for Arrived at consignee status with 7, 4, 3, 3 combination successfully");
-		extentTest.log(Status.PASS,
-				"XML has the combination of CMD as 7, S Type as 4, J Type as 3, Status as 3");
+		extentTest.log(Status.PASS, "XML has the combination of CMD as 7, S Type as 4, J Type as 3, Status as 3");
 
 	}
 
@@ -1318,7 +2373,7 @@ public class Pom extends BaseClass {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void POD_Signature_XML_Write() {
 		try {
 			// Load the XML document
@@ -1332,16 +2387,16 @@ public class Pom extends BaseClass {
 
 			// Update the TStamp attribute to the current date
 			NodeList extensionNodes = doc.getElementsByTagName("Extension");
-			
+
 			for (int i = 0; i < extensionNodes.getLength(); i++) {
-			    Element extElement = (Element) extensionNodes.item(i);
-			    String nameAttr = extElement.getAttribute("Name");
-			    if ("UDOLEGID".equals(nameAttr)) {
-			        extElement.setAttribute("Value", OrderID);  
-			        extentTest.log(Status.PASS, "Updated UDOLEGID Value in PAD Inbound XML to: " + OrderID);
-			    }
+				Element extElement = (Element) extensionNodes.item(i);
+				String nameAttr = extElement.getAttribute("Name");
+				if ("UDOLEGID".equals(nameAttr)) {
+					extElement.setAttribute("Value", OrderID);
+					extentTest.log(Status.PASS, "Updated UDOLEGID Value in PAD Inbound XML to: " + OrderID);
+				}
 			}
-			
+
 			extentTest.log(Status.PASS, "Updated udolegid in PAD Inbound XML");
 			// Write the updated document back to the same file
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -1364,1069 +2419,37 @@ public class Pom extends BaseClass {
 			e.printStackTrace();
 		}
 	}
-	
-	@FindBy(xpath = "//div[@title='Recents']/h3/i")
-	public static WebElement ClickonRecentsIcon;
-	
-	@FindBy(xpath = "//div[@title='Data types']/h3/i")
-	public static WebElement ClickonDatatypesIcon;
 
-	@FindBy(xpath = "//a[@aria-label='menu Route']")
-	public static WebElement Clickon_Route_Datatype;
-
-	@FindBy(xpath = "//a[@aria-label='menu Stop']")
-	public static WebElement Clickon_Stop_Datatype;
-
-	@FindBy(xpath = "//a[@aria-label='menu Order']")
-	public static WebElement Clickon_Order_Datatype;
-
-	@FindBy(xpath = "//a[@aria-label='menu Requested Accessorial']")
-	public static WebElement Clickon_RequestedAccessorial_Datatype;
-
-	@FindBy(xpath = "//a[@aria-label='menu Status']")
-	public static WebElement Clickon_Status_Datatype;
-
-	@FindBy(xpath = "//a[@aria-label='menu Rate']")
-	public static WebElement Clickon_Rate_Datatype;
-
-	@FindBy(xpath = "//div[@class='header']/h3[contains(text(),'Records')]")
-	public static WebElement Clickon_Datatype_Records;
-
-	@FindBy(xpath = "(//div[@class='header']/h3[contains(text(),'Records')])[2]")
-	public static WebElement Clickon_Datatype_Records2;
-
-	@FindBy(xpath = "//div[@class='field-item dataValueWrite']/span/input[@class='leftJustifyStyle' and @placeholder='Search...']")
-	public static WebElement Clickon_Datatype_Records_Search;
-
-	@FindBy(xpath = "//i[@class='pi pi-search']")
-	public static WebElement Clickon_Datatype_Records_SearchIcon;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Route Status']/div[contains(text(),' In Progress')]")
-	public static WebElement Route_Status_Validation;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Globally unique ID (required)']/div")
-	public static WebElement Route_GloballyUniqueID;
-	
-	@FindBy(xpath = "//span[contains(text(), 'Order BOL')]/following-sibling::div[1]/span")
-	public static WebElement PODReview_BOL;
-	
-	@FindBy(xpath="//span[contains(text(),'Inbound Load ID')]/following-sibling::div/span")
-	public static WebElement PODReview_IBLoadID;
-	
-	@FindBy(xpath="//span[contains(text(),'Inbound Trailer')]/following-sibling::div/span")
-	public static WebElement PODReview_IBTrailer;
-	
-	@FindBy(xpath="//span[contains(text(),'Outbound Load ID')]/following-sibling::div/span")
-	public static WebElement PODReview_OBLoadID;
-	
-	@FindBy(xpath="//span[contains(text(),'Total Weight')]/following-sibling::div/span")
-	public static WebElement PODReview_TotalWt;
-	
-	@FindBy(xpath="//span[contains(text(),'Total Weight')]/following-sibling::div/span")
-	public static WebElement PODReview_TotalHU;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Stop ID']/div)[1]")
-	public static WebElement Datatype_StopID;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Route Status']/div")
-	public static WebElement RouteStatus_Complete;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Stop Status']/div)[1]")
-	public static WebElement Stop_Status_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='ReceivedDate']/div)[1]")
-	public static WebElement Received_Date_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='TrackingNumber']/div)[1]")
-	public static WebElement TrackingNumber_Validation;
-	
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='PickupNumber']/div)[1]")
-	public static WebElement PickupNumber_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='InvoiceNumber']/div)[1]")
-	public static WebElement InvoiceNumber_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='PONumber']/div)[1]")
-	public static WebElement PONumber_Validation;
-	
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='DeliveryNumber']/div)[1]")
-	public static WebElement DeliveryNumber_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Company']/div)[1]")
-	public static WebElement Origin_Company_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Address 1']/div)[1]")
-	public static WebElement Origin_Address1_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin City']/div)[1]")
-	public static WebElement Origin_City_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin State']/div)[1]")
-	public static WebElement Origin_State_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Postal Code']/div)[1]")
-	public static WebElement Origin_PostalCode_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Country']/div)[1]")
-	public static WebElement Origin_Country_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='OriginPhoneNumber']/div)[1]")
-	public static WebElement Origin_PhoneNumber_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Origin Contact Name']/div)[1]")
-	public static WebElement Origin_ContactName_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Company']/div)[1]")
-	public static WebElement Destination_Company_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Address 1']/div)[1]")
-	public static WebElement Destination_Address1_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination City']/div)[1]")
-	public static WebElement Destination_City_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination State']/div)[1]")
-	public static WebElement Destination_State_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Postal Code']/div)[1]")
-	public static WebElement Destination_PostalCode_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Country']/div)[1]")
-	public static WebElement Destination_Country_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='DestinationPhoneNumber']/div)[1]")
-	public static WebElement Destination_PhoneNumber_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Destination Contact Name']/div)[1]")
-	public static WebElement Destination_ContactName_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='BOL']/div)[1]")
-	public static WebElement BOL_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Actual Delivery Date']/div)[1]")
-	public static WebElement ActualDelivery_Date_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='ArrivedAtPickup']/div)[1]")
-	public static WebElement ArrivedAtPickup_Date_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='OutForDelivery']/div)[1]")
-	public static WebElement OutForDelivery_Date_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='ArrivedAtConsignee']/div)[1]")
-	public static WebElement ArrivedAtConsignee_Date_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Actual Delivery Date']/div)[1]")
-	public static WebElement ActualDeliveryDate_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='LineHaulComplete']/div)[1]")
-	public static WebElement Delivered_Date_Validation;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Accessorial Code']/div")
-	public static List<WebElement> AccessorialCode_ValidationList;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='AccessorialLocation']/div")
-	public static List<WebElement> AccessorialLocation_ValidationList;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Status Event']/div)")
-	public static List<WebElement> StatusEvent_Data;
-
-	@FindBy(xpath = "//span[contains(text(), 'pyWorkPage (ESTES-EL2-EPIC-Work-PickupAndRelease)')]")
-	public static WebElement ClickonpyworkPage;
-
-	@FindBy(xpath = "//span[contains(text(), 'pyWorkPage (ESTES-EL2-EPIC-Work-DropForDelivery)')]")
-	public static WebElement ClickonpyworkPage_DFD;
-
-	@FindBy(xpath = "//span[contains(text(), 'pyWorkPage (ESTES-EL2-EPIC-Work-PickupAndDelivery)')]")
-	public static WebElement ClickonpyworkPage_PAD;
-
-	@FindBy(xpath = "(//span[contains(text(), 'pyWorkPage')])[1]/ancestor::li[2]/ul/li/div/div[1]")
-	public static WebElement ExpandpyworkPage;
-
-	@FindBy(xpath = "//span[contains(text(), 'OrderPage')]")
-	public static WebElement ClickonOrderpageinCipboard;
-
-	@FindBy(xpath = "((//span[contains(text(), 'OrderPage')])[1]/ancestor::li)[3]/ul/li/div/div/a")
-	public static WebElement ExpandOrderPageinClipboard;
-	
-	@FindBy(xpath = "(//table[@id='gridLayoutTable']/tbody/tr/td[2]/div/table/tbody/tr[2]/td/div/span/label/span[contains(text(),'pyID')]/ancestor::td/following-sibling::td)[1]//input")
-	public static WebElement pyIDTextBox;
-	
-	@FindBy(xpath = "(//table[@id='gridLayoutTable']/tbody/tr/td[2]/div/table/tbody/tr[3]/td/div/span/label/span[contains(text(),'PODConfirmNumber')]/ancestor::td/following-sibling::td)[1]//input")
-	public static WebElement PODConfirmNum_TextBox;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'LoadedDate')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPageStatusEvent;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusEvent')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPage_StatusEvent;
-
-	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusEvent')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
-	public static WebElement OrderPage_StatusEvent1;
-
-	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'RequiredStatus')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
-	public static WebElement pyWorkpage_RequiredStatus;
-
-	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusEventDateTime')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
-	public static WebElement OrderPage_StatusEvent_DateTime;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'ReceivedDate')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPage_ReceivedDate;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Received Date']")
-	public static WebElement OrderPAR_ReceivedDate;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'RequiredStatus')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPage_RequiredStatus;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'ArrivedAtPickup')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPage_ArrivedAtPickup;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'OutForDelivery')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPage_OutForDelivery;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'StatusUpdateToScanTool')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement StatusUpdatetoScanTool_Validation;
-
-	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'AccessorialCode')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
-	public static WebElement AccessorialCode;
-
-	@FindBy(xpath = "(//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'AccessorialLocation')]/ancestor::td/following-sibling::td[1]/div/span)[1]")
-	public static WebElement AccessorialLocation;
-
-	@FindBy(xpath = "((//span[contains(text(), 'ShipmentList')]/ancestor::li)[4]//ul//li//div//div)[1]")
-	public static WebElement ExpandShipmentinCLipboard;
-
-	@FindBy(xpath = "((//span[contains(text(), 'AccessorialItemList')]/ancestor::li)[4]//ul//li//div//div)[1]")
-	public static WebElement ExpandAccessorialinCLipboard;
-
-	@FindBy(xpath = "//span[contains(text(), 'AccessorialItemList(1)')]")
-	public static WebElement ClickAccessorial1inCLipboard;
-
-	@FindBy(xpath = "//span[contains(text(), 'AccessorialItemList(2)')]")
-	public static WebElement ClickAccessorial2inCLipboard;
-	
-	@FindBy(xpath = "//span[contains(text(), 'AccessorialItemList(3)')]")
-	public static WebElement ClickAccessorial3inCLipboard;
-
-	@FindBy(xpath = "//span[contains(text(), 'ShipmentList(2)')]")
-	public static WebElement ClickonShipment2inCLipboard;
-
-	@FindBy(xpath = "//table[@role='presentation']/tbody/tr/td/nobr/span/a[contains(text(),'PickupNumber')]/ancestor::td/following-sibling::td[1]/div/span")
-	public static WebElement OrderPage_PickupNumber;
-
-	@FindBy(id = "loginText2")
-	public static WebElement ssoLogin;
-
-	@FindBy(className = "table-row")
-	public static WebElement code;
-
-	@FindBy(id = "idTxtBx_SAOTCC_OTC")
-	public static WebElement send;
-
-	@FindBy(id = "idSubmit_SAOTCC_Continue")
-	public static WebElement click;
-
-	@FindBy(xpath = "//div[contains(@class,'launch-portals')]/descendant::a")
-	public static WebElement LaunchPortal;
-
-	@FindBy(xpath = "//span[contains(text(),'WareHouse UserPortal')]")
-	public static WebElement warehouse;
-
-	@FindBy(xpath = "//li[@title='Orders PAR']")
-	public static WebElement OrdersPAR;
-	
-	@FindBy(xpath = "//li[@title='Crowley On Dock']")
-	public static WebElement OrdersOnDock;
-	
-	@FindBy(xpath = "//li[@title='Attach POD for CrowleyTL']")
-	public static WebElement CrowleyTLPOD;
-	
-	@FindBy(xpath = "//input[@placeholder='Enter IB Load ID']")
-	public static WebElement EnterIBLoadID;
-	
-	@FindBy(xpath = "//button[contains(text(),'Search')]")
-	public static WebElement Search_IBLoadID;
-	
-	@FindBy(xpath = "//button[@name='ProcessCancellationRequestForCrowleyTL_pyDisplayHarness_45']")
-	public static WebElement ConfirmStatus_Submit;
-
-	@FindBy(xpath = "(//span[@role='presentation' and @class='menu-item-icon-imageclass pi pi-clipboard-content-icon'])[1]")
-	public static WebElement Reports;
-
-	@FindBy(xpath = "//button[@name='pyReportBrowserHeaderReports_pyDisplayHarness_']")
-	public static WebElement Reports_MovetoActions;
-
-	@FindBy(xpath = "//span[@title='Crowley Report'][1]")
-	public static WebElement Click_CrowleyReports;
-
-	@FindBy(xpath = "(//a[@id='pui_colmenu'])[1]")
-	public static WebElement Report_CaseIDFilterIcon;
-
-	@FindBy(xpath = "//span[contains(text(),'Filter')]")
-	public static WebElement Report_Click_CaseIDFilter;
-	
-	@FindBy(xpath = "(//span[contains(text(),'Filter')])[3]")
-	public static WebElement Report_Click_CaseIDFilter1;
-
-	@FindBy(xpath = "(//input[@class='leftJustifyStyle'])[2]")
-	public static WebElement Report_Click_SearchTextFilter;
-
-	@FindBy(xpath = "//span[contains(text(),'Filter')]")
-	public static WebElement Report_Click_Filter_Apply;
-
-	@FindBy(xpath = "//iframe[@name='PegaGadget0Ifr']")
-	public static WebElement frameName;
-
-	@FindBy(xpath = "(//input[@name='$PpySimulationDataPage$ppyHTTPMethod'])[2]")
-	public static WebElement RadioButton_POST;
-
-	@FindBy(xpath = "//h3[contains(text(),'OS&D')]")
-	public static WebElement OSD;
-
-	@FindBy(xpath = "//h1[contains(text(),'Crowley On Dock')]")
-	public static WebElement CrowleyOnDock_Header;	
-	
-	@FindBy(xpath = "//h3[contains(text(),'Inbound Trailer')]")
-	public static WebElement InboundTrailer;
-
-	@FindBy(xpath = "//h3[contains(text(),'Outbound Loads')]")
-	public static WebElement OutboundLoads;
-
-	@FindBy(xpath = "//th[@aria-label='Order ID']/div/span/a")
-	public static WebElement OrderFilter;
-
-	@FindBy(xpath = "//h3[@class='layout-group-item-title' and contains(text(),'POD Review')]")
-	public static WebElement PODReview_Workpage;
-
-	@FindBy(xpath = "//h3[@class='layout-group-item-title' and contains(text(),'Rate Review')]")
-	public static WebElement RateReview_Workpage;
-
-	@FindBy(xpath = "(//input[@type='checkbox'])[2]")
-	public static WebElement CheckBox_Click;
-
-	@FindBy(xpath = "//button[contains(text(),'Submit 210')]")
-	public static WebElement Submit210_Click;
-	
-	@FindBy(xpath = "//button[contains(text(),'Confirm Paid')]")
-	public static WebElement ConfirmPaid_Click;
-	
-	@FindBy(xpath = "//button[contains(text(),'Generate Invoice')]")
-	public static WebElement GenerateInvoice_Click;
-
-	@FindBy(xpath = "//button[contains(text(),'Assign Carrier')]")
-	public static WebElement Assign_Carrier_Click;
-
-	@FindBy(xpath = "//button[contains(text(),'Assign OB Trailer')]")
-	public static WebElement Assign_OBTrailer_Click;
-
-	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pPickupNumber']")
-	public static WebElement TrailerNumber_Click;
-
-	@FindBy(xpath = "//button[@title='Loaded']")
-	public static WebElement Loaded_Button;
-	
-	@FindBy(xpath = "//button[contains(text(),'Confirm Unload')]")
-	public static WebElement ConfirmUnload_Button;
-	
-	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")
-	public static WebElement ConfirmReleased_Button;
-	
-	@FindBy(xpath = "//td[@data-attribute-name='Loaded Date']")
-	public static WebElement loadedDateElement;
-	
-	@FindBy(xpath = "//td[@data-attribute-name='Outbound Trailer']")
-	public static WebElement OutboundTrailerElement;
-	
-	@FindBy(xpath = "//button[contains(text(),'Unload')]")
-	public static WebElement Unload_Button;
-	
-	@FindBy(xpath = "//button[contains(text(),'Released')]")
-	public static WebElement Released_Button;
-
-	@FindBy(xpath = "//button[contains(text(), '  Assign Carrier ')]")
-	public static WebElement Click_AssignCarrier_Popup;
-
-	@FindBy(xpath = "//span[contains(text(), 'USKO Logistics')]")
-	public static WebElement AssignCarrier_Validation;
-
-	@FindBy(xpath = "(//div[@id='gridBody_right']/table/tbody/tr/td/div/span)[1]")
-	public static WebElement ResolvePAROrder_CaseID;
-
-	@FindBy(xpath = "(//div[@id='gridBody_right']/table/tbody/tr/td/div/span)[2]")
-	public static WebElement ResolvePAROrder_BOL;
-
-	@FindBy(xpath = "(//div[@id='gridBody_right']/table/tbody/tr/td/div/span)[3]")
-	public static WebElement ResolvePAROrder_InvoiceNumber;
-
-	@FindBy(xpath = "//button[contains(text(),'Approve POD')]")
-	public static WebElement Approve_POD_Click;
-
-	@FindBy(xpath = "//div[contains(text(),'case type does not yet have any fields')]")
-	public static WebElement TextMessage_CompletedUI;
-	
-	@FindBy(xpath = "//span[@id='ERRORMESSAGES_ALL']//li")
-	public static WebElement ErrorMessage_ApprovePOD;
-	
-	@FindBy(xpath = "//button[contains(text(),'Receive Order')]")
-	public static WebElement ReceiveOrder_Click;
-	
-	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")
-	public static WebElement Button_Receive;
-
-	@FindBy(xpath = "//button[contains(text(),'Attach POD')]")
-	public static WebElement Attach_POD_Click;
-	
-    @FindBy(xpath = "//input[@name='$PpyAttachmentPage$ppxAttachName']")
-    public static WebElement AttachFile_POD;
-    
-    @FindBy(xpath = "//input[@name='$PpxRequestor$ppyFileUpload']")
-    public static WebElement ChooseFile_BulkAccessorial;
-    
-    @FindBy(xpath = "//span/button[contains(text(),'Update Accessorial')]")
-    public static WebElement ChooseFile_UpdateAccessorial;
-    
-    @FindBy(xpath = "//span/button[contains(text(),'Complete Update')]")
-    public static WebElement CompleteUpdate;
-	
-	@FindBy(xpath = "//div/div[contains(text(),'Total BOL:')]")
-	public static WebElement Text_TotalBOL;
-
-	@FindBy(xpath = "//div/div[contains(text(),'Total Weight:')]")
-	public static WebElement Text_TotalWeight;
-
-	@FindBy(xpath = "//div/div[contains(text(),'Total Pieces:')]")
-	public static WebElement Text_TotalPieces;
-
-	@FindBy(xpath = "//*[contains(text(),'Attachment and Req Status')]")
-	public static WebElement ReSubmit_ErrorMessage_Element;
-
-	@FindBy(xpath = "//button[contains(text(),'Re-Submit POD')]")
-	public static WebElement Re_Submit_POD_Click;
-	
-	@FindBy(xpath = "//button[contains(text(),'Upload Accessorials')]")
-	public static WebElement UploadAccessorials_Click;
-
-	@FindBy(xpath = "//button[contains(text(),'Submit')]")
-	public static WebElement ResolvePAROrder_Submit;
-
-	@FindBy(xpath = "(//input[@CLASS='multiselect-list'])[2]")
-	public static WebElement OrderSearch_Filer;
-
-	@FindBy(xpath = "(//a[@id='pui_filter'])[1]")
-	public static WebElement Order_Search_Filter;
-
-	@FindBy(xpath = "(//a[@id='pui_filter'])[2]")
-	public static WebElement PODReview_BOL_Filter;
-
-	@FindBy(xpath = "(//span/a[contains(text(),'PAR')])[1]")
-	public static WebElement PAR_Order_OSnD;
-
-	@FindBy(xpath = "//div[@class='content-inner ']/div/span/input[@type='text']")
-	public static WebElement OrderSearch_Filter;
-
-	@FindBy(xpath = "(//input[@type='checkbox' and contains(@name,'Inbound')])[21]")
-	public static WebElement FilterCheckBox;
-
-	@FindBy(xpath = "(//button[@class='pzhc pzbutton'])[1]")
-	public static WebElement OrderFilterApply;
-
-	@FindBy(xpath = "//a[contains(text(),'Refresh ')]")
-	public static WebElement Order_Tab_Refresh;
-	
-	@FindBy(xpath = "//div[@id='PEGA_GRID_SKIN']//a[contains(text(),'Refresh')]")
-	public static WebElement RateReview_Refresh;
-
-	@FindBy(xpath = "//a[contains(text(), 'DFD')]")
-	public static WebElement ClickDFDCaseID;
-
-	@FindBy(xpath = "//a[contains(text(), 'PAD')]")
-	public static WebElement ClickPADCaseID;
-                                                                          
-	@FindBy(xpath = "//a[contains(text(), 'PAR')]")
-	public static WebElement ClickPARCaseID;
-
-	@FindBy(xpath = "//button[contains(text(),'Go')]")
-	public static WebElement OutboundLoads_Go;
-
-	@FindBy(xpath = "//h3[contains(text(),'Outbound Loads')]")
-	public static WebElement OutBound_Loads;
-
-	@FindBy(xpath = "//iframe[@name='PegaGadget1Ifr']")
-	public static WebElement frameName2;
-
-	@FindBy(xpath = "//iframe[@name='PegaGadget2Ifr']")
-	public static WebElement frameName3;
-
-	@FindBy(xpath = "//iframe[@name='PegaGadget3Ifr']")
-	public static WebElement CrowleyReport_Frame;
-	
-	@FindBy(xpath = "//div/span[contains(text(),'Note: Case has been invoiced')]")
-	public static WebElement Invoiced_Note;
-
-	@FindBy(xpath = "//span[contains(text(),'Arrived at Terminal')]")
-	public static WebElement ArrivedAtTerminal;
-	
-	@FindBy(xpath = "//label[contains(normalize-space(.),'Status')]/ancestor::div[1]//span[contains(text(),'210 Submitted')]")
-	public static WebElement Submitted210_Status;
-
-	@FindBy(xpath = "//span[contains(text(),'FNB')]")
-	public static WebElement FNB_Status;
-
-	@FindBy(xpath = "//span[contains(text(),'BNF')]")
-	public static WebElement BNF_Status;
-
-	@FindBy(xpath = "//span[contains(text(),'NBNF')]")
-	public static WebElement NBNF_Status;
-
-	@FindBy(xpath = "//span[contains(text(),'Shortage')]")
-	public static WebElement Shortage_Status;
-
-	@FindBy(xpath = "//span[contains(text(),'Freight not on Bill')]")
-	public static WebElement Overage_Status;
-	
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pOrderPage$pShipmentList$l2$pPickupNumber')]")
-	public static WebElement Outbound_trailer_outboundLoads_Status;
-
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pStatusEvent')]")
-	public static WebElement Inbound_trailer_outboundLoads_Status;
-	
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pOrderPage$pShipmentList$l2$pAssignedTradingPartnerName')]")
-	public static WebElement Outbound_carrier_outboundLoads_Status;
-	
-	@FindBy(xpath = "//*[contains(@name, '$PpyDisplayHarness$pRateRequestingTPID')]")
-	public static WebElement RateReview_Shipper;
-
-	@FindBy(xpath = "//*[contains(@name, '$PpyDisplayHarness$pAssignedTradingPartnerName')]")
-	public static WebElement Assign_OutboundCarrier;
-
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pCustomerAppointmentStatus')]")
-	public static WebElement CustomerAppointment_Status;
-
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pDeliveryStatus')]")
-	public static WebElement CustomerDelivery_Status;
-	
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pAccessorialLocation')]")
-	public static WebElement AccessorialLocation_Dropdown;
-	
-	@FindBy(xpath = "//*[contains(@name, '$PpyWorkPage$pAccessorialCode')]")
-	public static WebElement AccessorialCode_Dropdown;
-
-	@FindBy(xpath = "//*[contains(@alt, 'Choose from calendar')]")
-	public static WebElement ClickonCalendar;
-
-	@FindBy(xpath = "//a[@id='todayLink']")
-	public static WebElement ClickonTodayDate;
-
-	@FindBy(xpath = "//a[@id='applyLink']")
-	public static WebElement ClickOnApply;
-
-	@FindBy(xpath = "//input[@name='$PpyWorkPage$pEventDate']")
-	public static WebElement GetDateandTime;
-	
-	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pReceivedDate']")
-	public static WebElement Get_Received_DateandTime;
-
-	@FindBy(xpath = "//span[text()='Arrive At Pickup']/following::div[@class='field-item dataValueRead'][1]/span")
-	public static WebElement Get_Pickup_DateandTime;
-
-	@FindBy(xpath = "//span[text()='Depart At Pickup']/following::div[@class='field-item dataValueRead'][1]/span")
-	public static WebElement Get_OutForDelivery_DateandTime;
-
-	@FindBy(xpath = "//button[contains(text(),'Submit')]")
-	public static WebElement Submit;
-	
-	@FindBy(xpath = "//span[contains(text(),'POD Complete')]/following-sibling::div/span[contains(text(),'Y')]")
-	public static WebElement PODComplete_Y;
-	
-	@FindBy(xpath = "//span[contains(text(),'Required Status')]/following-sibling::div/span[contains(text(),'Y')]")
-	public static WebElement RequiredStatus_Y;
-	
-	@FindBy(xpath = "//button[@name='ApproveRate_pyDisplayHarness_44']")
-	public static WebElement Submit210_Submit;
-
-	@FindBy(xpath = "//button[@type='button' and @title='Submit']")
-	public static WebElement ConfirmPaid_Submit;
-	
-	@FindBy(xpath = "//button[@id='ModalButtonSubmit']")
-	public static WebElement ApprovePAR_Submit;
-	
-	@FindBy(xpath = "//button[@type='button' and @title='Click Submit to Generate Invoice PDF']")
-	public static WebElement GenerateInvoice_Submit;
-	
-	@FindBy(xpath = "//a[contains(text(),'+ AddItem')]")
-	public static WebElement AddItem;
-	
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'210 Submitted')]")
-	public static WebElement Validate_210Submitted;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'POD Received')]")
-	public static WebElement Validate_POD_Received;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'POD Accepted')]")
-	public static WebElement Validate_POD_Accepted;
-
-	@FindBy(xpath = "//ul[contains(@class,'error')]/li")
-	public static WebElement Validate_ErrorMessage;
-
-	@FindBy(xpath = "//table[@class='gridTable ']/tbody/tr/td/div/span[contains(text(),'POD Resubmitted')]")
-	public static WebElement Validate_POD_Resubmitted;
-
-	@FindBy(xpath = "//span[contains(text(),'Resolved-Completed')]")
-	public static WebElement Resolved_Completed;
-
-	@FindBy(xpath = "//button[contains(text(), 'Go')]")
-	public static WebElement ClickonGo;
-
-	@FindBy(xpath = "//input[contains(@name,'Description')]")
-	public static WebElement Description_Value;
-
-	@FindBy(xpath = "//input[contains(@name,'Code')]")
-	public static WebElement Code_Value;
-
-	@FindBy(xpath = "//input[contains(@name,'QTY')]")
-	public static WebElement Qty_Value;
-
-	@FindBy(xpath = "//input[contains(@name,'AccessorialCost')]")
-	public static WebElement Charge_Value;
-
-	@FindBy(xpath = "//td[@data-attribute-name='Charge']/div/span/span")
-	public static WebElement Charge_Value1;
-
-	@FindBy(xpath = "(//td[@data-attribute-name='Charge']/div/span/span)[2]")
-	public static WebElement Charge_Value2;
-
-	@FindBy(xpath = "//button[contains(text(),'Save Accessorial')]")
-	public static WebElement SaveAccessorial;
-	
-	@FindBy(xpath = "//button[contains(text(),'Request New Rate')]")
-	public static WebElement RequestNewRate;
-	
-	@FindBy(xpath = "//button[contains(text(),'Save Changes')]")
-	public static WebElement SaveChanges;
-
-	@FindBy(xpath = "//button[@title='Toggle runtime toolbar']/i[@class='pz-pi pi-gear']")
-	public static WebElement Toggle_toolbar;
-
-	@FindBy(xpath = "//button[@title='Clipboard']")
-	public static WebElement CLickOnClipBoard;
-
-	@FindBy(xpath = "//span[contains(text(), 'Received')]")
-	public static WebElement StatusEvent_Shipement2_Clipboard;
-
-	@FindBy(xpath = "//span[contains(text(),'EFM')]")
-	public static WebElement EFMStatus_Validation;
-
-	@FindBy(xpath = "//span[contains(text(),'Loaded')]")
-	public static WebElement Loaded_Status_Validation;
-
-	@FindBy(xpath = "//span[contains(text(),'Received')]")
-	public static WebElement Received_Status_Validation;
-
-	@FindBy(xpath = "//span[contains(text(),'RECEIVED')]")
-	public static WebElement DFD_Received_Status_Validation;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='TotalInvoiceAmount']/div)[1]")
-	public static WebElement Table_TotalInvoiceAmount;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='Line Haul Price']/div)[1]")
-	public static WebElement Table_LineHaul;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='FSC Price']/div)[1]")
-	public static WebElement Table_FSCPrice;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='FSC Rate Percentage']/div)[1]")
-	public static WebElement Table_FSCRatePercentage;
-
-	@FindBy(xpath = "(//table[@class='gridTable ']/tbody/tr/td[@data-attribute-name='AccessorialTotalFees']/div)[1]")
-	public static WebElement Table_AccessorialTotalFees;
-
-	@FindBy(xpath = "//label[text()='Status']/following::span[@class='badge_text']")
-	public static WebElement Rated_Status;
-	
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Rated')]")
-	public static WebElement RatedTable_Status;
-	
-	@FindBy(xpath = "//td[@data-attribute-name='Status']/div/span[contains(text(),'Invoiced')]")
-	public static WebElement Invoiced_Status;
-	
-	@FindBy(xpath = "//td[@data-attribute-name='Line Haul Rate']/div/span/span")
-	public static WebElement Invoice_Linehaul;
-	
-	@FindBy(xpath = "//td[@data-attribute-name='FSC Charge']/div/span/span")
-	public static WebElement Invoice_FSCCharge;
-	
-	@FindBy(xpath = "(//td[@data-attribute-name='Total Accessorial']/div/span/span)[1]")
-	public static WebElement Invoice_TotalAccessorial;
-	
-	@FindBy(xpath = "(//td[@data-attribute-name='Total Amount']/div/span/span)[1]")
-	public static WebElement Invoice_TotalAmount;
-	
-	@FindBy(xpath = "//td[@data-attribute-name='Base &#43; Fuel']/div/span/span")
-	public static WebElement Base_FuelTotalCharge;
-
-	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Total']/following-sibling::div/span/span")
-	public static WebElement Total_Rate;
-
-	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Line Haul']/following-sibling::div/span/span")
-	public static WebElement LineHaul_Rate;
-
-	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Fuel']/following-sibling::div/span/span")
-	public static WebElement Fuel;
-
-	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Fuel Rate']/following-sibling::div/span/span")
-	public static WebElement Fuel_Rate;
-
-	@FindBy(xpath = "//span[contains(@class,'field-caption') and text()='Total Accessorial']/following-sibling::div/span/span")
-	public static WebElement Total_Accessorial;
-
-	@FindBy(xpath = "//span[contains(text(),'Scan Tool Order API')]")
-	public static WebElement ScanToolStatus_Validation;
-
-	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$ppySearchText']")
-	public static WebElement ClickDevStudioSearchBox;
-
-	@FindBy(xpath = "//i[@class='pi pi-search-2']")
-	public static WebElement ClickDevStudioSearchIcon;
-
-	@FindBy(xpath = "//a[contains(text(),'OrderServicePackage Services ProcessData')]")
-	public static WebElement ClickOrderServicePackage;
-	
-	@FindBy(xpath = "//a[contains(text(),'ConfrimPOD')]")
-	public static WebElement ClickConfirmPOD;
-
-	@FindBy(xpath = "//a[contains(text(),'OrderServicePackage V1 updatestatus')]")
-	public static WebElement ClickOrderServicePackage_UpdateStatus;
-
-	@FindBy(xpath = "//div[@string_type='field']/span/button[contains(text(),'Actions')]")
-	public static WebElement ServicePageActions;
-
-	@FindBy(xpath = "//div[contains(text(),'Run')]")
-	public static WebElement Actions_Run;
-	
-	@FindBy(xpath = "(//span[contains(text(),'Run')])[2]")
-	public static WebElement ServicePageRun;
-
-	@FindBy(xpath = "(//button[@name='CaseActionHeader_pyWorkPage_4'])[2]")
-	public static WebElement Actions_Button;
-	
-	@FindBy(xpath = "(//button[@title='Actions' and contains(text(),'Actions')])[2]")
-	public static WebElement PAD_Actions_Button;
-
-	@FindBy(xpath = "//span[contains(text(), 'Refresh')]")
-	public static WebElement Actions_Refresh;
-
-	@FindBy(xpath = "//input[@value='EnterText']")
-	public static WebElement SupplySOAPCheckBox;
-
-	@FindBy(xpath = "//textarea[@name='$PpySimulationDataPage$ppyPOSTRequestParameterValues$l1$ppyValue']")
-	public static WebElement TextAreaClick;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Pickup Scheduled')]")
-	public static WebElement pickUpScheduled_Validation;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Awaiting Arrival')]")
-	public static WebElement AwaitingArrival_Validation;
-
-	@FindBy(xpath = "//textarea[@name='$PpySimulationDataPage$ppyRequestTextData']")
-	public static WebElement SupplySOAPTextBox;
-
-	@FindBy(xpath = "//div//span[contains(text(),'Execute')]")
-	public static WebElement ExecuteClick;
-
-	@FindBy(xpath = "(//span[contains(@class,'route')])[1]")
-	public static WebElement OrdersDFDClick;
-
-	@FindBy(xpath = "(//span[contains(@class,'locations')])[1]")
-	public static WebElement OrdersPADClick;
-	
-	@FindBy(xpath = "(//a[@id='pui_filter'])[8]")
-	public static WebElement OrdersShipmentPADFilter;
-	
-	@FindBy(xpath = "(//a[@id='pui_filter'])[1]")
-	public static WebElement ShipmentScheduling_OrderID_Filter;
-
-	@FindBy(xpath = "/html/body/div[3]/form/div[5]/div[1]/ul/li[3]/div/button[1]")
-	public static WebElement CrowApplyClick;
-
-	@FindBy(xpath = "//div[@aria-label='Rate Review']")
-	public static WebElement ExceptionManagementHeaderClick;
-
-	@FindBy(xpath = "//div[contains(@aria-label,'Inbound Shipment')]")
-	public static WebElement InboundShipmentHeaderClick;
-
-	@FindBy(xpath = "//div[contains(@aria-label,'Shipment Scheduling')]")
-	public static WebElement ShipmentSchedulingHeaderClick;
-	
-	@FindBy(xpath = "//div[contains(@aria-label,'Delivery Management')]")
-	public static WebElement DeliveryManagementHeaderClick;
-
-	@FindBy(xpath = "(//a[@id='pui_filter'])[2]")
-	public static WebElement FilterIconClick;
-
-	@FindBy(xpath = "(//a[@id='pui_filter'])[1]")
-	public static WebElement PAD_FilterIconClick;
-
-	@FindBy(xpath = "//input[@data-primary-value='.BOL']")
-	public static WebElement BOL_DropdownFilterIconClick;
-	
-	@FindBy(xpath = "//input[@data-primary-value='.BOL' and @data-target='$PpyDisplayHarness$pInboundBOLNumberList']")
-	public static WebElement BOL_DropdownFilterIconClick_DFD;
-	
-	@FindBy(xpath = "//input[@data-primary-value='.BOL' and @placeholder='Select']")
-	public static WebElement PAD_BOL_DropdownFilterIconClick;
-	
-	@FindBy(xpath = "(//input[@data-primary-value='.Value'])[1]")
-	public static WebElement StatusSearchFilterIconClick;
-
-	@FindBy(xpath = "//input[@data-primary-value='.DeliveryNumber']")
-	public static WebElement POD_BOL_DropdownFilterIconClick;
-
-	@FindBy(xpath = "//span[contains(text(),'Use \"')]")
-	public static WebElement BOL_Use_Click;
-
-	@FindBy(xpath = "(//a[@id='pui_filter'])[4]")
-	public static WebElement BOL_FilterIconClick;
-
-	@FindBy(xpath = "//input[@CLASS='leftJustifyStyle']")
-	public static WebElement OrderSearchBoxClick;
-
-	@FindBy(xpath = "//button[contains(text(),'Apply')]")
-	public static WebElement ApplyClick;
-
-	@FindBy(xpath = "//td[@data-attribute-name='Status']/div/span[contains(text(),'Released')]")
-	public static WebElement status_Released;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'POD Received')]")
-	public static WebElement Order_status_PODReceived;
-
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'POD Resubmitted')]")
-	public static WebElement status_Re_Submit;
-
-	@FindBy(xpath = "//span[contains(text(),'Released')]")
-	public static WebElement CaseStatusUI_Released;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Released')]")
-	public static WebElement OrderStatus_Released_Validation;
-	
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'POD Exception')]")
-	public static WebElement OrderStatus_PODException_Validation;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Cancelled')]")
-	public static WebElement OrderStatus_Cancelled_Validation;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Delivery Scheduled')]")
-	public static WebElement OrderStatus_DeliveryScheduled_Validation;
-
-	@FindBy(xpath = "//div[@string_type='field']/span[contains(text(),'Out For Delivery')]")
-	public static WebElement OrderStatus_OutForDelivery_Validation;
-
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'POD Received')]")
-	public static WebElement status_PODReceived;
-
-	@FindBy(xpath = "//td[@data-attribute-name='Attached?']/div/span[contains(text(),'N')]")
-	public static WebElement Attachment_No;
-
-	@FindBy(xpath = "//td[@data-attribute-name='Attached?']/div/span[contains(text(),'Y')]")
-	public static WebElement Attachment_Yes;
-
-	@FindBy(xpath = "//h3[@class='layout-group-item-title' and contains(text(),'Add existing')]")
-	public static WebElement Add_Existing_Attachment;
-
-	@FindBy(xpath = "//td[@data-attribute-name='Count']/div/span[contains(text(),'0')]")
-	public static WebElement Count_Nil;
-
-	@FindBy(xpath = "//input[@name='$PAddRecentContent$ppyLabel']")
-	public static WebElement RichText_Name;
-
-	@FindBy(xpath = "//body[@aria-label='Enter document content.']")
-	public static WebElement RichText_ContentName;
-
-	@FindBy(xpath = "//div[@title='Add URL']")
-	public static WebElement AddURL;
-
-	@FindBy(xpath = "//div[@title='Upload local file']")
-	public static WebElement AddLocalFile;
-
-	@FindBy(xpath = "//input[@name='$PpyAttachmentPage$ppyNote']")
-	public static WebElement AddURL_Name;
-
-	@FindBy(xpath = "//div[@id='uniqueIDforMultiFilePath']/input[@name='$PpyAttachmentPage$ppxAttachName']")
-	public static WebElement SelectFile;
-
-	@FindBy(xpath = "//input[@name='$PpyAttachmentPage$ppyURL']")
-	public static WebElement AddURL_tag;
-
-	@FindBy(xpath = "//div[@string_type='label' and contains(text(),'Note')]")
-	public static WebElement Validation_Attachment_Note;
-
-	@FindBy(xpath = "//button[@name='ShowAttachmentNote_pyWorkPage_4' and contains(text(),'OK')]")
-	public static WebElement Click_Attachment_Ok;
-
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span/a/i[@class='pi pi-paper-clip']")
-	public static WebElement Attachment_Clip;
-
-	@FindBy(xpath = "//input[@id='$PpyAttachmentPage$ppxAttachName']")
-	public static WebElement AttachFile_ApprovePOD;
-
-	@FindBy(xpath = "//button[@title='Submit']")
-	public static WebElement Attachment_Submit;
-
-	@FindBy(xpath = "//button[contains(text(),'Save')]")
-	public static WebElement Attachment_Save;
-
-	@FindBy(xpath = "//button[@title='Please Provide Valid Orders' and contains(text(),'Re-Submit')]")
-	public static WebElement Re_Submit;
-
-	@FindBy(xpath = "//table/tbody/tr/td/button[@title='Submit']")
-	public static WebElement ApprovePOD_Submit;
-
-	@FindBy(xpath = "//span[contains(text(),'No cases')]")
-	public static WebElement POD_Review_NoCases;
-
-	@FindBy(xpath = "//button[contains(text(),'Refresh ')]")
-	public static WebElement PAR_Refresh;
-
-	@FindBy(xpath = "//a[contains(text(),'Refresh')]")
-	public static WebElement PAR_OBLoads_Refresh;
-
-	@FindBy(xpath = "//td[@data-attribute-name='IB Load ID']/div/span")
-	public static WebElement IB_LoadID;
-
-	@FindBy(xpath = "//input[@name='_user']")
-	public static WebElement Roundcube_Username;
-
-	@FindBy(xpath = "//input[@name='_pass']")
-	public static WebElement Roundcube_Password;
-
-	@FindBy(id = "rcmloginsubmit")
-	public static WebElement Roundcube_Submit;
-
-//	@FindBy(xpath = "(//a/span[contains(text(),'"+ OB_LoadID_Value +"')])[1]")
-//	public static WebElement Roundcube_Mail;
-
-	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Crowley Report')]")
-	public static WebElement Switchto_CrowleyReport_Page;
-
-	@FindBy(xpath = "//button[@name='pyReportEditorHeader_pyReportContentPage_18']")
-	public static WebElement ClickReport_Actions;
-
-	@FindBy(xpath = "//span[contains(text(),'Refresh')]")
-	public static WebElement ClickReport_Refresh;
-
-	@FindBy(xpath = "(//span[@title='Close this tab'])")
-	public static WebElement Close_PARtab1;
-
-	@FindBy(xpath = "(//span[@title='Close this tab'])[2]")
-	public static WebElement Close_PARtab;
-
-	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Orders PAR')]")
-	public static WebElement switchTo_OrdersPAR;
-	
-	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Orders DFD')]")
-	public static WebElement switchTo_OrdersDFD;
-	
-	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'Orders PAD')]")
-	public static WebElement switchTo_OrdersPAD;
-
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span/a[contains(text(),'View')]   ")
-	public static WebElement Click_ViewDoc;
-
-	@FindBy(xpath = "//div[@class='layout-body clearfix  ']/div/div/span[contains(text(),'1')]")
-	public static WebElement View_One_Doc;
-
-	@FindBy(xpath = "//div[@class='layout-body clearfix  ']/div/div/span[contains(text(),'0')]")
-	public static WebElement View_Zero_Doc;
-
-	@FindBy(xpath = "//span[@class='supporting_text' and contains(text(),'ago')]")
-	public static WebElement View_Doc_Validation;
-
-	@FindBy(xpath = "(//span[@class='supporting_text' and contains(text(),'No items')])[1]")
-	public static WebElement No_Doc_Attached;
-
-	@FindBy(xpath = "//i[@class='pi pi-more pi-right']")
-	public static WebElement Icon_Delete_Document_Attached;
-	
-	@FindBy(xpath = "(//i[@class='pi pi-more pi-right'])[1]")
-	public static WebElement PDF_Download_Icon;
-
-	@FindBy(xpath = "//span[@class='menu-item-title-wrap']/span[contains(text(),'Download')]")
-	public static WebElement Download_Doc_Attached;
-	
-	//span[@class='menu-item-title-wrap']/span[contains(text(),'Download')]
-	//div[@class='ellipsis']/a[contains(text(),'pdf')]/following::span/button/i[@class='pi pi-more pi-right']
-
-	@FindBy(xpath = "//span[@class='menu-item-title-wrap']/span[contains(text(),'Delete')]")
-	public static WebElement Delete_Doc_Attached;
-
-	@FindBy(xpath = "//button[@title='Close modal']")
-	public static WebElement Close_AttachmentList_Box;
-
-//	@FindBy(xpath = "//table[@id='RULE_KEY']/tbody/tr/td/span[contains(text(),'"+ sendkeys +"')]")
-//	public static WebElement switchTo_OrdersPage;
-	
-	@FindBy(xpath = "//span[@id='$PpyWorkPage$pDeliveryAppointmentDateSpan']/*[contains(@alt, 'Choose from calendar')]")
-	public static WebElement ClickonCalendar_DeliveryAppointment;
-
-	@FindBy(xpath = "(//*[contains(@alt, 'Choose from calendar')])[1]")
-	public static WebElement ClickonCalendar_POD_review;
-
-	@FindBy(xpath = "//input[@name='$PpyWorkPage$pOrderPage$pOutForDelivery']/following-sibling::img[@alt='Choose from calendar']")
-	public static WebElement ClickonCalendar_POD_review2;
-
-	@FindBy(xpath = "//img[@alt='Choose from calendar']")
-	public static WebElement CustomerDelivery_Calendar;
-
-	@FindBy(xpath = "//select[@name='$PpyWorkPage$pAssignedTradingPartnerName']")
-	public static WebElement Release__Carrier;
-	
-	@FindBy(xpath = "//a[contains(text(),'+ Add Accessorial')]")
-	public static WebElement Add_Accessorial;
-	
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Submit POD')]")
-	public static WebElement SubmitPOD;
-	
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Ready to Invoice')]")
-	public static WebElement ReadyToInvoice;
-	
-	@FindBy(xpath = "//div[@class='oflowDivM ']/span[contains(text(),'Rated')]")
-	public static WebElement Rated_StatusValidation;
-	
-	@FindBy(xpath = "(//span/a[contains(text(),'Edit')])[1]")
-	public static WebElement PODComplete_Edit;
-	
-	@FindBy(xpath = "//select[@name='$PpyWorkPage$pOrderPage$pPODSent']")
-	public static WebElement PODComplete_Dropdown;
-	
 	public static void SubmitPOD_Validation() {
 		String SubmitPOD_Status_Validation = SubmitPOD.getText().trim();
 		assertEquals(SubmitPOD_Status_Validation, "Submit POD");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + SubmitPOD_Status_Validation);
 	}
-	
+
 	public static void ReadyToInvoice_Validation() {
 		String ReadyToInvoice_Status_Validation = ReadyToInvoice.getText().trim();
 		assertEquals(ReadyToInvoice_Status_Validation, "Ready to Invoice");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + ReadyToInvoice_Status_Validation);
 	}
-	
+
 	public static void RatedStatus_Validation() {
 		String Rated_Status_Validation = Rated_StatusValidation.getText().trim();
 		assertEquals(Rated_Status_Validation, "Rated");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Rated_Status_Validation);
 	}
-	
+
 	public static void PODComplete_Status_Validation() {
 		String PODComplete_Status_Validation = PODComplete_Y.getText().trim();
 		assertEquals(PODComplete_Status_Validation, "Y");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + PODComplete_Status_Validation);
 	}
-	
+
 	public static void Required_Status_Validation() {
 		String Required_Status_Validation = RequiredStatus_Y.getText().trim();
 		assertEquals(Required_Status_Validation, "Y");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Required_Status_Validation);
 	}
-	
+
 	public static void frameSwitch() {
 		driver.switchTo().frame(frameName);
 	}
@@ -2584,7 +2607,7 @@ public class Pom extends BaseClass {
 //		String text = View_Doc_Validation.getText();
 //		assertEquals("ago", text.contains("ago"));
 	}
-	
+
 	public void Download_Attachment() throws Exception {
 		Icon_Delete_Document_Attached.click();
 		Await();
@@ -2593,7 +2616,7 @@ public class Pom extends BaseClass {
 		Close_AttachmentList_Box.click();
 		Await();
 	}
-	
+
 	public void Download_Attached_Doc() throws Exception {
 		Icon_Delete_Document_Attached.click();
 		Await();
@@ -2652,7 +2675,7 @@ public class Pom extends BaseClass {
 		Actions_Refresh.click();
 		Await();
 	}
-	
+
 	public void PAD_ActionsButton() throws Exception {
 		Await();
 		PAD_Actions_Button.click();
@@ -2660,7 +2683,6 @@ public class Pom extends BaseClass {
 		Actions_Refresh.click();
 		Await();
 	}
-
 
 	public void Validate_RouteStatus() {
 		String text = Route_Status_Validation.getText().trim();
@@ -2690,10 +2712,10 @@ public class Pom extends BaseClass {
 		assertEquals(InvoiceNumber, Invoice_number);
 		String PONumber = PONumber_Validation.getText().trim();
 		assertEquals(PONumber, PO_Number);
-		
+
 		String DeliveryNumber = DeliveryNumber_Validation.getText().trim();
 		assertEquals(DeliveryNumber, Delivery_Number);
-		
+
 		String OriginCompany = Origin_Company_Validation.getText().trim();
 		assertEquals(OriginCompany, Origin_CompanyName);
 
@@ -2763,7 +2785,6 @@ public class Pom extends BaseClass {
 		}
 	}
 
-
 	public void ActualDelivery_Date_Validation() {
 		String dateTime = ActualDelivery_Date_Validation.getText().trim();
 		assertEquals(dateTime, DateTime);
@@ -2781,13 +2802,13 @@ public class Pom extends BaseClass {
 		assertEquals(ArrivedatTerminal, "ARRIVED AT TERMINAL");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + ArrivedatTerminal);
 	}
-	
+
 	public void InvoiceNote_Validation() {
 		String Submitted210_Status_Validation = Invoiced_Note.getText().trim();
 		assertEquals(Submitted210_Status_Validation, "Note: Case has been invoiced and can not be updated/changed");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Submitted210_Status_Validation);
 	}
-	
+
 	public void Submitted210_Validation() {
 		String Submitted210_Status_Validation = Submitted210_Status.getText().trim();
 		assertEquals(Submitted210_Status_Validation, "210 SUBMITTED");
@@ -2842,7 +2863,7 @@ public class Pom extends BaseClass {
 		System.out.println("Successfully validated Status as " + Received_Status);
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Received_Status);
 	}
-	
+
 	public void Received_OBStatus_Validation() {
 		String Received_Status = Received_Status_Validation.getText().trim();
 		assertEquals(Received_Status, "Received");
@@ -2862,24 +2883,24 @@ public class Pom extends BaseClass {
 		assertEquals(Rated_Status_Validation, "RATED");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Rated_Status_Validation);
 	}
-	
+
 	public void RateReview_Rated_Status_Validation() {
 		String Rated_TableStatus_Validation = RatedTable_Status.getText().trim();
 		assertEquals(Rated_TableStatus_Validation, "Rated");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Rated_TableStatus_Validation);
 	}
-	
+
 	public void Rated_table_Status_Validation() {
 		String Rated_Status_Validation = Rated_Status.getText().trim();
 		assertEquals(Rated_Status_Validation, "RATED");
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Rated_Status_Validation);
 	}
-	
+
 	public void Invoiced_Status_Validation() {
 		String Invoiced_Status_Validation = Invoiced_Status.getText().trim();
 		extentTest.log(Status.PASS, "Successfully validated Status as " + Invoiced_Status_Validation);
 	}
-	
+
 	public void ArrivedAtPickup_Date() {
 		Arrived_DateTime = ArrivedAtPickup_Date_Validation.getText().trim();
 		System.out.println(Arrived_DateTime);
@@ -3138,9 +3159,10 @@ public class Pom extends BaseClass {
 				extentTest.log(Status.PASS, "Status Event contains: " + statusText);
 				isRatedFound = true;
 			}
-			
+
 			// If all statuses are found, we can exit the loop early
-			if (isArrivedAtPickupFound && isOutForDeliveryFound && isArrivedAtConsigneeFound && isDeliveredFound && isRatedFound) {
+			if (isArrivedAtPickupFound && isOutForDeliveryFound && isArrivedAtConsigneeFound && isDeliveredFound
+					&& isRatedFound) {
 				break;
 			}
 		}
@@ -3175,6 +3197,7 @@ public class Pom extends BaseClass {
 
 	}
 
+	//TC06: Verify the case is in Pickup Scheduled status
 	public static void PickUpScheduled_Validation() {
 		String text = pickUpScheduled_Validation.getText().trim();
 		assertEquals("PICKUP SCHEDULED", text);
@@ -3195,7 +3218,7 @@ public class Pom extends BaseClass {
 		System.out.println("Validated the created Order datatype status in UI as " + text);
 		extentTest.log(Status.PASS, "Validated the created Order datatype status as " + text);
 	}
-	
+
 	public static void OrderStatus_PODException_Validation() {
 		String text = OrderStatus_PODException_Validation.getText().trim();
 		assertEquals("POD EXCEPTION", text);
@@ -3271,7 +3294,7 @@ public class Pom extends BaseClass {
 		System.out.println("Validated the error message in Approve POD Popup as " + text);
 		extentTest.log(Status.PASS, "Validated the error message in Approve POD Popup as " + text);
 	}
-	
+
 	public static void Re_Submit_Validation() {
 		String text = status_Re_Submit.getText().trim();
 		assertEquals("POD Resubmitted", text);
@@ -3281,10 +3304,11 @@ public class Pom extends BaseClass {
 
 	public static void Re_Submit_ErrorMessage() {
 		String Actualtext = ErrorMessage_ApprovePOD.getText().trim();
-		String expectedText = "pyTempValue: Please Select the Order "+OrderID+" with Attachment and Required Status as \"Y\"";
+		String expectedText = "pyTempValue: Please Select the Order " + OrderID
+				+ " with Attachment and Required Status as \"Y\"";
 		System.out.println(expectedText);
-		
-		assertEquals(Actualtext,expectedText);
+
+		assertEquals(Actualtext, expectedText);
 		System.out.println("Validated the error message as " + Actualtext);
 		extentTest.log(Status.PASS, "Validated the error message as " + Actualtext);
 	}
@@ -3414,10 +3438,10 @@ public class Pom extends BaseClass {
 		assertEquals(BOL_Order, text2);
 		String text3 = ResolvePAROrder_InvoiceNumber.getText();
 		assertEquals(Invoice_number, text3);
-		
+
 		Attachment_Submit.click();
 		Await();
-		
+
 //		String NoCases = POD_Review_NoCases.getText();
 //		assertEquals("No cases", NoCases);
 		Await();
@@ -3426,11 +3450,11 @@ public class Pom extends BaseClass {
 	public void Release_Carrier() {
 		SelectClass(Release__Carrier, "Radiant");
 	}
-	
+
 	public void PODComplete_Status_Y() {
 		SelectClass(PODComplete_Dropdown, "Y");
 	}
-	
+
 	public void PODComplete_Status_N() {
 		SelectClass(PODComplete_Dropdown, "N");
 	}
@@ -3445,7 +3469,8 @@ public class Pom extends BaseClass {
 	public void Validate_ResolvePAROrder_ErrorMessage() {
 		String completedStatus = Validate_ErrorMessage.getText().trim();
 		assertEquals(completedStatus, "Please select the order with status \"POD Accepted\"");
-		extentTest.log(Status.PASS, "Successfully validated error message as :" + completedStatus);
+		//TC41:Verify the error message should be displayed when the required status and attachment type is in N status
+		extentTest.log(Status.PASS, "Error message displayed when the required status and attachment type is in N status :" + completedStatus);
 	}
 
 	public void Validate_POD_Accepted() {
@@ -3461,10 +3486,11 @@ public class Pom extends BaseClass {
 		extentTest.log(Status.PASS, "Successfully validated status as : " + completedStatus);
 		System.out.println("Successfully validated status as : " + completedStatus);
 	}
-	
+
 	public void Validate_ApprovePOD() {
 		Approve_POD_Click.click();
-		extentTest.log(Status.PASS, "Performed Approve POD");
+		//TC39 Verify that user can approve the case by using Approve POD button 
+		extentTest.log(Status.PASS, "User can approve the case by using Approve POD button ");
 		System.out.println("Successfully moved status to ApprovePOD");
 	}
 
@@ -3478,7 +3504,8 @@ public class Pom extends BaseClass {
 	public void Resolved_Completed() {
 		String completedStatus = Resolved_Completed.getText().trim();
 		assertEquals(completedStatus, "RESOLVED-COMPLETED");
-		extentTest.log(Status.PASS, "Successfully validated status as : " + completedStatus);
+		//TC42: Verify whether the status has been changed to resolved completed once the case is approved.
+		extentTest.log(Status.PASS, "Successfully status has been changed to : " + completedStatus);
 
 	}
 
@@ -3503,6 +3530,7 @@ public class Pom extends BaseClass {
 
 	public void PEGALogin() throws InterruptedException {
 		extentTest.log(Status.PASS, "User can able to launch Pega application in chrome");
+
 		getWindow_Parent();
 		ssoLogin.click();
 		waits(code);
@@ -3539,20 +3567,27 @@ public class Pom extends BaseClass {
 		ClickOrderServicePackage_UpdateStatus.click();
 		Await();
 	}
-	
+
 	public void UpdateStatus() {
 		WebElement OrderStatus = driver.findElement(By.xpath("//span[contains(text(),'UpdateStatus')]"));
 		OrderStatus.click();
 
 	}
-	
+
 	public void OrderServicePage() {
 		extentTest.log(Status.PASS, "User should allowed to update the case through descartes XML in pega");
 		WebElement OrderService = driver.findElement(By.xpath("//span[contains(text(),'ProcessData (generated)')]"));
 		OrderService.click();
 
 	}
-	
+
+	public void CrowleyConfirmPOD() {
+		extentTest.log(Status.PASS, "User should allowed to update the POD status in pega");
+		WebElement OrderService = driver
+				.findElement(By.xpath("//span[@class='explorer_primary' and contains(text(),'ConfrimPOD')]"));
+		OrderService.click();
+
+	}
 
 	public void orderService_Actions() throws Exception {
 		frameSwitch();
@@ -3666,7 +3701,7 @@ public class Pom extends BaseClass {
 		DeliveryManagementHeaderClick.click();
 		Await();
 		OrdersShipmentPADFilter.click();
-		//PAD_FilterIconClick.click();
+		// PAD_FilterIconClick.click();
 		Await();
 		OrderSearchBoxClick.click();
 		Await();
@@ -3674,10 +3709,16 @@ public class Pom extends BaseClass {
 		waits(ApplyClick);
 		ApplyClick.click();
 		Await();
-		WebElement PAD_OrderID = driver.findElement(By.xpath("//a[contains(text(), '"+OrderID+"')]"));
+		WebElement PAD_OrderID = driver.findElement(By.xpath("//a[contains(text(), '" + OrderID + "')]"));
 		Await();
 		PAD_OrderID.click();
 		driver.switchTo().defaultContent();
+	}
+
+	public void PAD_DeliveryScheduled() throws Exception {
+		SelectClass(CustomerAppointmentStatus, "Delivery Scheduled");
+		Await();
+		Submit.click();
 	}
 
 	public void OrdersPAD_ShipmentScheduling() throws Exception {
@@ -3694,19 +3735,19 @@ public class Pom extends BaseClass {
 		ShipmentSchedulingHeaderClick.click();
 		Await();
 		ShipmentScheduling_OrderID_Filter.click();
-		//PAD_FilterIconClick.click();
+		// PAD_FilterIconClick.click();
 		Await();
 		OrderSearchBoxClick.click();
 		Await();
 		OrderSearchBoxClick.sendKeys(OrderID);
 		waits(ApplyClick);
 		ApplyClick.click();
-		WebElement PAD_OrderID = driver.findElement(By.xpath("//a[contains(text(), '"+OrderID+"')]"));
+		WebElement PAD_OrderID = driver.findElement(By.xpath("//a[contains(text(), '" + OrderID + "')]"));
 		Await();
 		PAD_OrderID.click();
 		driver.switchTo().defaultContent();
 	}
-	
+
 	public void OnDock() throws Exception {
 		Await();
 		extentTest.log(Status.PASS, "User successfully logged into warehouse portal");
@@ -3720,7 +3761,6 @@ public class Pom extends BaseClass {
 
 	}
 
-	
 	public void OrdersPAR() throws Exception {
 		Await();
 		extentTest.log(Status.PASS, "User successfully logged into warehouse portal");
@@ -3734,11 +3774,8 @@ public class Pom extends BaseClass {
 
 	}
 
-	
-
 	public void InboundTrailer_WorkQueue() throws InterruptedException {
 		Await();
-		extentTest.log(Status.PASS, "Select PAR order from Inbound Trailer work queue");
 		InboundTrailer.click();
 		Await();
 		BOL_DropdownFilterIconClick.click();
@@ -3746,13 +3783,18 @@ public class Pom extends BaseClass {
 		Await();
 		BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
 		Await();
+		//TC02: Verify user can able to filter the case using BOL of the case
 		extentTest.log(Status.PASS, "User can able to filter the case using BOL of the case");
-		
+
 		ClickPARCaseID.click();
+		//TC03: Verify whether the created case is populated in Inbound trailer work queue
 		extentTest.log(Status.PASS, "Created case " + OrderID + " is filtered and displayed in Inbound trailer");
 		Await();
+		//TC04: Verify whether the user can work on the cases in Inbound trailer work queue
 		extentTest.log(Status.PASS, "User can work on the case " + OrderID + " in Inbound trailer work queue");
 		driver.switchTo().defaultContent();
+		//TC05: Verify whether the case is opened in new tab when the user click on case ID hyper link.
+		extentTest.log(Status.PASS, "Case is opened in new tab when the user click on case ID hyper link");
 
 	}
 
@@ -3787,7 +3829,7 @@ public class Pom extends BaseClass {
 		Await();
 		Loaded_OB_Validation();
 	}
-	
+
 	public void Unload() throws Exception {
 		Unload_Button.click();
 		Await();
@@ -3797,7 +3839,7 @@ public class Pom extends BaseClass {
 		ConfirmUnload_Button.click();
 		Await();
 	}
-	
+
 	public void ReleasedStatus_Button() throws Exception {
 		Released_Button.click();
 		Await();
@@ -3807,25 +3849,24 @@ public class Pom extends BaseClass {
 		ConfirmReleased_Button.click();
 		Await();
 	}
-	
+
 	public void NullValidation() {
-	
+
 		String loadedDate = loadedDateElement.getText().trim();
 		String outboundTrailer = OutboundTrailerElement.getText().trim();
 		// Validate if it's null or empty
-		if(loadedDate == null || loadedDate.isEmpty()) {
-		    System.out.println("Loaded Date is null/empty ✅");
+		if (loadedDate == null || loadedDate.isEmpty()) {
+			System.out.println("Loaded Date is null/empty ✅");
 		} else {
-		    System.out.println("Loaded Date is present: " + loadedDate);
+			System.out.println("Loaded Date is present: " + loadedDate);
 		}
-		 // Validate Outbound Trailer
-	    if (outboundTrailer == null || outboundTrailer.isEmpty()) {
-	        System.out.println("Outbound Trailer is null/empty ✅");
-	    } else {
-	        System.out.println("Outbound Trailer is present: " + outboundTrailer);
-	    }
+		// Validate Outbound Trailer
+		if (outboundTrailer == null || outboundTrailer.isEmpty()) {
+			System.out.println("Outbound Trailer is null/empty ✅");
+		} else {
+			System.out.println("Outbound Trailer is present: " + outboundTrailer);
+		}
 	}
-
 
 	public void OutboundTrailer_Tab() throws Exception {
 		OutboundLoads.click();
@@ -3890,30 +3931,44 @@ public class Pom extends BaseClass {
 		Await();
 		Await();
 		BOL_DropdownFilterIconClick_DFD.sendKeys(Keys.ENTER);
-		
+
 		Await();
 
 	}
-	
+
+	public void OnDockOrderSearchandFilter() throws Exception {
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		Await();
+		OnDock_BOL_DropdownFilterIconClick.click();
+		OnDock_BOL_DropdownFilterIconClick.sendKeys(BOL_Order);
+		Await();
+		Await();
+		Await();
+		OnDock_BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
+
+		Await();
+
+	}
+
 	public void PAR_OrderSearchandFilter() throws Exception {
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		BOL_DropdownFilterIconClick.click();
+
+		waitForElementToBeVisibleAndClickable(driver, BOL_DropdownFilterIconClick, 10);
+		// BOL_DropdownFilterIconClick.click();
 		BOL_DropdownFilterIconClick.sendKeys(BOL_Order);
 		Await();
 		Await();
 		Await();
 		BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
-		
+
 		Await();
 
 	}
-	
+
 	public void PAD_OrderSearchandFilter() throws Exception {
 		Await();
 		Await();
@@ -3929,14 +3984,23 @@ public class Pom extends BaseClass {
 		Await();
 		PAD_BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
 		Await();
+	}
+
+	public void PAR_Outbound_OrderSearchFilter() throws Exception {
+		waits(BOL_DropdownFilterIconClick);
+		BOL_DropdownFilterIconClick.click();
+		BOL_DropdownFilterIconClick.sendKeys(BOL_Order);
+		Await();
+		BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
+		Await();
 
 	}
-	
+
 	public void selectShipper() {
 		SelectClass(RateReview_Shipper, "Estes Express Lines");
 		extentTest.log(Status.PASS, "Selected shipper as Estes express lines");
 	}
-	
+
 	public void select_StatusSearch() throws Exception {
 		Await();
 		Await();
@@ -3952,8 +4016,7 @@ public class Pom extends BaseClass {
 		Await();
 
 	}
-	
-	
+
 	public void convert_Date() {
 
 		DateTimeFormatter originalFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmss.SSS z", Locale.ENGLISH);
@@ -3979,68 +4042,67 @@ public class Pom extends BaseClass {
 			System.out.println("Error parsing date: " + e.getMessage());
 		}
 	}
-	
+
 	public void updateExcelBeforeUpload() throws Exception {
 
-	    String filePath = "C:\\Users\\PALANGA\\Downloads\\accessorialbulkuploadtemplate (30).xlsx";
+		String filePath = "C:\\Users\\PALANGA\\Downloads\\accessorialbulkuploadtemplate (30).xlsx";
 
-	    FileInputStream fis = new FileInputStream(new File(filePath));
-	    Workbook workbook = new XSSFWorkbook(fis);
-	    Sheet sheet = workbook.getSheetAt(0);
+		FileInputStream fis = new FileInputStream(new File(filePath));
+		Workbook workbook = new XSSFWorkbook(fis);
+		Sheet sheet = workbook.getSheetAt(0);
 
-	    Row row = sheet.getRow(1);
-	    if (row == null) {
-	        row = sheet.createRow(1);
-	    }
+		Row row = sheet.getRow(1);
+		if (row == null) {
+			row = sheet.createRow(1);
+		}
 
-	    Cell cell = row.getCell(0); // Column 1
-	    if (cell == null) {
-	        cell = row.createCell(0);
-	    }
+		Cell cell = row.getCell(0); // Column 1
+		if (cell == null) {
+			cell = row.createCell(0);
+		}
 
-	    cell.setCellValue(BOL_Order); // Set your value
-	    fis.close();
+		cell.setCellValue(BOL_Order); // Set your value
+		fis.close();
 
-	    // Save the updated file
-	    FileOutputStream fos = new FileOutputStream(new File(filePath));
-	    workbook.write(fos);
-	    fos.close();
-	    workbook.close();
+		// Save the updated file
+		FileOutputStream fos = new FileOutputStream(new File(filePath));
+		workbook.write(fos);
+		fos.close();
+		workbook.close();
 
-	    System.out.println("Excel updated successfully");
+		System.out.println("Excel updated successfully");
 	}
 
 	@Test
 	public static void main(String[] args) throws Exception {
-		
-	        try {
-	            // Input file
-	            FileInputStream fis = new FileInputStream("test.txt");
 
-	            // Read file content
-	            StringBuilder content = new StringBuilder();
-	            int ch;
-	            while ((ch = fis.read()) != -1) {
-	                content.append((char) ch);
-	            }
-	            fis.close();
+		try {
+			// Input file
+			FileInputStream fis = new FileInputStream("test.txt");
 
-	            // Edit content (replace word)
-	            String updatedContent = content.toString().replace("Java", "JAVA");
+			// Read file content
+			StringBuilder content = new StringBuilder();
+			int ch;
+			while ((ch = fis.read()) != -1) {
+				content.append((char) ch);
+			}
+			fis.close();
 
-	            // Output file
-	            FileOutputStream fos = new FileOutputStream("output.txt");
-	            fos.write(updatedContent.getBytes());
-	            fos.close();
+			// Edit content (replace word)
+			String updatedContent = content.toString().replace("Java", "JAVA");
 
-	            System.out.println("File edited successfully.");
+			// Output file
+			FileOutputStream fos = new FileOutputStream("output.txt");
+			fos.write(updatedContent.getBytes());
+			fos.close();
 
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    }
-	
-	
+			System.out.println("File edited successfully.");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void Validate_ArriveAtPickup() throws Exception {
 
 		// Sample LTStamp attribute value
@@ -4127,12 +4189,12 @@ public class Pom extends BaseClass {
 		SelectClass(Inbound_trailer_outboundLoads_Status, "Loaded");
 		extentTest.log(Status.PASS, "User can able to update the case to Loaded status through UI");
 	}
-	
+
 	public void Outbound_Carrier() {
 		SelectClass(Outbound_carrier_outboundLoads_Status, "Primo Express");
 		extentTest.log(Status.PASS, "User can able to update the outbound carrier through UI");
 	}
-	
+
 	public void Outbound_Trailer() {
 		Outbound_trailer_outboundLoads_Status.sendKeys("TestOutbound1567");
 	}
@@ -4167,17 +4229,17 @@ public class Pom extends BaseClass {
 		extentTest.log(Status.PASS, "User can able to update the case to Released status through UI");
 
 	}
-	
+
 	public void Accessorial_Pickup() {
 		SelectClass(AccessorialLocation_Dropdown, "Pickup");
 		extentTest.log(Status.PASS, "Selected Accessorial dropdown as Pickup");
 	}
-	
+
 	public void Accessorial_Code() {
 		SelectClass(AccessorialCode_Dropdown, "HIINS");
 		extentTest.log(Status.PASS, "Selected Accessorial Code dropdown as HIINS");
 	}
-	
+
 	public void SubmitandGo_Click() throws Exception {
 		Await();
 		scrollToElementAndClick(driver, Submit);
@@ -4381,7 +4443,7 @@ public class Pom extends BaseClass {
 	}
 
 	public void Click_PAD_PyWorkpage() throws Exception {
-	//	scrollToElementAndClick(driver, ClickonpyworkPage_PAD);
+		// scrollToElementAndClick(driver, ClickonpyworkPage_PAD);
 		Await();
 		ClickonpyworkPage_PAD.click();
 		Await();
@@ -4392,7 +4454,6 @@ public class Pom extends BaseClass {
 		waits(ClickonpyworkPage);
 		ClickonpyworkPage.click();
 		Await();
-
 	}
 
 	public void ToggleToolBar() throws Exception {
@@ -4401,6 +4462,7 @@ public class Pom extends BaseClass {
 		waits(CLickOnClipBoard);
 
 	}
+
 	public void Clipboard_Click_DFD() throws Exception {
 		Await();
 		CLickOnClipBoard.click();
@@ -4437,7 +4499,6 @@ public class Pom extends BaseClass {
 		Click_PAD_PyWorkpage();
 	}
 
-	
 	public void Clipboard_Click() throws Exception {
 		Await();
 		CLickOnClipBoard.click();
@@ -4450,28 +4511,29 @@ public class Pom extends BaseClass {
 
 	}
 
-/*	public void getCalendar() {
-		WebElement calendar1 = driver.findElement(By.xpath("(//*[contains(@alt, 'Choose from calendar')])[1]"));
-		calendar1.click();
-		Calendarss();
-		WebElement calendar2 = driver.findElement(By.xpath("(//*[contains(@alt, 'Choose from calendar')])[2]"));
-		calendar2.click();
-		Calendarss();
-		WebElement calendar3 = driver.findElement(By.xpath("(//*[contains(@alt, 'Choose from calendar')])[3]"));
-		calendar3.click();
-		Calendarss();
-		WebElement calendar4 = driver.findElement(By.xpath("(//*[contains(@alt, 'Choose from calendar')])[4]"));
-		calendar4.click();
-		Calendarss();
-	} */
+	/*
+	 * public void getCalendar() { WebElement calendar1 = driver.findElement(By.
+	 * xpath("(//*[contains(@alt, 'Choose from calendar')])[1]"));
+	 * calendar1.click(); Calendarss(); WebElement calendar2 =
+	 * driver.findElement(By.
+	 * xpath("(//*[contains(@alt, 'Choose from calendar')])[2]"));
+	 * calendar2.click(); Calendarss(); WebElement calendar3 =
+	 * driver.findElement(By.
+	 * xpath("(//*[contains(@alt, 'Choose from calendar')])[3]"));
+	 * calendar3.click(); Calendarss(); WebElement calendar4 =
+	 * driver.findElement(By.
+	 * xpath("(//*[contains(@alt, 'Choose from calendar')])[4]"));
+	 * calendar4.click(); Calendarss(); }
+	 */
 	public void getCalendar() throws Exception {
-	    for (int i = 0; i < 4; i++) {
-	        WebElement calendar = driver.findElement(By.xpath("(//*[contains(@alt, 'Choose from calendar')])[1]"));
-	        calendar.click();
-	        Calendarss(); // your method to select the date
-	        Await();  
-	    }
+		for (int i = 0; i < 4; i++) {
+			WebElement calendar = driver.findElement(By.xpath("(//*[contains(@alt, 'Choose from calendar')])[1]"));
+			calendar.click();
+			Calendarss(); // your method to select the date
+			Await();
+		}
 	}
+
 	public void OrderPage_ReceivedDate() {
 		Clipboard_ReceivedDate = OrderPage_ReceivedDate.getText().trim();
 		System.out.println(Clipboard_ReceivedDate);
@@ -4507,7 +4569,7 @@ public class Pom extends BaseClass {
 		Assert.assertTrue(text.contains("Out For Delivery"));
 		System.out.println("Successfully Validated Status:" + text);
 	}
-	
+
 	public void OrderPage_StatusEvent_Delivered_StatusValidation() {
 		String text = OrderPage_StatusEvent1.getText().trim();
 		System.out.println(text);
@@ -4521,7 +4583,7 @@ public class Pom extends BaseClass {
 		Assert.assertTrue(text.contains("Released"));
 		System.out.println("Successfully Validated Status:" + text);
 	}
-	
+
 	public void pyWOrkPage_RequiredStatus_Validation() {
 		String text = pyWorkpage_RequiredStatus.getText().trim();
 		System.out.println(text);

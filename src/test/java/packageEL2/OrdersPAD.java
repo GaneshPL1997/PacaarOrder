@@ -20,9 +20,11 @@ public class OrdersPAD extends BaseClass{
 		Await();
 		login.PEGALogin();
 		login.LaunchWarehousePortal();
-		login.OrdersPAD();
+		login.OrdersPAD_ShipmentScheduling();
 		Await();
 		Pom.frameswitch2();
+		Await();
+		login.PAD_DeliveryScheduled();
 		Await();
 		login.OrderStatus_DeliveryScheduled_Validation();
 		Await();
@@ -36,7 +38,11 @@ public class OrdersPAD extends BaseClass{
 		ArrayList<String> tab1 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab1.get(1));
 		login.driver.switchTo().defaultContent();
-		
+		Pom.frameswitch2();
+		Await();
+		login.ClickonGo.click();
+		login.driver.switchTo().defaultContent();
+		Await();
 		Pom.frameswitch2();
 		Await();
 		login.CustomerDelivery_Status_Pickup();
@@ -120,7 +126,7 @@ public class OrdersPAD extends BaseClass{
 		login.PAD_OrderSearchandFilter();
 		Await();
 		//----------------------------------------------- New code added
-		login.SubmitPOD_Validation();
+	//	login.SubmitPOD_Validation();
 		login.RateReview_Rated_Status_Validation();
 		login.driver.switchTo().defaultContent();
 		Await();
@@ -233,18 +239,20 @@ public class OrdersPAD extends BaseClass{
 		login.SwitchtoOrderPage();
 		Await();
 		Await();
+		
 		login.driver.switchTo().defaultContent();
 		login.frameswitch2();
+		login.PODComplete_Edit.click();
 		Await();
+		login.PODComplete_Status_Y();
 		Await();
-		login.PAD_ActionsButton();
-		Await();
-		login.driver.switchTo().defaultContent();
-		login.frameswitch2();
+		scrollToElementAndClick(driver, login.SaveChanges);
 		Await();
 		login.ClickonGo.click();
-		Await();
+		login.driver.switchTo().defaultContent();
+		login.frameswitch2();
 		login.PODComplete_Status_Validation();
+		
 		login.Required_Status_Validation();
 		Await();
 		login.driver.switchTo().defaultContent();

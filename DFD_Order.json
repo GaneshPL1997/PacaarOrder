@@ -1,331 +1,193 @@
 {
-
-   "CreatedBy":"????",
-   "Account":"PyGuid",
-    "RequestingTradingPartnerID":"8825b8a8-aa81-4a1c-931b-6bf902c98c3c",
-   "AssignedTradingPartnerID":"e04601af-d37c-4ed8-807f-1b71d7323fa4", 
-
-   "CaseType":"DroppedForDelivery",
-
-   "ServiceLevel":"Basic",
-
-   "Equipment":"Trailer",
-
-   "Mode":"LTL",
-
-   "PaymentTerm":"Outbound Prepaid",
-
-   "HotPriority":"",
-
-   "PickupNotes":"",
-
-   "DeliveryNotes":"",
-
-   "OrderRefs":{
-
-      "BOL":"",
-
-      "TrackingNumber":"",
-
-      "InvoiceNumber":"",
-
-      "PickupNumber":"12321981N",
-
-      "DeliveryNumber":"123345",
-
-      "PONumber":"W87236945227834",
-
-      "SONumber":""
-
-   },
-
-   "OrderOrigin":{
-
-      "CompanyName":"THE HOME DEPOT 6006",
-
-      "Address1":"1 Main Street",
-
-      "Address2":"",
-
-      "City":"Waltham",
-
-      "State":"MA",
-
-      "PostalCode":"02453",
-
-      "Country":"US",
-
-      "Phone":"abccv",
-
-      "Email":"",
-
-      "ContactName":""
-
-   },
-
-   "OrderDestination":{
-
-      "CompanyName":"55676",
-
-      "Address1":"2095 Kolekole Avenue",
-
-      "Address2":"",
-
-      "City":"Wahiawa",
-
-      "State":"HI",
-
-      "PostalCode":"96857",
-
-      "Country":"US",
-
-      "Phone":"qwer",
-
-      "Email":"",
-
-      "ContactName":""
-
-   },
-
-   "BillTo":{
-
-      "CompanyName":"Home Depot",
-
-      "Address1":"170 Forbes Road",
-
-      "Address2":"",
-
-      "City":"Braintree",
-
-      "State":"MA",
-
-      "PostalCode":"02184",
-
-      "Country":"US",
-
-      "Phone":"abcd 123456",
-
-      "Email":"",
-
-      "ContactName":""
-
-   },
-
-   "OrderAgent":{
-
-      "CompanyName":"NR",
-
-      "Address1":"20 Forge Parkway",
-
-      "Address2":"",
-
-      "City":"Franklin",
-
-      "PostalCode":"2038",
-
-      "State":"MA",
-
-      "Country":"United States"
-
-   },
-
-   "Items":[
-
-      {
-
-         "SkuName":"1003897266",
-
-         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
-
-         "TotalWeight":10.0,
-
-         "WeightUOM":"lb",
-
-         "ItemQuantity":1,
-
-         "ItemWeight":30,
-
-         "PackageType":"",
-
-         "PackageWeight":30,
-
-         "PackageQuantity":1,
-
-         "DangerousGoods":10,
-
-         "FreightClass":"",
-
-         "NMFC":"",
-
-         "MaxTemp":"",
-
-         "MinTemp":"",
-
-         "OnHandlingUnit":[
-
-            {
-
-               "pyID":"DPB002993279"
-
+    "CreatedBy": "????",
+    "Account": "PyGuid",
+    "RequestingTradingPartnerID": "8825b8a8-aa81-4a1c-931b-6bf902c98c3c",
+    "AssignedTradingPartnerID": "e04601af-d37c-4ed8-807f-1b71d7323fa4",
+    "CaseType": "DroppedForDelivery",
+    "ServiceLevel": "Basic",
+    "Equipment": "Trailer",
+    "Mode": "LTL",
+    "PaymentTerm": "Outbound Prepaid",
+    "HotPriority": "",
+    "PickupNotes": "",
+    "DeliveryNotes": "",
+    "OrderRefs": {
+        "BOL": "",
+        "TrackingNumber": "",
+        "InvoiceNumber": "",
+        "PickupNumber": "763837215",
+        "DeliveryNumber": "8339215",
+        "PONumber": "W873789215",
+        "SONumber": ""
+    },
+    "OrderOrigin": {
+        "CompanyName": "THE HOME DEPOT 6006",
+        "Address1": "1 Main Street",
+        "Address2": "",
+        "City": "Waltham",
+        "State": "HI",
+        "PostalCode": "02453",
+        "Country": "US",
+        "Phone": "556678",
+        "Email": "",
+        "ContactName": ""
+    },
+    "OrderDestination": {
+        "CompanyName": "55676",
+        "Address1": "2095 Kolekole Avenue",
+        "Address2": "",
+        "City": "Wahiawa",
+        "State": "HI",
+        "PostalCode": "96857",
+        "Country": "US",
+        "Phone": "qwer",
+        "Email": "",
+        "ContactName": ""
+    },
+    "BillTo": {
+        "CompanyName": "Home Depot",
+        "Address1": "170 Forbes Road",
+        "Address2": "",
+        "City": "Braintree",
+        "State": "MA",
+        "PostalCode": "02184",
+        "Country": "US",
+        "Phone": "abcd 123456",
+        "Email": "",
+        "ContactName": ""
+    },
+    "OrderAgent": {
+        "CompanyName": "NR",
+        "Address1": "20 Forge Parkway",
+        "Address2": "",
+        "City": "Franklin",
+        "PostalCode": "2038",
+        "State": "MA",
+        "Country": "United States"
+    },
+    "AccessorialItemList": [
+        {
+            "AccessorialCode": "DVD",
+            "AccessorialQuantity": "1",
+            "AccessorialLocation": "Pickup"
+        },{
+            "AccessorialCode": "DVD",
+            "AccessorialQuantity": "1",
+            "AccessorialLocation": "Delivery"
+        }
+
+    ],
+    "Items": [
+        {
+            "SkuName": "1003897266",
+            "SkuDescription": "ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+            "TotalWeight": 10.0,
+            "WeightUOM": "lb",
+            "ItemQuantity": 1,
+            "ItemWeight": 30,
+            "PackageType": "",
+            "PackageWeight": 30,
+            "PackageQuantity": 1,
+            "DangerousGoods": 10,
+            "FreightClass": "",
+            "NMFC": "",
+            "MaxTemp": "",
+            "MinTemp": "",
+            "OnHandlingUnit": [
+                {
+                    "pyID": "DPB002993275"
+                }
+            ],
+            "DIMS": {
+                "Length": "24",
+                "Width": "69.199",
+                "Height": "34.5",
+                "UOM": "Inch"
             }
-
-         ],
-
-         "DIMS":{
-
-            "Length":"24",
-
-            "Width":"69.199",
-
-            "Height":"34.5",
-
-            "UOM":"Inch"
-
-         }
-
-      },
-
-      {
-
-         "SkuName":"1003897288",
-
-         "SkuDescription":"ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
-
-         "TotalWeight":1.0,
-
-         "WeightUOM":"lb",
-
-         "ItemQuantity":1,
-
-         "ItemWeight":20,
-
-         "PackageType":"",
-
-         "PackageWeight":30,
-
-         "PackageQuantity":1,
-
-         "DangerousGoods":30,
-
-         "FreightClass":"",
-
-         "NMFC":"",
-
-         "MaxTemp":"",
-
-         "MinTemp":"",
-
-         "OnHandlingUnit":[
-
-            {
-
-               "pyID":"DPB002993277"
-
+        },
+        {
+            "SkuName": "1003897288",
+            "SkuDescription": "ASSEMBLED 30X34.5X24 IN. BASE KITCHE",
+            "TotalWeight": 1.0,
+            "WeightUOM": "lb",
+            "ItemQuantity": 1,
+            "ItemWeight": 20,
+            "PackageType": "",
+            "PackageWeight": 30,
+            "PackageQuantity": 1,
+            "DangerousGoods": 30,
+            "FreightClass": "",
+            "NMFC": "",
+            "MaxTemp": "",
+            "MinTemp": "",
+            "OnHandlingUnit": [
+                {
+                    "pyID": "DPB002993277"
+                }
+            ],
+            "DIMS": {
+                "Length": "24",
+                "Width": "69.199",
+                "Height": "34.5",
+                "UOM": "Inch"
             }
-
-         ],
-
-         "DIMS":{
-
-            "Length":"24",
-
-            "Width":"69.199",
-
-            "Height":"34.5",
-
-            "UOM":"Inch"
-
-         }
-
-      }
-
-   ],
-
-   "HandlingUnit":[
-
-      {
-
-         "HandlingUnitType":"Pallet",
-
-         "HandlingUnitQuantity":1,
-
-         "HandlingUnitClientID":"DPB002993277",
-
-         "FreightClass":"",
-
-         "TotalWeight":44,
-
-         "TareWeight":1.0,
-
-         "DIMS":{
-
-            "Length":"20",
-
-            "Width":"30",
-
-            "Height":"40",
-
-            "UOM":""
-
-         }
-
-      },
-
-      {
-
-         "HandlingUnitType":"Pallet",
-
-         "HandlingUnitQuantity":1,
-
-         "HandlingUnitClientID":"DPB002993279",
-
-         "FreightClass":"",
-
-         "TotalWeight":44,
-
-         "TareWeight":1.0,
-
-         "DIMS":{
-
-            "Length":"20",
-
-            "Width":"30",
-
-            "Height":"40",
-
-            "UOM":""
-
-         }
-
-      }
-
-   ],
-
-   "PickupRequestTWStart":"",
-
-   "PickupRequestTWEnd":"",
-
-   "PickupGuaranteed":"",
-
-   "DeliverByTWStart":"",
-
-   "DeliverByTWEnd":"",
-
-   "DeliveryGuaranteed":"false",
-
-   "InboundCarrier":{
-
-      "TradingPartnerID":"037be56c-fb89-4cbb-a4e0-4d196b7b52a9",
-
-      "SCAC":"RDWY",
-
-      "TrackingNumber":"60202211720",
-
-      "BOL":"6020772211",
-
-      "ShipDate":"05/06/24 3:00 AM"
-
-   }
-
+        }
+    ],
+    "HandlingUnit": [
+        {
+            "HandlingUnitType": "Pallet",
+            "HandlingUnitQuantity": 1,
+            "HandlingUnitClientID": "DPB002993277",
+            "FreightClass": "",
+            "TotalWeight": 45,
+            "TareWeight": 1.0,
+            "DIMS": {
+                "Length": "21",
+                "Width": "20",
+                "Height": "41",
+                "UOM": ""
+            }
+        },
+        {
+            "HandlingUnitType": "Pallet",
+            "HandlingUnitQuantity": 1,
+            "HandlingUnitClientID": "DPB002993275",
+            "FreightClass": "",
+            "TotalWeight": 45,
+            "TareWeight": 1.0,
+            "DIMS": {
+                "Length": "40",
+                "Width": "40",
+                "Height": "45",
+                "UOM": ""
+            }
+        },
+        {
+            "HandlingUnitType": "Pallet",
+            "HandlingUnitQuantity": 1,
+            "HandlingUnitClientID": "DPB002993278",
+            "FreightClass": "",
+            "TotalWeight": 46,
+            "TareWeight": 1.0,
+            "DIMS": {
+                "Length": "50",
+                "Width": "40",
+                "Height": "45",
+                "UOM": ""
+            }
+        }
+    ],
+    "PickupRequestTWStart": "",
+    "PickupRequestTWEnd": "",
+    "PickupGuaranteed": "",
+    "DeliverByTWStart": "20250218T050000.000 GMT",
+    "DeliverByTWEnd": "20250220T050000.000 GMT",
+    "DeliveryGuaranteed": "false",
+    "InboundCarrier": {
+        "TradingPartnerID": "037be56c-fb89-4cbb-a4e0-4d196b7b52a9",
+        "SCAC": "RDWY",
+        "TrackingNumber": "6020775721",
+        "BOL": "6020775721",
+        "ShipDate": "05/06/24 3:00 AM"
+    }
 }
- 

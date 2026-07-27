@@ -18,7 +18,7 @@ public class CrowleyOnDock extends BaseClass {
 		driver.switchTo().defaultContent();
 		pom.frameSwitch();
 		Await();
-		pom.OrderSearchandFilter();
+		pom.OnDockOrderSearchandFilter();
 		Await();
 		pom.CheckBox_Click.click();
 		

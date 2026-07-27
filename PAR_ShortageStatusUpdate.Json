@@ -15,7 +15,7 @@
   "UpdateType" : "StatusUpdate",
   "RequestingTradingPartnerID":"",
    "AssignedTradingPartnerID":"",
-  "TerminalNotes": "Test Terminal notes",
+  "TerminalNotes": "test Terminal notes",
   "LocationCity" : "Lathrop",
   "LocationState" : "CA"
 }
