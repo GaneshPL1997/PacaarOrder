@@ -80,7 +80,7 @@ public class Pom extends BaseClass {
 	// public static String SearchBox_Text = "OrderServicePackage";
 	public static String IB_LoadID_Value = "";
 	public static String BOL_Order = "";
-	public static String ATP_Id = "";
+	public static String ATP_Id = "";	
 	public static String RTP_Id = "";
 	public static String Tracking_Number = "";
 	public static String Invoice_number = "";
@@ -404,6 +404,9 @@ public class Pom extends BaseClass {
 	@FindBy(xpath = "//span[contains(text(),'WareHouse UserPortal')]")
 	public static WebElement warehouse;
 
+	@FindBy(xpath ="//li[@title='Pacaar']")
+	public static WebElement PacaarOrderCreate;
+	
 	@FindBy(xpath = "//li[@title='Orders PAR']")
 	public static WebElement OrdersPAR;
 
@@ -631,6 +634,9 @@ public class Pom extends BaseClass {
 
 	@FindBy(xpath = "//h3[contains(text(),'Outbound Loads')]")
 	public static WebElement OutBound_Loads;
+	
+	@FindBy(xpath = "//div[@aria-labelledby='Tab4']//iframe")
+	public static WebElement accessorialFrame;
 
 	@FindBy(xpath = "//iframe[@name='PegaGadget1Ifr']")
 	public static WebElement frameName2;
@@ -697,7 +703,25 @@ public class Pom extends BaseClass {
 
 	@FindBy(xpath = "//*[contains(@alt, 'Choose from calendar')]")
 	public static WebElement ClickonCalendar;
+	
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pCrowleyTLPODList$l1$pArrivedAtPickup']/following-sibling::img")
+	public static WebElement ArrivedAtPickupDate_Icon;
+	
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pCrowleyTLPODList$l1$pOutForDelivery']/following-sibling::img")
+	public static WebElement OutForDeliveryDate_Icon;
+	
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pCrowleyTLPODList$l1$pArrivedAtConsignee']/following-sibling::img")
+	public static WebElement ArrivedAtConsigneeDate_Icon;
+	
+	@FindBy(xpath = "//input[@name='$PpyDisplayHarness$pCrowleyTLPODList$l1$pLineHaulComplete']/following-sibling::img")
+	public static WebElement DeliveredDate_Icon;
+	
+//	@FindBy(xpath = "//span[@id='$PpyWorkPage$pOrderPage$pArrivedAtPickupSpan']/ancestor::div[contains(@class,'content-item')][1]/following-sibling::div[contains(@class,'content-item')][1]//a[normalize-space()='Edit']")
+//	public static WebElement ArrivedAtPickupDateUI_Icon;
 
+	@FindBy(xpath = "//span/a[contains(@data-click,'ArrivedAtPickupDate')]")
+	public static WebElement ArrivedAtPickupDateUI_Icon;
+	
 	@FindBy(xpath = "//a[@id='todayLink']")
 	public static WebElement ClickonTodayDate;
 
@@ -785,7 +809,7 @@ public class Pom extends BaseClass {
 	@FindBy(xpath = "//button[contains(text(),'Request New Rate')]")
 	public static WebElement RequestNewRate;
 
-	@FindBy(xpath = "//button[contains(text(),'Save Changes')and @name='RateReview_pyWorkPage_113']")
+	@FindBy(xpath = "//button[contains(text(),'Save Changes')and @name='RateReview_pyWorkPage_115']")
 	public static WebElement SaveChanges;
 
 	@FindBy(xpath = "//button[@title='Toggle runtime toolbar']/i[@class='pz-pi pi-gear']")
@@ -1188,7 +1212,7 @@ public class Pom extends BaseClass {
 	@FindBy(xpath = "//select[@name='$PpyWorkPage$pOrderPage$pPODSent']")
 	public static WebElement PODComplete_Dropdown;
 
-	public void PAR_Order_Create() throws Exception {
+	public void par_Order_Create_Using_JSON() throws Exception {
 
 		File file = new File(System.getProperty("user.dir") + "\\PAR.json");
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -1216,9 +1240,9 @@ public class Pom extends BaseClass {
 			System.out.println("Ass Trading Partner: " + ATP_Id);
 			String mode = rootNode.path("Mode").asText();
 		//TC77:	Verify the created order has mode as CrowleyTL
-			extentTest.log(Status.PASS, "Created order has mode as " + mode);
+			extentTest.log(Status.PASS, "User can able to create PAR case using - " + mode + " - as Mode");
 			String paymentTerm = rootNode.path("PaymentTerm").asText();
-			extentTest.log(Status.PASS, "Created order has Payment Term as " + paymentTerm);
+			extentTest.log(Status.PASS, "Created order has - " + paymentTerm + " - as Payment Term");
 
 			PO_Number = rootNode.path("OrderRefs").path("PONumber").asText();
 			// Retrieve the CompanyName from OrderOrigin
@@ -1305,9 +1329,8 @@ public class Pom extends BaseClass {
 
 			// TC01: Verify whether the user can create a PAR case using JSON.
 			extentTest.log(Status.PASS, "User can create a PAR case using JSON : " + OrderID);
-			extentTest.log(Status.PASS, "BOL of the created order : " + BOL_Order);
-			extentTest.log(Status.PASS, "Case is created using " + mode + " as Mode");
-			extentTest.log(Status.PASS, "Case is created using " + paymentTerm + " as Payment Term");
+			extentTest.log(Status.PASS, "User can able to create a PAR case for provided BOL : " + BOL_Order);
+			
 		}
 
 	}
@@ -1609,7 +1632,7 @@ public class Pom extends BaseClass {
 		UpdateStatus();
 		// DevStudioSearchBox1();
 		Await();
-		orderService_Actions();
+		clickOrderServicePageActions();
 		RadioSelect();
 		ClickExecute();
 		Await();
@@ -1635,7 +1658,7 @@ public class Pom extends BaseClass {
 		Await();
 		driver.switchTo().defaultContent();
 		Await();
-		orderService_Actions();
+		clickOrderServicePageActions();
 		RadioSelect();
 		ClickExecute();
 		Await();
@@ -1660,7 +1683,7 @@ public class Pom extends BaseClass {
 		Await();
 		ClickonRecentsIcon.click();
 		UpdateStatus();
-		orderService_Actions();
+		clickOrderServicePageActions();
 		RadioSelect();
 		ClickExecute();
 		Await();
@@ -2087,7 +2110,7 @@ public class Pom extends BaseClass {
 				mlRouteElement.setAttribute("Cmd", "7"); // Update Cmd attribute
 				mlRouteElement.setAttribute("SType", "2");
 				TStamp = mlRouteElement.getAttribute("TStamp");
-				mlRouteElement.setAttribute("TStamp", "2025-01-11T10:21:05");
+				mlRouteElement.setAttribute("TStamp", "2025-05-10T10:21:05");
 				System.out.println("TStamp: " + TStamp);
 			}
 			// Update Job elements' attributes
@@ -2141,7 +2164,7 @@ public class Pom extends BaseClass {
 			Element mlRouteElement = (Element) mlRouteNodes.item(0);
 			mlRouteElement.setAttribute("Cmd", "8"); // Update Cmd attribute
 			mlRouteElement.setAttribute("SType", "2");
-			mlRouteElement.setAttribute("TStamp", "2025-01-12T10:21:05");
+			mlRouteElement.setAttribute("TStamp", "2025-05-11T10:21:05");
 		}
 
 		// Update Job elements' attributes
@@ -2181,7 +2204,7 @@ public class Pom extends BaseClass {
 			Element mlRouteElement = (Element) mlRouteNodes.item(0);
 			mlRouteElement.setAttribute("Cmd", "7"); // Update Cmd attribute
 			mlRouteElement.setAttribute("SType", "4");
-			mlRouteElement.setAttribute("TStamp", "2025-01-13T10:21:05");
+			mlRouteElement.setAttribute("TStamp", "2025-05-13T10:21:05");
 		}
 
 		// Update Job elements' attributes
@@ -2221,7 +2244,7 @@ public class Pom extends BaseClass {
 			Element mlRouteElement = (Element) mlRouteNodes.item(0);
 			mlRouteElement.setAttribute("Cmd", "8"); // Update Cmd attribute
 			mlRouteElement.setAttribute("SType", "4");
-			mlRouteElement.setAttribute("TStamp", "2025-01-14T10:21:05");
+			mlRouteElement.setAttribute("TStamp", "2025-05-15T10:21:05");
 		}
 
 		// Update Job elements' attributes
@@ -2452,6 +2475,45 @@ public class Pom extends BaseClass {
 
 	public static void frameSwitch() {
 		driver.switchTo().frame(frameName);
+	}
+	
+	public static void switchToFrames() {
+
+	    driver.switchTo().defaultContent();
+
+	    try {
+	        driver.switchTo().frame(frameName);
+	        System.out.println("Switched to frameName");
+	        return;
+	    } catch (Exception e) {
+	        System.out.println("frameName is not available");
+	    }
+
+	    try {
+	        driver.switchTo().frame(frameName2);
+	        System.out.println("Switched to frameName2");
+	        return;
+	    } catch (Exception e) {
+	        System.out.println("frameName2 is not available");
+	    }
+	    
+	    try {
+	        driver.switchTo().frame(frameName3);
+	        System.out.println("Switched to frameName3");
+	        return;
+	    } catch (Exception e) {
+	        System.out.println("frameName3 not available");
+	    }
+	    throw new RuntimeException("No expected frame is available.");
+	}
+	
+	public static void HandleFrames() {
+		try {
+			driver.switchTo().frame(frameName);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
 	}
 
 	public static void Crowley_Filter_Apply() {
@@ -3523,15 +3585,19 @@ public class Pom extends BaseClass {
 		DateTime = Get_OutForDelivery_DateandTime.getAttribute("data-value");
 		System.out.println(DateTime);
 	}
+	
+	public static void accessorialFrameSwitch() {
+		driver.switchTo().frame(accessorialFrame);
+	}
 
 	public static void frameswitch2() {
 		driver.switchTo().frame(frameName2);
 	}
 
-	public void PEGALogin() throws InterruptedException {
-		extentTest.log(Status.PASS, "User can able to launch Pega application in chrome");
+	public void logIntoPegaUsingValidCredentials() throws InterruptedException {
+		extentTest.log(Status.PASS, "User can able to launch Pega application in chrome browser");
 
-		getWindow_Parent();
+		getParentWindow();
 		ssoLogin.click();
 		waits(code);
 		code.click();
@@ -3541,7 +3607,7 @@ public class Pom extends BaseClass {
 		send.sendKeys(scanner);
 		waits(click);
 		click.click();
-		extentTest.log(Status.PASS, "Successfully logged into PEGA Application using valid credentials");
+		extentTest.log(Status.PASS, "User can able to Successfully log into PEGA Application using valid credentials");
 		extentTest.log(Status.PASS, "User should allowed to launch warehouse portal");
 	}
 
@@ -3589,7 +3655,7 @@ public class Pom extends BaseClass {
 
 	}
 
-	public void orderService_Actions() throws Exception {
+	public void clickOrderServicePageActions() throws Exception {
 		frameSwitch();
 		// Windows();
 		Await();
@@ -3651,11 +3717,13 @@ public class Pom extends BaseClass {
 
 	}
 
-	public void LaunchWarehousePortal() throws InterruptedException {
+	public void launchWarehousePortal() throws InterruptedException {
 		waits(LaunchPortal);
 		LaunchPortal.click();
+		extentTest.log(Status.PASS, "User can able to click Launch Portal from dev studio");
 		waits(warehouse);
 		warehouse.click();
+		extentTest.log(Status.PASS, "User can able to click Launch Portal from dev studio");
 		Await();
 		Windows();
 		extentTest.log(Status.PASS, "Warehouse portal is launched in a new tab after clicking warehouse portal");
@@ -3742,6 +3810,7 @@ public class Pom extends BaseClass {
 		OrderSearchBoxClick.sendKeys(OrderID);
 		waits(ApplyClick);
 		ApplyClick.click();
+		Await();
 		WebElement PAD_OrderID = driver.findElement(By.xpath("//a[contains(text(), '" + OrderID + "')]"));
 		Await();
 		PAD_OrderID.click();
@@ -3761,7 +3830,7 @@ public class Pom extends BaseClass {
 
 	}
 
-	public void OrdersPAR() throws Exception {
+	public void navigateToOrdersPARWorkQueue() throws Exception {
 		Await();
 		extentTest.log(Status.PASS, "User successfully logged into warehouse portal");
 		OrdersPAR.click();
@@ -3774,9 +3843,10 @@ public class Pom extends BaseClass {
 
 	}
 
-	public void InboundTrailer_WorkQueue() throws InterruptedException {
+	public void navigateToInboundTrailerWorkQueue() throws InterruptedException {
 		Await();
 		InboundTrailer.click();
+		extentTest.log(Status.PASS, "User can able to click Inbound Trailer from Orders PAR");
 		Await();
 		BOL_DropdownFilterIconClick.click();
 		BOL_DropdownFilterIconClick.sendKeys(BOL_Order);
@@ -3784,11 +3854,12 @@ public class Pom extends BaseClass {
 		BOL_DropdownFilterIconClick.sendKeys(Keys.ENTER);
 		Await();
 		//TC02: Verify user can able to filter the case using BOL of the case
-		extentTest.log(Status.PASS, "User can able to filter the case using BOL of the case");
-
-		ClickPARCaseID.click();
+		extentTest.log(Status.PASS, "User can able to filter the case using BOL dropdown from Inbound Trailer ");
+		ClickPARCaseID.isDisplayed();
 		//TC03: Verify whether the created case is populated in Inbound trailer work queue
 		extentTest.log(Status.PASS, "Created case " + OrderID + " is filtered and displayed in Inbound trailer");
+		ClickPARCaseID.click();
+	
 		Await();
 		//TC04: Verify whether the user can work on the cases in Inbound trailer work queue
 		extentTest.log(Status.PASS, "User can work on the case " + OrderID + " in Inbound trailer work queue");

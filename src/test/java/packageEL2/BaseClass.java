@@ -73,7 +73,7 @@ public class BaseClass {
 	
 	public void extentReportInitialization() {
 		String path = System.getProperty("user.dir");
-		ExtentSparkReporter reporter = new ExtentSparkReporter(path + "/07_24_2026_Report/testReport.html");
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path + "/10_01_2026_Report/testReport.html");
 		reports = new ExtentReports();
 		reports.attachReporter(reporter);
 	}
@@ -82,7 +82,7 @@ public class BaseClass {
 	public static void BrowserLaunch() {
 
 
-		String chromeVersion = "149"; // Your actual Chrome version
+		String chromeVersion = "154"; // Your actual Chrome version
 		WebDriverManager.chromedriver().browserVersion(chromeVersion).setup();
 
 		driver = new ChromeDriver();
@@ -108,7 +108,7 @@ public class BaseClass {
 
 	}
 
-	public void getWindow_Parent() {
+	public void getParentWindow() {
 		parentWindow = driver.getWindowHandle();
 	}
 
@@ -189,6 +189,59 @@ public class BaseClass {
 		WebElement CalClick = driver.findElement(By.xpath("//a[text()= '" + date + "']"));
 		CalClick.click();
 	}
+	
+//	public static void Select1DaysagoDate() {
+//		Calendar calendar = Calendar.getInstance();
+//		calendar.add(Calendar.DAY_OF_MONTH, -1);
+//		SimpleDateFormat format = new SimpleDateFormat("d");
+//		String date = format.format(calendar.getTime());
+//		WebElement CalClick = driver.findElement(By.xpath("//a[text()= '" + date + "']"));
+//		CalClick.click();
+//	}
+	
+	public static void Select1DaysagoDate() {
+
+	    Calendar calendar = Calendar.getInstance();
+
+	    int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+
+	    if (currentDay == 1) {
+
+	        // Move calendar UI to previous month
+	        WebElement previousMonthButton = driver.findElement(
+	            By.xpath("//span[@id='monthSpinner']//button[contains(@class,'spin-down')]")
+	        );
+
+	        previousMonthButton.click();
+
+	        // Move Java calendar to previous month
+	        calendar.add(Calendar.MONTH, -1);
+
+	        // Get the last day of the previous month
+	        int lastDay = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+
+	        String date = String.valueOf(lastDay);
+
+	        WebElement CalClick = driver.findElement(
+	            By.xpath("//a[normalize-space(text())='" + date + "']")
+	        );
+
+	        CalClick.click();
+
+	    } else {
+
+	        // For day 2 onwards, simply select yesterday
+	        int yesterday = currentDay - 1;
+
+	        String date = String.valueOf(yesterday);
+
+	        WebElement CalClick = driver.findElement(
+	            By.xpath("//a[normalize-space(text())='" + date + "']")
+	        );
+
+	        CalClick.click();
+	    }
+	}
 
 	public static void ScrollDown() {
 		JavascriptExecutor ch = (JavascriptExecutor) driver;
@@ -239,11 +292,8 @@ public class BaseClass {
 		}
 	}
 
-//		public static void awaitility(WebElement element) {
-//			Awaitility.await().atMost(Duration.ofSeconds(5)).untilAsserted(() -> Assert.assertTrue(element.isDisplayed()));
-//		}
 
-	public static void Await(By locator) {
+	public static void webDriverWaitUsingLocator(By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
