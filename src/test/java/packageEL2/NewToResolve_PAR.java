@@ -42,9 +42,7 @@ public class NewToResolve_PAR extends BaseClass {
 
 		ArrayList<String> tab0 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab0.get(0));
-		Await();
-		Await();
-		pom.ClickonRecentsIcon.click();
+		Click(pom.ClickonRecentsIcon);
 		// pom.DevStudioSearchBox();
 		pom.OrderServicePage();
 		pom.clickOrderServicePageActions();
@@ -61,38 +59,20 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		Await();
 		pom.CloseTab();
-
-		pom.ClickonDatatypesIcon.click();
-		Await();
-		pom.Clickon_Order_Datatype.click();
+		Click(pom.ClickonDatatypesIcon);
+		//Await();
+		Click(pom.Clickon_Order_Datatype);
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
-		pom.waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records, 6);
-		pom.Clickon_Datatype_Records.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-	//	pom.Clickon_Datatype_Records.click();
-		pom.waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records_Search, 8);
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
+		waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records, 6);
+		Click(pom.Clickon_Datatype_Records);
+		Click(pom.Clickon_Datatype_Records_Search);
+		waitForElementToBeVisibleAndClickable(driver, pom.Clickon_Datatype_Records_Search, 8);
+		waitForElementToBeVisibleAndText(pom.Clickon_Datatype_Records_Search, OrderID);
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
-		pom.Clickon_Datatype_Records_SearchIcon.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
+		Click(pom.Clickon_Datatype_Records_SearchIcon);
+		waits(pom.ArrivedAtPickup_Date_Validation);
 		pom.ArrivedAtPickup_Date();
 		Await();
 		Await();
@@ -102,8 +82,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
-		Await();
-		pom.ClickonRecentsIcon.click();
+		Click(pom.ClickonRecentsIcon);
 		pom.OrderServicePage();
 //		pom.DevStudioSearchBox();
 		pom.clickOrderServicePageActions();
@@ -119,34 +98,16 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.ClickExecute();
 		Await();
 		pom.CloseTab();
-		pom.ClickonDatatypesIcon.click();
-		Await();
-		pom.Clickon_Order_Datatype.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
+		Click(pom.ClickonDatatypesIcon);
+		Click(pom.Clickon_Order_Datatype);
 		pom.driver.switchTo().defaultContent();
-		Await();
+	//	Await();
 		pom.frameSwitch();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		pom.Clickon_Datatype_Records.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
+		Click(pom.Clickon_Datatype_Records);
+		Click(pom.Clickon_Datatype_Records_Search);
 		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
 		Await();
-		pom.Clickon_Datatype_Records_SearchIcon.click();
+		Click(pom.Clickon_Datatype_Records_SearchIcon);
 		Await();
 		Await();
 		Await();
@@ -175,36 +136,15 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.ClickExecute();
 		Await();
 		pom.CloseTab();
-		pom.ClickonDatatypesIcon.click();
-		Await();
+		Click(pom.ClickonDatatypesIcon);
 		pom.Clickon_Order_Datatype.click();
-		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		pom.Clickon_Datatype_Records.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
-		Await();
-		pom.Clickon_Datatype_Records_SearchIcon.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
+		Click(pom.Clickon_Datatype_Records);
+		waitForElementToBeVisibleAndText(pom.Clickon_Datatype_Records_Search, pom.OrderID);
+		Click(pom.Clickon_Datatype_Records_SearchIcon);
+		waits(pom.ArrivedAtConsignee_Date_Validation);
 		pom.ArrivedAtConsignee_Date();
 		Await();
 //		pom.Consignee_Date_Validation();
@@ -212,9 +152,8 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
 		Await();
-		pom.ClickonRecentsIcon.click();
+		Click(pom.ClickonRecentsIcon);
 		pom.OrderServicePage();
-//		pom.DevStudioSearchBox();
 		pom.clickOrderServicePageActions();
 		pom.SOAPServicePopup();
 		pom.PAR_Delivered_Status_Update();
@@ -228,42 +167,22 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.ClickExecute();
 		Await();
 		pom.CloseTab();
-		pom.ClickonDatatypesIcon.click();
-		Await();
-		pom.Clickon_Order_Datatype.click();
-		Await();
+		Click(pom.ClickonDatatypesIcon);
+		Click(pom.Clickon_Order_Datatype);
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
+		Click(pom.Clickon_Datatype_Records);
+		waitForElementToBeVisibleAndText(pom.Clickon_Datatype_Records_Search, pom.OrderID);
 		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		pom.Clickon_Datatype_Records.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		Await();
-		pom.Clickon_Datatype_Records_Search.sendKeys(pom.OrderID);
-		Await();
-		pom.Clickon_Datatype_Records_SearchIcon.click();
+		Click(pom.Clickon_Datatype_Records_SearchIcon);
 		Await();
 		Await();
 		Await();
 		Await();
 		Await();
 		pom.Delivered_Date();
-		
-		
-		Await();
+	
 		pom.driver.switchTo().defaultContent();
 		pom.CloseTab();
 		Await();
@@ -279,30 +198,19 @@ public class NewToResolve_PAR extends BaseClass {
 		Pom.frameswitch2();
 		Await();
 		
-//		ArrayList<String> tabnew = new ArrayList<>(driver.getWindowHandles());
-//		driver.switchTo().window(tabnew.get(1));
-//		pom.driver.switchTo().defaultContent();
-//		Await();
-//		Pom.frameswitch2();
-//		Await();
-//		Thread.sleep(7000);
-//		Await();
 		pom.ActionsButton();
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
-		Await();
-		pom.ClickonGo.click();
+		Click(pom.ClickonGo);
 		Await();
 		pom.Arrived_At_Terminal_Validation();
 		Await();
-
 		pom.Status_File_FNB();
 		pom.StatusUpdate_Process();
 		pom.FNB_Status_Validation();
 		Await();
-		
-		pom.ClickonGo.click();
+		Click(pom.ClickonGo);
 		Await();
 		pom.BOL_Received_Status();
 		Await();
@@ -311,10 +219,7 @@ public class NewToResolve_PAR extends BaseClass {
 	//	pom.ClickonTodayDate.click();
 		Await();
 		scrollToElementAndClick(driver, pom.Submit);
-		pom.Submit.click();
-		Await();
-		Await();
-		pom.ClickonGo.click();
+		Click(pom.ClickonGo);
 		Await();
 		pom.Loaded_Status();
 		Await();
@@ -323,34 +228,26 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Outbound_Carrier();
 
 		scrollToElementAndClick(driver, pom.Submit);
-
-		pom.Submit.click();
-		Await();
-		Await();
-		pom.ClickonGo.click();
+        Click(pom.Submit);
+	    Click(pom.ClickonGo);
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
 		pom.Loaded_Status_Validation();
 		Await();
 		pom.Released_Status();
-		Await();
-		pom.ClickonCalendar.click();
+		Click(pom.ClickonCalendar);
 		pom.Select1DaysagoDate();
 	//	pom.ClickonTodayDate.click();
 		Await();
 		scrollToElementAndClick(driver, pom.Submit);
-		pom.Submit.click();
-		Await();
-		Await();
-		pom.ClickonGo.click();
-		Await();
+		Click(pom.Submit);
+		Click(pom.ClickonGo);
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
 		pom.StatusUI_Released_Portal();
 
 		// ------------------------
-		Await();
 		driver.switchTo().defaultContent();
 		Await();
 		pom.SwitchtoOrdersPAR();
@@ -402,37 +299,30 @@ public class NewToResolve_PAR extends BaseClass {
 //		Await();
 //		pom.Download_and_Delete_Document_Attached();
 //		pom.Validate_Status_Released();
-		Await();
 
 		
 		Await();
 		pom.driver.switchTo().defaultContent();
 		Await();
-		pom.CrowleyTLPOD.click();
+		Click(pom.CrowleyTLPOD);
 		pom.frames3();
-		pom.CrowleyTL_Refresh.click();
-		Await();
+		Click(pom.CrowleyTL_Refresh);
 		pom.driver.switchTo().defaultContent();
 		pom.frames3();
 		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
 		pom.SelectIBLoadID.sendKeys(pom.Invoice_number);
 		Await();
 		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
+        Click(pom.Attach_POD_Click);
+		Click(pom.Enter_IBLoadID);
+		pom.waitForElementToBeVisibleAndText(pom.Enter_IBLoadID, pom.Invoice_number);
+		Click(pom.Search_IBLoadID);
 		Await();
-
-		pom.Attach_POD_Click.click();
-		Await();
-		pom.Enter_IBLoadID.click();
-		pom.Enter_IBLoadID.sendKeys(pom.Invoice_number);
-		pom.Search_IBLoadID.click();
-		Await();
-		pom.Submit.click();
+		Click(pom.Submit);
 		Await();
 		pom.AttachFile_POD
 				.sendKeys("C:\\Users\\palanga\\eclipse-workspace\\Sprint-35\\File\\List of Outbound Loads (4).pdf");
-		Await();
-		pom.Submit.click();
-		Await();
+		Click(pom.Submit);
 
 		pom.driver.switchTo().defaultContent();
 		pom.SwitchtoOrdersPAR();
@@ -441,7 +331,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.frameSwitch();
 		Await();
-		pom.Order_Tab_Refresh.click();
+		Click(pom.Order_Tab_Refresh);
 		pom.driver.switchTo().defaultContent();
 		Await();
 		pom.frameSwitch();
@@ -452,8 +342,7 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 
 		pom.POD_Received();
-		Await();
-		pom.CheckBox_Click.click();
+		Click(pom.CheckBox_Click);
 		Await();
 		pom.Validate_ApprovePOD();
 		Await();
@@ -470,9 +359,7 @@ public class NewToResolve_PAR extends BaseClass {
 //------------------------------------------------------------***
 		
 		pom.driver.switchTo().defaultContent();
-		Await();
-		pom.CrowleyTLPOD.click();
-	//	pom.frameSwitch();
+		Click(pom.CrowleyTLPOD);
 		pom.frames3();
 		pom.SelectIBLoadID.sendKeys(Keys.ENTER);
 		pom.SelectIBLoadID.sendKeys(pom.Invoice_number);
@@ -495,30 +382,22 @@ public class NewToResolve_PAR extends BaseClass {
 		pom.Enter_IBLoadID.sendKeys(pom.Invoice_number);
 		pom.Search_IBLoadID.click();
 		Await();
-		pom.Submit.click();
-		Await();
+		Click(pom.Submit);
+		Click(pom.ArrivedAtPickupDate_Icon);
+		Click(pom.ClickonTodayDate);
+	
+		Click(pom.OutForDeliveryDate_Icon);
+		Click(pom.ClickonTodayDate);
 		
-		pom.ArrivedAtPickupDate_Icon.click();
-		pom.ClickonTodayDate.click();
-		Await();
+		Click(pom.ArrivedAtConsigneeDate_Icon);
+		Click(pom.ClickonTodayDate);
 		
-		pom.OutForDeliveryDate_Icon.click();
-		pom.ClickonTodayDate.click();
-		Await();
-		
-		pom.ArrivedAtConsigneeDate_Icon.click();
-		pom.ClickonTodayDate.click();
-		Await();
-		
-		pom.DeliveredDate_Icon.click();
-		pom.ClickonTodayDate.click();
-		Await();
+		Click(pom.DeliveredDate_Icon);
+		Click(pom.ClickonTodayDate);
 		
 		pom.AttachFile_POD
 				.sendKeys("C:\\Users\\palanga\\eclipse-workspace\\Sprint-35\\File\\List of Outbound Loads (4).pdf");
-		Await();
-		pom.Submit.click();
-		Await();
+		Click(pom.Submit);
 		pom.driver.switchTo().defaultContent();
 		
 	//-----------------------------------------------***	
@@ -527,8 +406,6 @@ public class NewToResolve_PAR extends BaseClass {
 		driver.switchTo().defaultContent();
 		ArrayList<String> tab4 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab4.get(1));
-		Await();
-		
 		
 		
 		pom.driver.switchTo().defaultContent();
@@ -543,46 +420,28 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		pom.driver.switchTo().defaultContent();
 		pom.frameswitch2();
-		Await();
-		pom.ClickonGo.click();
-		Await();
-		pom.ArrivedAtPickupDateUI_Icon.click();
-		Await();
-		pom.ClickonCalendar.click();
+		Click(pom.ClickonGo);
+		Click(pom.ArrivedAtPickupDateUI_Icon);
+		Click(pom.ClickonCalendar);
 		pom.Select1DaysagoDate();
-		Await();
-		pom.Submit.click();
-		Await();
-		Await();
-		Await();
-		Await();
-		pom.ClickonGo.click();
-		
-		
-		
+		Click(pom.Submit);
+		Click(pom.ClickonGo);
 		
 		driver.switchTo().defaultContent();
 		ArrayList<String> tab7 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab7.get(0));
-		Await();
-		Await();
-		//------------------------------------------------------------***
-		Await();
-		Await();
-		pom.ClickonRecentsIcon.click();
+		
+		Click(pom.ClickonRecentsIcon);
 		pom.CrowleyConfirmPOD();
 		pom.clickOrderServicePageActions();
 
-//		pom.DevStudioSearchBox("ConfrimPOD", pom.ClickConfirmPOD);  
-//		pom.clickOrderServicePageActions();
 		driver.switchTo().defaultContent();
 		Await();
 		System.out.println(driver.getWindowHandles().size());
 		pom.getParentWindow();
 		Await();
 		pom.switchToLatestWindow();
-		Await();
-		pom.pyIDTextBox.click();
+		Click(pom.pyIDTextBox);
 		System.out.println("Clicked");
 		pom.pyIDTextBox.sendKeys(pom.OrderID);
 		pom.PODConfirmNum_TextBox.click();
@@ -1257,19 +1116,19 @@ public class NewToResolve_PAR extends BaseClass {
 		ArrayList<String> tab4 = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tab4.get(0));
 		Await();
-		login.ClickonDatatypesIcon.click();
+		click(login.ClickonDatatypesIcon);
 		Await();
-		login.Clickon_Status_Datatype.click();
+		click(login.Clickon_Status_Datatype);
 		login.driver.switchTo().defaultContent();
 		Await();
 		login.frameSwitch();
 		Await();
-		login.Clickon_Datatype_Records.click();
+		click(login.Clickon_Datatype_Records);
 		Await();
 		Await();
 //		login.Clickon_Datatype_Records_Search.clear();
 //		login.Clickon_Datatype_Records_Search.sendKeys(login.OrderID);
-		login.Clickon_Datatype_Records_SearchIcon.click();
+		click(login.Clickon_Datatype_Records_SearchIcon);
 		Await();
 		Await();
 		Await();
@@ -1288,18 +1147,18 @@ public class NewToResolve_PAR extends BaseClass {
 		Await();
 		scrollToElementAndClick(driver, login.SaveChanges);
 		Await();
-		login.ClickonGo.click();
+		click(login.ClickonGo);
 		Await();
 		login.driver.switchTo().defaultContent();
 		login.frameswitch2();
 		Await();
-		login.Add_Accessorial.click();
+		click(login.Add_Accessorial);
 		Await();
 		login.Accessorial_Pickup();
 		login.Accessorial_Code();
-		login.SaveAccessorial.click();
+		click(login.SaveAccessorial);
 		Await();
-		login.RequestNewRate.click();
+		click(login.RequestNewRate);
 		Await();
 		Await();
 		scrollToElementAndClick(driver, login.SaveChanges);
@@ -1307,11 +1166,11 @@ public class NewToResolve_PAR extends BaseClass {
 		login.driver.switchTo().defaultContent();
 		login.frameswitch2();
 		Await();
-		login.ClickonGo.click();
+		click(login.ClickonGo);
 		login.driver.switchTo().defaultContent();
-		login.switchTo_OrdersDFD.click();
+		click(login.switchTo_OrdersDFD);
 		login.frameSwitch();
-		login.RateReview_Workpage.click();
+		click(login.RateReview_Workpage);
 		Await();
 		login.OrderSearchandFilter();
 		Await();

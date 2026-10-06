@@ -101,12 +101,17 @@ public class BaseClass {
 	}
 
 	public static String scanner() {
+		
 		scanner = new Scanner(System.in);
 		String otp = scanner.nextLine();
 		System.out.println(otp + " is the received OTP");
 		return otp;
 
 	}
+	
+	public void click(WebElement element){
+        element.click();
+}
 
 	public void getParentWindow() {
 		parentWindow = driver.getWindowHandle();
@@ -155,6 +160,13 @@ public class BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
 		wait.until(ExpectedConditions.visibilityOf(element)); // Wait until element is visible
 		wait.until(ExpectedConditions.elementToBeClickable(element)); // Wait until element is clickable
+	}
+	
+	public static void waitForElementToBeVisibleAndText(WebElement element, String text) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		element.clear();
+		element.sendKeys(text);
 	}
 
 	public static void SelectClass(WebElement status, String Dropdown) {
@@ -296,6 +308,13 @@ public class BaseClass {
 	public static void webDriverWaitUsingLocator(By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+	
+	public static void Click(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		element.click();
+
 	}
 
 	public static void Await() throws InterruptedException {

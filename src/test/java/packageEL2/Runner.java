@@ -44,12 +44,12 @@ public class Runner extends BaseClass {
 		Pom login = new Pom(driver);
 		login.DFDScanTool_API();
 		login.XML_Write();
-		login.PEGALogin();
+		login.logIntoPegaUsingValidCredentials();
 		Await();
 		login.ClickonRecentsIcon.click();
 		login.OrderServicePage();
 	//	login.DevStudioSearchBox();
-		login.orderService_Actions();
+		login.clickOrderServicePageActions();
 
 		login.SOAPServicePopup();
 		WebElement textArea = driver
@@ -60,7 +60,7 @@ public class Runner extends BaseClass {
 		// Call the sendKeysJavascript method with the appropriate arguments
 		login.sendKeysJavascript(driver, textArea, filePath);
 		login.ClickExecute();
-		login.LaunchWarehousePortal();
+		login.launchWarehousePortal();
 		login.OrdersDFD();
 		login.EFM_Clipboard_Status_Validation();
 		
@@ -122,12 +122,12 @@ public class Runner extends BaseClass {
 		Pom login = new Pom(driver);
 		DFD_EFM_API();
 		POD_SIGNATURE_XML_Write();
-		login.PEGALogin();
+		login.logIntoPegaUsingValidCredentials();
 		Await();
 		login.ClickonRecentsIcon.click();
 		login.OrderServicePage();
 	//	login.DevStudioSearchBox();
-		login.orderService_Actions();
+		login.clickOrderServicePageActions();
 		login.SOAPServicePopup();
 		WebElement textArea = driver
 				.findElement(By.xpath("//textarea[@name='$PpySimulationDataPage$ppyRequestTextData']"));
@@ -137,7 +137,7 @@ public class Runner extends BaseClass {
 		// Call the sendKeysJavascript method with the appropriate arguments
 		login.sendKeysJavascript(driver, textArea, filePath);
 		login.ClickExecute();
-		login.LaunchWarehousePortal();
+		login.launchWarehousePortal();
 		login.OrdersDFD();
 		login.EFM_Clipboard_Status_Validation();
 		driver.close();

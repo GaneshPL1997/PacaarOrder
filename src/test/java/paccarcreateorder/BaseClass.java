@@ -37,14 +37,13 @@ public class BaseClass {
 	@BeforeClass
 	public void extentReportInitialization() {
 		String path = System.getProperty("user.dir");
-		ExtentSparkReporter reporter = new ExtentSparkReporter(path + "/07_31_2026_Report/testReport.html");
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path + "/10_01_2026_Report/testReport.html");
 		reports = new ExtentReports();
 		reports.attachReporter(reporter);
 	}
 
 	@BeforeMethod
 	public static void BrowserLaunch() {
-
 
 		ChromeOptions options = new ChromeOptions();
 		 
@@ -59,7 +58,7 @@ public class BaseClass {
         
 
  
-		String chromeVersion = "149"; // Your actual Chrome version
+		String chromeVersion = "154"; // Your actual Chrome version
 		WebDriverManager.chromedriver().browserVersion(chromeVersion).setup();
 
 		driver = new ChromeDriver(options);
